@@ -1,0 +1,132 @@
+"""Data loading and evaluation-set construction.
+
+Source: the 16 `learned_hands_*` tasks of LegalBench (Hugging Face "nguha/legalbench"),
+read as plain TSV files at a pinned commit. Each task is a balanced Yes/No question
+("does this post involve <category>?") with columns: index, text, answer.
+
+Builds:
+  Set A  - standard binary items, N_A per category (stratified Yes/No), fixed seed.
+  Set B  - every unique post with a 16-dim label vector:
+           1 = positive in that task, 0 = negative in that task,
+           empty (NaN) = masked, because the post never appears in that task.
+
+Run:  python -m src.data
+"""
+import json
+import re
+from pathlib import Path
+
+import pandas as pd
+import yaml
+from huggingface_hub import hf_hub_download
+
+
+def load_config(path="config.yaml"):
+    with open(path, encoding="utf-8") as f:
+        return yaml.safe_load(f)
+
+
+def normalize_text(text):
+    """Lowercase and collapse whitespace. Used only to detect duplicate posts."""
+    return re.sub(r"\s+", " ", text.lower()).strip()
+
+
+def make_post_id(text):
+    """Stable short id for a post, derived from its normalized text."""
+    import hashlib
+    return hashlib.sha1(normalize_text(text).encode("utf-8")).hexdigest()[:12]
+
+
+def load_split(cfg, split):
+    """All 16 tasks for one split, as one long table: one row per (task, item)."""
+    frames = []
+    for cat in cfg["categories"]:
+        path = hf_hub_download(cfg["data"]["hf_repo"], f"data/learned_hands_{cat}/{split}.tsv",
+                               repo_type="dataset", revision=cfg["data"]["hf_revision"])
+        df = pd.read_csv(path, sep="\t")
+        assert list(df.columns) == ["index", "text", "answer"], df.columns
+        assert set(df["answer"]) <= {"Yes", "No"}
+        frames.append(pd.DataFrame({
+            "item_id": [f"{cat}-{i}" for i in df["index"]],
+            "category": cat,
+            "text": df["text"],
+            "label": (df["answer"] == "Yes").astype(int),
+        }))
+    long = pd.concat(frames, ignore_index=True)
+    long.insert(1, "post_id", long["text"].map(make_post_id))
+    return long
+
+
+def build_set_a(test_long, n_per_cat, seed):
+    """Stratified sample: ceil(n/2) positives and floor(n/2) negatives per category."""
+    parts = []
+    for cat, rows in test_long.groupby("category"):
+        for label, k in [(1, (n_per_cat + 1) // 2), (0, n_per_cat // 2)]:
+            pool = rows[rows["label"] == label]
+            parts.append(pool.sample(n=min(k, len(pool)), random_state=seed))
+    return pd.concat(parts).sort_values(["category", "item_id"]).reset_index(drop=True)
+
+
+def build_set_b(test_long, categories):
+    """One row per unique post. A (post, category) pair seen with conflicting labels is masked."""
+    per_pair = test_long.groupby(["post_id", "category"])["label"].agg(["min", "max"])
+    per_pair["value"] = per_pair["min"].where(per_pair["min"] == per_pair["max"])  # NaN on conflict
+    labels = per_pair["value"].unstack("category").reindex(columns=categories).astype("Int8")
+    texts = test_long.drop_duplicates("post_id").set_index("post_id")["text"]
+    set_b = labels.join(texts).reset_index()
+    set_b["n_known"] = set_b[categories].notna().sum(axis=1)
+    set_b["n_known_pos"] = (set_b[categories] == 1).sum(axis=1)
+    return set_b[["post_id", "text", "n_known", "n_known_pos"] + categories]
+
+
+def overlap_stats(test_long, set_b, set_a, categories):
+    pair_counts = test_long.groupby(["post_id", "category"]).size()
+    conflicts = test_long.groupby(["post_id", "category"])["label"].nunique()
+    pos = set_b[categories].eq(1).fillna(False).astype(int)  # masked counts as "not a known positive"
+    co_pos = pos.T.dot(pos)
+    pairs = [(a, b, int(co_pos.loc[a, b])) for i, a in enumerate(categories)
+             for b in categories[i + 1:] if co_pos.loc[a, b] > 0]
+    pairs.sort(key=lambda p: -p[2])
+    chars = set_b["text"].str.len()
+    return {
+        "test_rows": len(test_long),
+        "unique_posts": len(set_b),
+        "duplicate_rows_within_same_task": int((pair_counts > 1).sum()),
+        "conflicting_labels_within_same_task": int((conflicts > 1).sum()),
+        "rows_per_category": test_long["category"].value_counts().sort_index().to_dict(),
+        "tasks_per_post": {int(k): int(v) for k, v in set_b["n_known"].value_counts().sort_index().items()},
+        "known_positives_per_post": {int(k): int(v) for k, v in set_b["n_known_pos"].value_counts().sort_index().items()},
+        "posts_with_2plus_known_positives": int((set_b["n_known_pos"] >= 2).sum()),
+        "top_co_positive_pairs": pairs[:15],
+        "text_chars": {k: round(float(v)) for k, v in chars.describe().items()},
+        "set_a_items": len(set_a),
+        "set_a_unique_posts": int(set_a["post_id"].nunique()),
+    }
+
+
+def main():
+    cfg = load_config()
+    cats = cfg["categories"]
+    out = Path(cfg["data"]["processed_dir"])
+    out.mkdir(parents=True, exist_ok=True)
+
+    train = load_split(cfg, "train")
+    test = load_split(cfg, "test")
+    set_a = build_set_a(test, cfg["data"]["n_a_per_category"], cfg["seed"])
+    set_b = build_set_b(test, cats)
+    stats = overlap_stats(test, set_b, set_a, cats)
+    stats["train_rows"] = len(train)
+
+    train.to_csv(out / "train.csv", index=False)
+    test.to_csv(out / "test_long.csv", index=False)
+    set_a.to_csv(out / "set_a.csv", index=False)
+    set_b.to_csv(out / "set_b.csv", index=False)
+    (out / "stats.json").write_text(json.dumps(stats, indent=2))
+    print(json.dumps(stats, indent=2))
+
+    if stats["posts_with_2plus_known_positives"] < cfg["data"]["hand_label_threshold"]:
+        print("Fewer multi-issue posts than the threshold: build data/hand_label_template.csv")
+
+
+if __name__ == "__main__":
+    main()

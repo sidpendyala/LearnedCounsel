@@ -1,0 +1,4 @@
+# Python 3.11. More packages are added as later milestones need them.
+pandas==3.1.1
+PyYAML==6.0.4
+huggingface_hub==2.4.0

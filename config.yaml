@@ -1,0 +1,34 @@
+# LearnedCounsel configuration. Every tunable setting lives here.
+
+seed: 448
+
+data:
+  hf_repo: nguha/legalbench
+  # Pinned commit of the Hugging Face repo, so every run sees the same data.
+  hf_revision: daec8237410aa23e3faf4bc41ad8b3a7e1696826
+  processed_dir: data/processed
+  n_a_per_category: 25        # Set A: items per category (stratified Yes/No)
+  hand_label_threshold: 100   # build a hand-label template if fewer Set B posts have 2+ known positives
+  hand_label_candidates: 50
+
+categories: [benefits, business, consumer, courts, crime, divorce, domestic_violence,
+             education, employment, estates, family, health, housing, immigration,
+             torts, traffic]
+
+# One specialist agent per group.
+groups:
+  housing: [housing]
+  family: [family, divorce, domestic_violence, estates]
+  work_money: [employment, consumer, benefits, business]
+  courts_crime: [courts, crime, traffic]
+  health_more: [health, education, immigration, torts]
+
+ollama:
+  url: http://localhost:11434
+  num_ctx: 8192
+  concurrency: 1              # revisit after the M2 benchmark
+
+models:
+  main: qwen3:8b
+  strong: qwen3:14b           # only for experiment (g), if fast enough
+  small: qwen3:4b             # fallback for experiment (g)
