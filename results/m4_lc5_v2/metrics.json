@@ -1,0 +1,126 @@
+{
+  "system": "learnedcounsel",
+  "run_name": "m4_lc5_v2",
+  "cost": {
+    "calls_per_post": 10.6,
+    "tokens_in_per_post": 12188.4,
+    "tokens_out_per_post": 2347.4,
+    "latency_s_per_post": 105.654,
+    "total_calls": 53.0,
+    "total_tokens_in": 60942.0,
+    "total_tokens_out": 11737.0,
+    "total_latency_s": 528.27,
+    "n_posts": 5
+  },
+  "per_post_means": {
+    "invalid_messages": 0.0,
+    "repair_retries": 0.0,
+    "evidence_retries": 0.8,
+    "first_try_evidence_valid": 3.4,
+    "first_try_evidence_total": 4.0,
+    "specialists_called": 3.0,
+    "consults": 1.0,
+    "challenges": 0.0,
+    "possible_misses": 0.6,
+    "reopens": 1.6,
+    "flips": 0.4,
+    "rounds": 1.6,
+    "coordinator_failed": 0.0
+  },
+  "llm_stats": {
+    "calls": 53,
+    "cached_calls": 10,
+    "tokens_in": 60942,
+    "tokens_out": 11737,
+    "model_seconds": 528.27366065979,
+    "live_seconds": 426.131765127182,
+    "repair_retries": 0,
+    "invalid_after_retry": 0,
+    "ctx_warnings": 0
+  },
+  "invalid_outputs": 0,
+  "evidence_validity_rate": 1.0,
+  "set_a": {
+    "n_items": 0,
+    "n_items_in_set": 240,
+    "mean_accuracy": null,
+    "overall": {
+      "n": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0
+    },
+    "per_category": {}
+  },
+  "set_b": {
+    "n_posts": 5,
+    "n_known_entries": 12,
+    "micro_precision": 1.0,
+    "micro_recall": 1.0,
+    "micro_f1": 1.0,
+    "macro_f1": 1.0,
+    "macro_f1_categories": 4,
+    "exact_match": 1.0,
+    "recall_by_known_positives": {
+      "1": 1.0,
+      "2": 1.0,
+      "3+": 1.0
+    },
+    "per_category": {
+      "crime": {
+        "n": 2,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "domestic_violence": {
+        "n": 1,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "family": {
+        "n": 4,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 3,
+        "fp": 0,
+        "fn": 0
+      },
+      "housing": {
+        "n": 4,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "torts": {
+        "n": 1,
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  }
+}

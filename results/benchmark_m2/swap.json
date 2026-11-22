@@ -1,0 +1,88 @@
+{
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU, 8188 MiB, 621.14",
+    "cpu": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+    "os": "Windows-10-10.0.26200-SP0",
+    "ollama": "0.40.17"
+  },
+  "switches": [
+    {
+      "model": "qwen3:8b",
+      "load_seconds": 0.0,
+      "wall_seconds": 2.42,
+      "loaded_after": [
+        {
+          "name": "qwen3:8b",
+          "size_gb": 6.19,
+          "gpu_pct": 100,
+          "context": 8192
+        }
+      ]
+    },
+    {
+      "model": "qwen3:4b",
+      "load_seconds": 5.06,
+      "wall_seconds": 7.28,
+      "loaded_after": [
+        {
+          "name": "qwen3:4b",
+          "size_gb": 3.88,
+          "gpu_pct": 100,
+          "context": 8192
+        }
+      ]
+    },
+    {
+      "model": "qwen3:8b",
+      "load_seconds": 3.93,
+      "wall_seconds": 6.26,
+      "loaded_after": [
+        {
+          "name": "qwen3:8b",
+          "size_gb": 6.19,
+          "gpu_pct": 100,
+          "context": 8192
+        }
+      ]
+    },
+    {
+      "model": "qwen3:4b",
+      "load_seconds": 4.19,
+      "wall_seconds": 6.41,
+      "loaded_after": [
+        {
+          "name": "qwen3:4b",
+          "size_gb": 3.88,
+          "gpu_pct": 100,
+          "context": 8192
+        }
+      ]
+    },
+    {
+      "model": "qwen3:8b",
+      "load_seconds": 4.14,
+      "wall_seconds": 6.47,
+      "loaded_after": [
+        {
+          "name": "qwen3:8b",
+          "size_gb": 6.19,
+          "gpu_pct": 100,
+          "context": 8192
+        }
+      ]
+    },
+    {
+      "model": "qwen3:4b",
+      "load_seconds": 3.79,
+      "wall_seconds": 5.98,
+      "loaded_after": [
+        {
+          "name": "qwen3:4b",
+          "size_gb": 3.88,
+          "gpu_pct": 100,
+          "context": 8192
+        }
+      ]
+    }
+  ]
+}

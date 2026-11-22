@@ -79,6 +79,17 @@ def build_set_b(test_long, categories):
     return set_b[["post_id", "text", "n_known", "n_known_pos"] + categories]
 
 
+def positives_bucket(n):
+    return "3+" if n >= 3 else str(n)
+
+
+def stratified_sample(set_b, sizes, seed):
+    """Sample posts by number of known positives, e.g. sizes = {"1": 40, "2": 50, "3+": 30}."""
+    bucket = set_b["n_known_pos"].map(positives_bucket)
+    parts = [set_b[bucket == b].sample(n=n, random_state=seed) for b, n in sizes.items()]
+    return pd.concat(parts).reset_index(drop=True)
+
+
 def overlap_stats(test_long, set_b, set_a, categories):
     pair_counts = test_long.groupby(["post_id", "category"]).size()
     conflicts = test_long.groupby(["post_id", "category"])["label"].nunique()
@@ -117,10 +128,20 @@ def main():
     stats = overlap_stats(test, set_b, set_a, cats)
     stats["train_rows"] = len(train)
 
+    # Evaluation samples sized to the compute budget (see NOTES.md, M2)
+    set_b_sample = stratified_sample(set_b, cfg["data"]["set_b_sample"], cfg["seed"])
+    ablation = stratified_sample(set_b_sample, cfg["data"]["ablation_subset"], cfg["seed"])
+    all_posts = set(set_a["post_id"]) | set(set_b_sample["post_id"])
+    stats["set_b_sample_posts"] = len(set_b_sample)
+    stats["ablation_subset_posts"] = len(ablation)
+    stats["unique_posts_to_run_main"] = len(all_posts)
+
     train.to_csv(out / "train.csv", index=False)
     test.to_csv(out / "test_long.csv", index=False)
     set_a.to_csv(out / "set_a.csv", index=False)
     set_b.to_csv(out / "set_b.csv", index=False)
+    set_b_sample.to_csv(out / "set_b_sample.csv", index=False)
+    ablation.to_csv(out / "ablation_subset.csv", index=False)
     (out / "stats.json").write_text(json.dumps(stats, indent=2))
     print(json.dumps(stats, indent=2))
 

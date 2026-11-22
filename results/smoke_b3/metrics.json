@@ -1,0 +1,202 @@
+{
+  "system": "b3",
+  "run_name": "smoke_b3",
+  "cost": {
+    "calls_per_post": 1.0,
+    "tokens_in_per_post": 1257.2,
+    "tokens_out_per_post": 387.2,
+    "latency_s_per_post": 17.83879336118698,
+    "total_calls": 20.0,
+    "total_tokens_in": 25144.0,
+    "total_tokens_out": 7744.0,
+    "total_latency_s": 356.7758672237396,
+    "n_posts": 20
+  },
+  "llm_stats": {
+    "calls": 20,
+    "cached_calls": 20,
+    "tokens_in": 25144,
+    "tokens_out": 7744,
+    "model_seconds": 356.7758672237396,
+    "live_seconds": 0.0,
+    "repair_retries": 0,
+    "invalid_after_retry": 0,
+    "ctx_warnings": 0
+  },
+  "invalid_outputs": 0,
+  "evidence_validity_rate": 0.8775510204081632,
+  "set_a": {
+    "n_items": 1,
+    "n_items_in_set": 240,
+    "mean_accuracy": 1.0,
+    "overall": {
+      "n": 1,
+      "accuracy": 1.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0
+    },
+    "per_category": {
+      "business": {
+        "n": 1,
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  },
+  "set_b": {
+    "n_posts": 20,
+    "n_known_entries": 54,
+    "micro_precision": 0.8648648648648649,
+    "micro_recall": 0.9142857142857143,
+    "micro_f1": 0.888888888888889,
+    "macro_f1": 0.9342324342324343,
+    "macro_f1_categories": 12,
+    "exact_match": 0.6,
+    "recall_by_known_positives": {
+      "1": 1.0,
+      "2": 0.8888888888888888,
+      "3+": 0.8888888888888888
+    },
+    "per_category": {
+      "business": {
+        "n": 1,
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "consumer": {
+        "n": 4,
+        "accuracy": 0.75,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "tp": 3,
+        "fp": 0,
+        "fn": 1
+      },
+      "courts": {
+        "n": 1,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "crime": {
+        "n": 5,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 5,
+        "fp": 0,
+        "fn": 0
+      },
+      "divorce": {
+        "n": 1,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "domestic_violence": {
+        "n": 2,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "employment": {
+        "n": 2,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "estates": {
+        "n": 1,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "family": {
+        "n": 8,
+        "accuracy": 0.625,
+        "precision": 0.6666666666666666,
+        "recall": 0.8,
+        "f1": 0.7272727272727272,
+        "tp": 4,
+        "fp": 2,
+        "fn": 1
+      },
+      "health": {
+        "n": 2,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "housing": {
+        "n": 18,
+        "accuracy": 0.8333333333333334,
+        "precision": 0.625,
+        "recall": 1.0,
+        "f1": 0.7692307692307693,
+        "tp": 5,
+        "fp": 3,
+        "fn": 0
+      },
+      "torts": {
+        "n": 5,
+        "accuracy": 0.8,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "tp": 3,
+        "fp": 0,
+        "fn": 1
+      },
+      "traffic": {
+        "n": 4,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  }
+}

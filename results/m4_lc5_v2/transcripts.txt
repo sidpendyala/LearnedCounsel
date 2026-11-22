@@ -1,0 +1,197 @@
+=== 1d0bd3174796 ===
+I'm in Arkansas so I am well aware I have absolutely no rights at all.   I always make sure to pay my rent on time. It is due by the 2nd with one grace day. There was a slight hick-up with my payroll department and I didn't get paid on the day I was suppose to. I had a small amount in savings, not enough to cover it so I read my lease which says that any late payments would require a $95 fee and $10 a day. Suppose to be paid on the first but I actually didn't get paid until the 3rd at 8am. So when I went online to pay it the very next day at 8am when I got the notice that my deposit  was in my account, I went ahead and paid the fee I knew I would be charged and the day late fee for a total of $855 (rent is $750). The $855 came out of my account immediately and I got a receipt.  I apologized in the note section and told them to let me know if I owed more.   I was technically just 8 hours later than the midnight cut off. But if you don't count the grace period I was 2 days late.   No one ever said anything. My balance on line shows $0. I've never been later than the 1st before.   A few days ago I got contacted by the office about my paying rent late. I apologized again, said it would...
+
+[round 0] intake  (765 in / 309 out, 9.32s)
+   urgency high: ['Eviction notice received', 'Potential lease termination', 'Landlord is proceeding with eviction despite rent being paid']
+   facts: ['User is in Arkansas', 'User pays rent on time', 'Rent is due by the 2nd with a grace day', 'User did not get paid on time due to payroll issues', 'User paid rent on the 3rd at 8am', 'User paid a $95 fee and $10/day late fee totaling $855', 'User received a notice of eviction for breaking the lease', 'Lease states termination if rent is late past the 5th day']
+[round 0] router  (1611 in / 204 out, 11.44s)
+   call: housing
+[round 0] specialist:housing  (989 in / 107 out, 7.69s)
+   housing: PRESENT 1.00 "I was technically just 8 hours later than the midnight cut off." | User paid rent late, triggering lease penalties and eviction notice.
+   consult requests: [{'specialist': 'courts_crime', 'reason': 'User seeks clarification on legal options for eviction and breach of lease in Arkansas.'}]
+[round 0] specialist:courts_crime  (1094 in / 202 out, 8.01s)
+   courts: PRESENT 1.00 "I was technically just 8 hours later than the midnight cut off." | User is facing eviction and needs to understand legal procedures and potential court actions.
+   crime: absent 0.50 "" | No criminal activity is mentioned or implied in the post.
+   traffic: absent 0.50 "" | No traffic-related issues are mentioned or implied in the post.
+   consult requests: [{'specialist': 'housing', 'reason': 'User is facing eviction and needs guidance on tenant rights and lease violations in Arkansas.'}]
+[round 1] skeptic  (1778 in / 68 out, 8.56s)
+   challenge courts [weak_evidence]: Post does not mention court procedures, only eviction notice and lease terms.
+   possible miss torts: Potential claim for breach of contract or unfair eviction practices.
+[round 1] rebuttal:health_more  (877 in / 79 out, 8.52s)
+   maintain -> present=False 1.0: The post describes a breach of contract and potential unfair eviction, not a tort.
+[round 1] coordinator  (1895 in / 462 out, 17.57s)
+   labels: courts, housing
+   urgency high, settled True, reopen []
+   referral: You may want to contact a local housing rights organization or tenant advocacy group in Arkansas to discuss your lease terms and eviction process. They can help you understand your rights and options, such as disputing the eviction or negotiating with your landlord. Be sure to keep copies of all communications and receipts related to your rent payment.
+(skeptic items kept: ['torts'], dropped by tau/rules: 1)
+FINAL: courts, housing | urgency high | rounds 1 
+
+=== 54c92e2b13b9 ===
+Mom and i recently found out my father (divored) has been molesting my sisters but they hid it for years because they didnt want to lose their dad. We tried to report him but they sent cops and cps to our mom trying to charge her for it  because there's no proof against him. Also, my sisters said they found child porn on his phone but they didnt mention it to cops because they were telling them theyll go to a foster home.  How can we report him for that instead? My sisters dont see him no more
+
+[round 0] intake  (312 in / 265 out, 7.95s)
+   urgency high: ['Potential ongoing abuse', 'Risk of foster care placement', 'Possession of child pornography']
+   facts: ['Father (divorced) has been molesting sisters', 'Sisters hid the abuse for years to avoid losing father', 'Attempted to report father but cops and CPS targeted mother', 'No proof against father due to lack of evidence', "Sisters found child porn on father's phone", 'Sisters did not report child porn to cops', 'Sisters say they no longer see father', 'Sisters fear foster care placement']
+[round 0] router  (1143 in / 194 out, 15.89s)
+   call: family, courts_crime
+[round 0] specialist:family  (659 in / 288 out, 8.5s)
+   family: PRESENT 1.00 "Mom and I recently found out my father (divored) has been molesting my sisters" | The post describes abuse by a family member and its impact on the family unit.
+   divorce: absent 0.50 "" | The father is divorced, but the post focuses on abuse rather than divorce proceedings.
+   domestic_violence: PRESENT 1.00 "Father (divored) has been molesting my sisters" | The post describes sexual abuse by a family member, which is a form of domestic violence.
+   estates: absent 0.50 "" | There is no mention of death, inheritance, or estate planning.
+   consult requests: [{'specialist': 'courts_crime', 'reason': 'The post involves reporting abuse and potential possession of child pornography, which requires legal action.'}]
+[round 0] specialist:courts_crime  (626 in / 276 out, 17.6s)
+   courts: PRESENT 1.00 "We tried to report him but they sent cops and cps to our mom trying to charge her for it b" | Post describes attempts to report abuse but faced legal barriers due to lack of evidence.
+   crime: PRESENT 0.80 "my sisters said they found child porn on his phone but they didnt mention it to cops becau" | Post implies criminal activity (child pornography) and potential victimization of minors.
+   traffic: absent 0.50 "" | No mention of traffic-related issues.
+   consult requests: [{'specialist': 'family', 'reason': 'Post involves family abuse, child protection, and foster care concerns.'}, {'specialist': 'health_more', 'reason': 'Post involves potential trauma and child abuse, which may require mental health support.'}]
+[round 0] specialist:health_more  (645 in / 298 out, 9.81s)
+   health: absent 0.50 "" | Post describes child abuse, which falls under health due to medical and psychological impacts.
+   torts: PRESENT 0.80 "We tried to report him but they sent cops and cps to our mom trying to charge her for it b" | Post describes potential civil wrongs related to abuse and failure to report.
+   consult requests: [{'specialist': 'family', 'reason': 'Post involves family abuse, child protection, and potential foster care placement.'}, {'specialist': 'courts_crime', 'reason': 'Post involves potential criminal charges for abuse and possession of child pornography.'}]
+[round 1] skeptic  (1527 in / 46 out, 8.33s)
+   challenge crime [weak_evidence]: Finding child porn does not necessarily prove criminal activity or direct harm to minors.
+[round 1] coordinator  (1592 in / 393 out, 16.23s)
+   labels: courts, crime, domestic_violence, family, torts
+   urgency high, settled True, reopen []
+   referral: You need to seek help from a domestic violence advocate or a criminal defense attorney who specializes in child abuse cases. They can help you understand how to report the abuse and the possession of child pornography, and guide you through the legal process to protect your sisters and hold your father accountable. You may also need support from a family law attorney to navigate the complexities of the situation.
+(skeptic items kept: [], dropped by tau/rules: 1)
+FINAL: courts, crime, domestic_violence, family, torts | urgency high | rounds 1 
+
+=== 9b0bf8371bc2 ===
+The situation is kind of complex, but I'll try to break it down. I may not know all the details of the legal stuff that happened, but I'm trying my best from what I do know.  We are in Manitoba, Canada.   My parents separated legally. However, between themselves they agreed that Mom will not apply for child support benefits and in turn Dad will let her live with him rent free. They live like roommates, only sharing common spaces. They barely talk and in general do not have a relationship.  They do not share finances outside an RESP for my education.   My mom recieved government benefits for being a single mother for 3 (?) years. She works part time and does not recieve financial assistance from Dad at all, apart from their agreement about the rent.   Last month they both got letters stating that they need to explain what kind of custodial agreement they have over me. Their definition of shared custody included living at separate addresses, so they could not say they shared custody. So they wrote a custom explanation about the situation and their agreement.   Today a letter came in with an invoice of $10k CAD. I do not know the terms of this debt (interest, time frame). Is there any...
+
+[round 0] intake  (516 in / 278 out, 15.51s)
+   urgency low: ['No immediate safety risk', 'No court date or deadline within weeks', 'No imminent job loss or deportation risk']
+   facts: ['Parents separated legally', 'Agreed Mom will not apply for child support benefits', 'Dad lets Mom live rent free in his home', 'They live like roommates, sharing only common spaces', 'They do not share finances outside an RESP for education', 'Mom received government benefits as single mother for 3 years', 'Mom works part time and does not receive financial assistance from Dad', 'Received letter requiring explanation of custodial agreement']
+[round 0] router  (1356 in / 207 out, 10.08s)
+   call: housing, family, work_money
+[round 0] specialist:housing  (734 in / 112 out, 5.07s)
+   housing: PRESENT 1.00 "Mom received government benefits for being a single mother for 3 years." | Government benefits are tied to custodial arrangements and financial support.
+   consult requests: [{'specialist': 'health_more', 'reason': 'The post involves government benefits and potential debt related to child support, which may intersect with immigration or benefits eligibility.'}]
+[round 0] specialist:housing:evidence_retry  (777 in / 140 out, 5.78s)
+   consult requests: [{'specialist': 'health_more', 'reason': 'The post involves government benefits and potential debt, which may relate to immigration or benefits issues.'}, {'specialist': 'work_money', 'reason': 'The post involves government benefits, child support, and potential debt, which may relate to benefits or financial assistance.'}]
+[round 0] specialist:family  (872 in / 273 out, 11.14s)
+   family: PRESENT 1.00 "They live like roommates, only sharing common spaces." | The parents' living arrangement and financial separation suggest a complex family custody and support situation.
+   divorce: PRESENT 1.00 "My parents separated legally." | The parents' legal separation indicates a divorce-related issue.
+   domestic_violence: absent 0.50 "" | No evidence of abuse, threats, or controlling behavior is present.
+   estates: absent 0.50 "" | No mention of death, inheritance, or estate planning is present.
+   consult requests: [{'specialist': 'courts_crime', 'reason': 'The user needs legal advice on whether the government debt is legal and what can be done about the $10k CAD invoice.'}]
+[round 0] specialist:work_money  (913 in / 278 out, 8.72s)
+   benefits: PRESENT 1.00 "Mom recieved government benefits for being a single mother for 3 (?) years." | The post involves government benefits and potential overpayment or denial.
+   consult requests: [{'specialist': 'health_more', 'reason': 'The post involves government benefits and potential overpayment, which falls under benefits, not health.'}, {'specialist': 'family', 'reason': 'The post involves child custody, child support, and government benefits, which are family law issues.'}]
+[round 0] specialist:health_more  (858 in / 288 out, 8.71s)
+   consult requests: [{'specialist': 'work_money', 'reason': 'Post involves government debt, child support, and financial arrangements between parents.'}, {'specialist': 'courts_crime', 'reason': 'Post involves legal letters, custodial agreements, and potential legal consequences.'}]
+[round 0] specialist:courts_crime  (839 in / 252 out, 16.72s)
+   courts: PRESENT 1.00 "They both got letters stating that they need to explain what kind of custodial agreement t" | The post involves a legal requirement to explain custodial arrangements, which is a court-related process.
+   crime: absent 0.50 "" | No criminal activity or investigation is mentioned in the post.
+   traffic: absent 0.50 "" | No traffic-related issues or vehicle matters are mentioned in the post.
+   consult requests: [{'specialist': 'family', 'reason': 'The post involves child custody, financial agreements between parents, and potential legal consequences of the government debt.'}, {'specialist': 'housing', 'reason': 'The post involves living arrangements and financial agreements between parents, which may have housing implications.'}]
+[round 1] skeptic  (1669 in / 216 out, 12.1s)
+   challenge benefits [weak_evidence]: The post mentions benefits but does not clarify if they were overpaid or denied.
+   challenge courts [overlap]: The court process is already covered under 'family' and 'divorce' categories.
+   challenge family [overclaim]: The post focuses on financial arrangements and legal letters, not family relationships.
+   possible miss torts: The $10k debt may involve a civil claim for overpayment of benefits, which could be a tort.
+   possible miss crime: The parents may be intentionally misrepresenting their custody arrangement, which could be a criminal fraud.
+[round 1] rebuttal:health_more  (657 in / 95 out, 6.53s)
+   revise -> present=True 0.8: The $10k debt likely relates to overpayment of benefits, which could involve a civil claim, but not a tort.
+[round 1] rebuttal:health_more:evidence_retry  (700 in / 80 out, 3.94s)
+   revise -> present=True 0.8: The $10k debt may relate to overpayment of benefits, which could involve a civil claim, but not a tort.
+[round 1] rebuttal:courts_crime  (648 in / 58 out, 13.29s)
+   maintain -> present=False 1.0: The post does not mention criminal activity or investigation, so 'crime' category remains unchanged.
+[round 1] coordinator  (1913 in / 598 out, 16.38s)
+   labels: benefits, courts, divorce, family
+   urgency medium, settled False, reopen [{'category': 'torts', 'question': 'Is the $10k debt a civil claim for overpayment of benefits, or could it involve a criminal fraud charge?'}, {'category': 'domestic_violence', 'question': "Is there any evidence of abuse, threats, or controlling behavior in the parents' relationship that could affect custody or child support?"}, {'category': 'courts', 'question': 'What specific legal requirements must be met to explain the custodial arrangement to the government?'}]
+   referral: You may need to consult a family law lawyer or a benefits specialist to understand the government debt and how to respond to the custody letter. They can help you navigate the legal process and ensure your parents' arrangement is properly documented. You can also contact your local social services or child support office for guidance.
+[round 2] rebuttal:health_more  (687 in / 72 out, 3.71s)
+   maintain -> present=True 1.0: The $10k debt likely relates to overpayment of benefits, not a tort.
+[round 2] rebuttal:family  (662 in / 52 out, 3.36s)
+   maintain -> present=False 0.5: No evidence of domestic violence present in the parents' relationship.
+[round 2] rebuttal:courts_crime  (686 in / 80 out, 11.28s)
+   maintain -> present=True 1.0: The post involves a legal process with the government regarding custodial arrangements, which is court-related.
+[round 2] coordinator  (2084 in / 479 out, 17.94s)
+   labels: benefits, courts, divorce, family
+   urgency medium, settled True, reopen []
+   referral: You may need to consult a family law or benefits specialist to understand the government debt and how to respond to the custodial agreement letter. They can help you navigate the legal process and ensure your parents' arrangement complies with Manitoba child support and benefits laws. Look for local legal aid clinics or family law services in Manitoba.
+(skeptic items kept: ['torts', 'crime'], dropped by tau/rules: 3)
+FINAL: benefits, courts, divorce, family | urgency medium | rounds 2 
+
+=== b285646300ba ===
+Edit: Please read the entire thing before passing judgement  Hello, yesterday I was arrested for child endangerment because I took the keys out of the vehicle so we could stop arguing and to make sure I didn't go to jail for domestic abuse. (I was really pissed, it's a long story) yes, it was hot, but my wife was in the vehicle supervising my son. There was no harm to my son, this all happened in 5 minutes give or take. I got back in the vehicle, and offered her the keys, she told me to get out, so I got back out, and was then arrested for child endangerment. I looked at what the statutes are and my son was never unsupervised, and wasn't hurt in any way. (Less than 5 minutes in a vehicle, the AC had been going for a while, and at any time my wife could have taken my son out of the car) and I'm curious why I was arrested?
+
+[round 0] intake  (402 in / 278 out, 8.32s)
+   urgency low: ['No immediate safety risk', 'No court date or deadline mentioned', 'Incident occurred in the past']
+   facts: ['Arrested for child endangerment', 'Took keys out of vehicle to stop arguing', 'Did not go to jail for domestic abuse', 'Wife was in vehicle supervising son', 'No harm to son occurred', 'Event lasted less than 5 minutes', 'AC was running in vehicle', 'Wife could have taken son out of car at any time']
+[round 0] router  (1221 in / 126 out, 5.1s)
+   call: family, courts_crime
+[round 0] specialist:family  (737 in / 307 out, 12.66s)
+   family: PRESENT 0.80 "I was arrested for child endangerment because I took the keys out of the vehicle so we cou" | The arrest for child endangerment involves a family dispute with potential domestic violence implications.
+   divorce: absent 0.50 "" | The post involves a marital conflict and potential domestic abuse, which may relate to divorce proceedings.
+   domestic_violence: PRESENT 0.80 "I was arrested for child endangerment because I took the keys out of the vehicle so we cou" | The post describes a domestic conflict leading to arrest, suggesting potential domestic violence.
+   consult requests: [{'specialist': 'courts_crime', 'reason': 'The post involves a criminal arrest for child endangerment and seeks to understand the legal basis for the arrest.'}]
+[round 0] specialist:courts_crime  (704 in / 188 out, 9.49s)
+   courts: PRESENT 1.00 "I was arrested for child endangerment because I took the keys out of the vehicle" | Post describes an arrest for a criminal charge, which involves court procedures.
+   crime: PRESENT 1.00 "I was arrested for child endangerment because I took the keys out of the vehicle" | Post describes being arrested for a criminal charge of child endangerment.
+   traffic: absent 0.50 "" | No traffic-related actions or violations are described in the post.
+[round 1] skeptic  (1526 in / 12 out, 2.83s)
+[round 1] coordinator  (1594 in / 507 out, 15.09s)
+   labels: courts, crime, domestic_violence, family
+   urgency low, settled False, reopen [{'category': 'domestic_violence', 'question': 'Was there any physical violence, threats, or controlling behavior in addition to the argument described?'}, {'category': 'crime', 'question': "Was the child endangerment charge based on a specific statute that defines 'child endangerment' as the act of removing keys from a vehicle with a child present?"}, {'category': 'courts', 'question': 'Was there a court date or legal proceeding that resulted from the arrest, or was it a police booking without formal charges?'}]
+   referral: You may want to consult a criminal defense attorney to understand the legal reasoning behind your arrest for child endangerment. Also, consider reaching out to a domestic violence support organization to explore options for safety and guidance during this difficult time. These professionals can help you navigate the legal system and provide emotional support.
+[round 2] rebuttal:family  (565 in / 77 out, 3.94s)
+   maintain -> present=True 0.8: The post describes a domestic conflict leading to arrest, suggesting potential domestic violence.
+[round 2] rebuttal:courts_crime  (565 in / 73 out, 15.75s)
+   maintain -> present=True 1.0: The arrest for child endangerment is a criminal charge, not a civil claim.
+[round 2] rebuttal:courts_crime  (570 in / 72 out, 3.87s)
+   maintain -> present=True 1.0: The post describes an arrest for a criminal charge, which involves court procedures.
+[round 2] coordinator  (1778 in / 369 out, 10.78s)
+   labels: courts, crime, domestic_violence, family
+   urgency low, settled True, reopen []
+   referral: You may want to consult a criminal defense attorney to understand the legal basis for your arrest and to challenge the charge if appropriate. You may also want to reach out to a domestic violence support organization to discuss your situation and explore resources for safety and counseling.
+(skeptic items kept: [], dropped by tau/rules: 0)
+FINAL: courts, crime, domestic_violence, family | urgency low | rounds 2 
+
+=== bf50a9ef4bd9 ===
+Hello Reddit,    Thank you for reading my post. This is a throwaway account. I’ve been renting from a 60-year old retired man for a bit over 4 months now. August is my last month in town (I’m moving to a different town for college in September). Yesterday he got extremely angry (details are included 2 paragraphs later) and started an argument with me, yelling, cussing and insulting me before telling me “You are bugging the sh*t out of me, I want you out of my f****** house by Sunday.” When I told him he couldn’t do that even though we don’t have an official lease, he said “this is my house, I can kick you out whenever the hell I want. All we have is a handshake”, before he pointed at my face and yelled “F*** you, and f*** whoever wants to f*** with me like that, you can lawyer up and you’re gonna get f***ed.”     That was about 14 hours ago. I don’t think I want to be around him anymore, but I’m not sure whether he can actually screw me over completely. I have already paid full rent for my remaining time here (Aug 1 - Sep 15, 1.5 months’ rent) in cash. He did say he’d give me my money back, but I don’t know if I can trust him. Also it feels like the way he treats me is almost harra...
+
+[round 0] intake  (1047 in / 337 out, 11.34s)
+   urgency medium: ['Landlord threatened to evict user without a lease', "User feels harassed and threatened by landlord's behavior", 'User is unsure if landlord will refund money']
+   facts: ['User has been renting from a 60-year-old retired man for over 4 months', 'User is moving to a different town for college in September', 'Landlord became extremely angry and told user to leave by Sunday', 'Landlord claimed he can kick user out anytime without a lease', 'User paid full rent for remaining time in cash', 'Landlord promised to refund money but user is unsure if he can trust him', 'Landlord has been imposing random rules and restrictions', "User feels harassed by landlord's behavior"]
+[round 0] router  (1911 in / 206 out, 7.18s)
+   call: housing, family
+[round 0] specialist:housing  (1289 in / 123 out, 9.36s)
+   housing: PRESENT 1.00 "this is my house, I can kick you out whenever the hell I want. All we have is a handshake" | Landlord claims right to evict without lease, indicating potential illegal eviction.
+   consult requests: [{'specialist': 'courts_crime', 'reason': 'User needs legal guidance on whether landlord can evict without lease and if harassment claims are valid.'}]
+[round 0] specialist:family  (1427 in / 292 out, 13.58s)
+   domestic_violence: PRESENT 0.80 "He was cussing, yelling and flipping me off for about an hour. I even thought about callin" | The landlord's behavior includes yelling, cursing, and threatening, which may constitute harassment.
+   consult requests: [{'specialist': 'housing', 'reason': 'The post describes a landlord-tenant dispute regarding eviction, harassment, and refund issues.'}]
+[round 0] specialist:family:evidence_retry  (1473 in / 278 out, 8.41s)
+   domestic_violence: PRESENT 0.80 "You are bugging the sh*t out of me, I want you out of my f****** house by Sunday." | The landlord's threatening and aggressive behavior may constitute domestic violence.
+   consult requests: [{'specialist': 'housing', 'reason': 'The post describes a landlord-tenant dispute regarding eviction, harassment, and potential refund issues.'}]
+[round 0] specialist:courts_crime  (1394 in / 270 out, 15.66s)
+   courts: PRESENT 1.00 "this is my house, I can kick you out whenever the hell I want. All we have is a handshake" | Landlord claims right to evict without lease, indicating potential legal dispute.
+   crime: PRESENT 1.00 "he was cussing, yelling and flipping me off for about an hour. I even thought about callin" | Landlord's behavior may constitute harassment, which is a criminal offense.
+   traffic: absent 0.50 "" | No traffic-related issues mentioned in the post.
+   consult requests: [{'specialist': 'housing', 'reason': 'User needs legal guidance on eviction without a lease and potential harassment claims.'}, {'specialist': 'work_money', 'reason': 'User may need assistance with refund disputes and financial protection.'}]
+[round 0] specialist:courts_crime:evidence_retry  (1437 in / 224 out, 7.22s)
+   courts: PRESENT 0.80 ""You are bugging the sh*t out of me, I want you out of my f****** house by Sunday."" | The landlord is attempting to evict the tenant without a lease, which may involve court proceedings.
+   crime: absent 0.50 "" | There is no direct mention of criminal behavior, though harassment could be a criminal issue.
+   traffic: absent 0.50 "" | No traffic-related issues are mentioned in the post.
+   consult requests: [{'specialist': 'housing', 'reason': "The post involves a tenant's rights, eviction without a lease, and potential harassment by a landlord."}]
+[round 1] skeptic  (2151 in / 49 out, 3.86s)
+   challenge domestic_violence [wrong_category]: The post describes landlord-tenant conflict, not domestic violence between family members.
+[round 1] coordinator  (2240 in / 559 out, 15.69s)
+   labels: courts, domestic_violence, housing, torts
+   urgency medium, settled False, reopen [{'category': 'torts', 'question': "Can the landlord's threatening behavior and harassment be considered a civil wrong (tort) that could lead to a claim for damages?"}, {'category': 'courts', 'question': 'What steps should the tenant take if the landlord attempts to evict them without a lease, and what legal options are available?'}]
+   referral: You may need help with housing and domestic violence issues. Look for a tenant rights group or a domestic violence shelter in your area. These organizations can help you understand your legal rights and options if your landlord is threatening to evict you without a lease and acting in a threatening way. They can also help you explore whether you can get a refund or take legal action.
+[round 2] rebuttal:health_more  (1173 in / 81 out, 4.46s)
+   revise -> present=True 1.0: The post describes potential torts including harassment, intentional infliction of emotional distress, and possible breach of contract.
+[round 2] rebuttal:courts_crime  (1228 in / 82 out, 4.4s)
+   maintain -> present=True 1.0: The post describes a landlord attempting to evict without a lease, which may involve court proceedings.
+[round 2] coordinator  (2426 in / 478 out, 13.6s)
+   labels: courts, domestic_violence, housing, torts
+   urgency medium, settled True, reopen []
+   referral: You may need to contact a housing rights organization or a tenant advocacy group to understand your rights as a tenant without a lease. They can help you explore options like filing a complaint with local housing authorities or seeking legal assistance if the landlord is threatening eviction or engaging in harassing behavior. You should also consider reaching out to a legal aid clinic that specializes in housing disputes to discuss your situation and potential remedies.
+(skeptic items kept: [], dropped by tau/rules: 1)
+FINAL: courts, domestic_violence, housing, torts | urgency medium | rounds 2 
+

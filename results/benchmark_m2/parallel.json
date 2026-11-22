@@ -1,0 +1,76 @@
+{
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU, 8188 MiB, 621.14",
+    "cpu": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+    "os": "Windows-10-10.0.26200-SP0",
+    "ollama": "0.40.17"
+  },
+  "workers_2": {
+    "workers": 2,
+    "wall_seconds": 80.2,
+    "calls": 16,
+    "wall_seconds_per_call": 5.01,
+    "output_tokens_per_wall_second": 41.4,
+    "by_type": {
+      "full": {
+        "calls": 8,
+        "sec_per_call": 9.48,
+        "tokens_in": 1088.0,
+        "tokens_out": 226.5,
+        "valid_rate": 1.0,
+        "repair_retries": 0
+      },
+      "specialist": {
+        "calls": 8,
+        "sec_per_call": 10.03,
+        "tokens_in": 1106.0,
+        "tokens_out": 188.5,
+        "valid_rate": 1.0,
+        "repair_retries": 0
+      }
+    },
+    "min_gpu_pct": 100,
+    "ps_last": [
+      {
+        "name": "qwen3:8b",
+        "size_gb": 6.19,
+        "gpu_pct": 100,
+        "context": 8192
+      }
+    ]
+  },
+  "workers_1": {
+    "workers": 1,
+    "wall_seconds": 113.7,
+    "calls": 16,
+    "wall_seconds_per_call": 7.11,
+    "output_tokens_per_wall_second": 29.2,
+    "by_type": {
+      "full": {
+        "calls": 8,
+        "sec_per_call": 7.52,
+        "tokens_in": 1088.0,
+        "tokens_out": 226.5,
+        "valid_rate": 1.0,
+        "repair_retries": 0
+      },
+      "specialist": {
+        "calls": 8,
+        "sec_per_call": 6.7,
+        "tokens_in": 1106.0,
+        "tokens_out": 188.38,
+        "valid_rate": 1.0,
+        "repair_retries": 0
+      }
+    },
+    "min_gpu_pct": 100,
+    "ps_last": [
+      {
+        "name": "qwen3:8b",
+        "size_gb": 6.19,
+        "gpu_pct": 100,
+        "context": 8192
+      }
+    ]
+  }
+}

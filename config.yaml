@@ -7,7 +7,10 @@ data:
   # Pinned commit of the Hugging Face repo, so every run sees the same data.
   hf_revision: daec8237410aa23e3faf4bc41ad8b3a7e1696826
   processed_dir: data/processed
-  n_a_per_category: 25        # Set A: items per category (stratified Yes/No)
+  n_a_per_category: 15        # Set A: items per category (stratified Yes/No); 25 did not fit the budget (M2)
+  # Set B evaluation sample, by number of known positives (oversamples multi-issue posts)
+  set_b_sample: {"1": 40, "2": 50, "3+": 30}
+  ablation_subset: {"1": 20, "2": 25, "3+": 15}   # drawn from the Set B sample
   hand_label_threshold: 100   # build a hand-label template if fewer Set B posts have 2+ known positives
   hand_label_candidates: 50
 
@@ -26,7 +29,14 @@ groups:
 ollama:
   url: http://localhost:11434
   num_ctx: 8192
-  concurrency: 1              # revisit after the M2 benchmark
+  num_predict: 1024           # max output tokens per call
+  concurrency: 2              # M2: 1.42x throughput vs 1, still 100% GPU (use 1 for mixed-model runs)
+
+compute_budget_hours: 12      # total live model time across all experiments
+
+learnedcounsel:
+  tau: 0.7                    # skeptic may challenge positive claims below this confidence
+  max_rounds: 2               # challenge/rebuttal rounds (0 = no debate)
 
 models:
   main: qwen3:8b

@@ -1,0 +1,81 @@
+post_id,category,pred,confidence,evidence_quote,evidence_valid
+1d0bd3174796,benefits,0,1.0,,
+1d0bd3174796,business,0,1.0,,
+1d0bd3174796,consumer,0,1.0,,
+1d0bd3174796,courts,1,1.0,They are talking eviction but my rent is paid in full.,True
+1d0bd3174796,crime,0,1.0,,
+1d0bd3174796,divorce,0,1.0,,
+1d0bd3174796,domestic_violence,0,1.0,,
+1d0bd3174796,education,0,1.0,,
+1d0bd3174796,employment,0,1.0,,
+1d0bd3174796,estates,0,1.0,,
+1d0bd3174796,family,0,1.0,,
+1d0bd3174796,health,0,1.0,,
+1d0bd3174796,housing,1,1.0,I'm in Arkansas so I am well aware I have absolutely no rights at all.,True
+1d0bd3174796,immigration,0,1.0,,
+1d0bd3174796,torts,0,1.0,,
+1d0bd3174796,traffic,0,1.0,,
+9b0bf8371bc2,benefits,1,1.0,Mom recieved government benefits for being a single mother for 3 (?) years.,True
+9b0bf8371bc2,business,0,1.0,,
+9b0bf8371bc2,consumer,0,1.0,,
+9b0bf8371bc2,courts,1,1.0,They do not share finances outside an RESP for my education.,True
+9b0bf8371bc2,crime,0,1.0,,
+9b0bf8371bc2,divorce,1,1.0,My parents separated legally.,True
+9b0bf8371bc2,domestic_violence,0,1.0,,
+9b0bf8371bc2,education,0,1.0,,
+9b0bf8371bc2,employment,0,1.0,,
+9b0bf8371bc2,estates,0,1.0,,
+9b0bf8371bc2,family,1,1.0,"My parents separated legally. However, between themselves they agreed that Mom will not apply for child support benefits",True
+9b0bf8371bc2,health,0,1.0,,
+9b0bf8371bc2,housing,0,1.0,,
+9b0bf8371bc2,immigration,0,1.0,,
+9b0bf8371bc2,torts,0,1.0,,
+9b0bf8371bc2,traffic,0,1.0,,
+b285646300ba,benefits,0,1.0,,
+b285646300ba,business,0,1.0,,
+b285646300ba,consumer,0,1.0,,
+b285646300ba,courts,0,1.0,,
+b285646300ba,crime,1,1.0,arrested for child endangerment because I took the keys out of the vehicle,True
+b285646300ba,divorce,0,0.5,,
+b285646300ba,domestic_violence,1,1.0,"I was really pissed, it's a long story) yes, it was hot, but my wife was in the vehicle supervising my son",True
+b285646300ba,education,0,0.5,,
+b285646300ba,employment,0,1.0,,
+b285646300ba,estates,0,0.5,,
+b285646300ba,family,1,1.0,I was arrested for child endangerment because I took the keys out of the vehicle so we could stop arguing,True
+b285646300ba,health,0,0.5,,
+b285646300ba,housing,0,0.5,,
+b285646300ba,immigration,0,0.5,,
+b285646300ba,torts,0,0.5,,
+b285646300ba,traffic,0,1.0,,
+54c92e2b13b9,benefits,0,0.5,,
+54c92e2b13b9,business,0,0.5,,
+54c92e2b13b9,consumer,0,0.5,,
+54c92e2b13b9,courts,1,1.0,We tried to report him but they sent cops and cps to our mom trying to charge her for it,True
+54c92e2b13b9,crime,1,1.0,my sisters said they found child porn on his phone but they didnt mention it to cops,True
+54c92e2b13b9,divorce,0,0.5,,
+54c92e2b13b9,domestic_violence,1,1.0,Father (divored) has been molesting my sisters,True
+54c92e2b13b9,education,0,0.5,,
+54c92e2b13b9,employment,0,0.5,,
+54c92e2b13b9,estates,0,0.5,,
+54c92e2b13b9,family,1,1.0,Mom and I recently found out my father (divored) has been molesting my sisters,True
+54c92e2b13b9,health,0,0.5,,
+54c92e2b13b9,housing,0,1.0,,
+54c92e2b13b9,immigration,0,0.5,,
+54c92e2b13b9,torts,1,1.0,my sisters said they found child porn on his phone,True
+54c92e2b13b9,traffic,0,1.0,,
+bf50a9ef4bd9,benefits,0,0.5,,
+bf50a9ef4bd9,business,0,0.5,,
+bf50a9ef4bd9,consumer,0,0.5,,
+bf50a9ef4bd9,courts,1,1.0,You can lawyer up and you’re gonna get f***ed.,True
+bf50a9ef4bd9,crime,0,1.0,,
+bf50a9ef4bd9,divorce,0,1.0,,
+bf50a9ef4bd9,domestic_violence,0,1.0,,
+bf50a9ef4bd9,education,0,0.5,,
+bf50a9ef4bd9,employment,0,0.5,,
+bf50a9ef4bd9,estates,0,0.5,,
+bf50a9ef4bd9,family,0,0.5,,
+bf50a9ef4bd9,health,0,0.5,,
+bf50a9ef4bd9,housing,1,1.0,"this is my house, I can kick you out whenever the hell I want",True
+bf50a9ef4bd9,immigration,0,0.5,,
+bf50a9ef4bd9,torts,1,1.0,"You are bugging the sh*t out of me, I want you out of my f****** house by Sunday.",True
+bf50a9ef4bd9,traffic,0,1.0,,
