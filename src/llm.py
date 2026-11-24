@@ -60,11 +60,12 @@ class LLMClient:
         self.num_predict = num_predict      # cap on output tokens per call
         self.seed = seed
         self.cache_dir = Path(cache_dir) if cache_dir else None
-        self.max_seconds = max_seconds      # runtime guard (live model seconds), None = no limit
+        self.max_seconds = max_seconds      # runtime guard (wall-clock seconds of live calls), None = no limit
         self.ctx_warn_frac = ctx_warn_frac
         self.max_http_retries = max_http_retries
         self.keep_alive = keep_alive
         self._lock = threading.Lock()
+        self._active, self._active_since, self._wall = 0, 0.0, 0.0   # for wall_seconds()
         self.stats = dict(calls=0, cached_calls=0, tokens_in=0, tokens_out=0,
                           model_seconds=0.0, live_seconds=0.0, repair_retries=0,
                           invalid_after_retry=0, ctx_warnings=0)
@@ -134,9 +135,25 @@ class LLMClient:
         if schema_json is not None:
             payload["format"] = schema_json
         start = time.time()
-        resp = self._post(payload)
+        with self._lock:
+            if self._active == 0:
+                self._active_since = start
+            self._active += 1
+        try:
+            resp = self._post(payload)
+        finally:
+            with self._lock:
+                self._active -= 1
+                if self._active == 0:
+                    self._wall += time.time() - self._active_since
         resp["_latency"] = time.time() - start
         return resp
+
+    def wall_seconds(self):
+        """Wall-clock time during which at least one live call was running.
+        (Summing latencies would count two parallel calls twice.)"""
+        with self._lock:
+            return self._wall + (time.time() - self._active_since if self._active else 0.0)
 
     def _post(self, payload):
         """HTTP call with retries and exponential backoff (2s, 4s, 8s ...)."""
@@ -182,10 +199,10 @@ class LLMClient:
                 self.stats["ctx_warnings"] += 1
 
     def _check_budget(self):
-        if self.max_seconds is not None and self.stats["live_seconds"] >= self.max_seconds:
-            raise RuntimeBudgetExceeded(
-                f"Live model time {self.stats['live_seconds']:.0f}s reached the budget of "
-                f"{self.max_seconds:.0f}s. Re-run to resume from the cache.")
+        used = self.wall_seconds()
+        if self.max_seconds is not None and used >= self.max_seconds:
+            raise RuntimeBudgetExceeded(f"Model runtime {used:.0f}s reached the budget of "
+                                        f"{self.max_seconds:.0f}s. Re-run to resume from the cache.")
 
     def _record(self, result):
         with self._lock:

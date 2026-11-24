@@ -1,0 +1,44 @@
+{
+  "seconds_per_post": {
+    "LC": 52.9,
+    "B2 per item": 1.3,
+    "B3": 9.1,
+    "B4": 28.2,
+    "B5": 81.5,
+    "g": 62.6,
+    "h": 60.8,
+    "a no_skeptic (assumed)": 16.0,
+    "b no_router (measured)": 30.5,
+    "c no_consults (assumed)": 10.0,
+    "d single_specialist (measured)": 49.9,
+    "e rounds0 (assumed)": 8.0,
+    "e rounds1 (assumed)": 8.0,
+    "f tau0.5 (as tau0.9 rerun)": 7.9,
+    "f tau0.7 (as tau0.9 rerun)": 7.9
+  },
+  "hours_used": 1.2756944444444445,
+  "current sizes (15 per category, 120 Set B, 60 ablation, g+h)": {
+    "LearnedCounsel main": 5.03,
+    "B2": 0.08,
+    "B3": 0.86,
+    "B4": 2.68,
+    "B5 (Set B only)": 2.72,
+    "latency check (5 posts, sequential, no cache)": 0.34,
+    "ablations a-f": 2.3,
+    "g mixed 4B": 1.04,
+    "h few-shot": 1.01,
+    "TOTAL new runs": 16.06,
+    "TOTAL with hours already used": 17.34
+  },
+  "fits 12 h (10 per category, 90 Set B, 45 ablation, no g/h)": {
+    "LearnedCounsel main": 3.53,
+    "B2": 0.06,
+    "B3": 0.6,
+    "B4": 1.88,
+    "B5 (Set B only)": 2.04,
+    "latency check (5 posts, sequential, no cache)": 0.34,
+    "ablations a-f": 1.73,
+    "TOTAL new runs": 10.18,
+    "TOTAL with hours already used": 11.46
+  }
+}

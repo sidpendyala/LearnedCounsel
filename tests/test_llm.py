@@ -1,5 +1,6 @@
 """Tests for src/llm.py. They use FakeLLM, so Ollama does not need to be running."""
 import json
+import time
 
 import pytest
 from pydantic import BaseModel
@@ -82,7 +83,7 @@ def test_prompt_close_to_limit_warns():
 def test_runtime_guard_stops_new_calls_but_cache_still_works(tmp_path):
     llm = FakeLLM(lambda p: GOOD, cache_dir=tmp_path, max_seconds=10)
     llm.chat("sys", "a", schema=Answer)
-    llm.stats["live_seconds"] = 11  # pretend we used up the budget
+    llm._wall = 11  # pretend we used up the budget
     assert llm.chat("sys", "a", schema=Answer).cached  # cached call is still fine
     with pytest.raises(RuntimeBudgetExceeded):
         llm.chat("sys", "b", schema=Answer)
@@ -100,3 +101,13 @@ def test_parallel_map_keeps_order():
                   [f"c{i}" for i in range(8)], workers=2)
     assert out == [f"c{i}" for i in range(8)]
     assert llm.stats["calls"] == 8
+
+
+def test_wall_time_does_not_double_count_parallel_calls():
+    def slow(p):
+        time.sleep(0.2)
+        return GOOD
+    llm = FakeLLM(slow)
+    llm.map(lambda i: llm.chat("sys", str(i), schema=Answer), range(4), workers=2)
+    assert llm.stats["live_seconds"] > 0.7      # 4 calls x 0.2 s of latency
+    assert 0.3 < llm.wall_seconds() < 0.7       # but only about 0.4 s of wall time

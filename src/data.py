@@ -123,15 +123,21 @@ def main():
 
     train = load_split(cfg, "train")
     test = load_split(cfg, "test")
-    set_a = build_set_a(test, cfg["data"]["n_a_per_category"], cfg["seed"])
+    dev_ids = set(Path(cfg["data"]["dev_ids"]).read_text(encoding="utf-8").split())
+    set_a = build_set_a(test[~test["post_id"].isin(dev_ids)], cfg["data"]["n_a_per_category"], cfg["seed"])
     set_b = build_set_b(test, cats)
+    dev = set_b[set_b["post_id"].isin(dev_ids)]       # tuning only
+    eval_pool = set_b[~set_b["post_id"].isin(dev_ids)]
     stats = overlap_stats(test, set_b, set_a, cats)
     stats["train_rows"] = len(train)
 
     # Evaluation samples sized to the compute budget (see NOTES.md, M2)
-    set_b_sample = stratified_sample(set_b, cfg["data"]["set_b_sample"], cfg["seed"])
+    set_b_sample = stratified_sample(eval_pool, cfg["data"]["set_b_sample"], cfg["seed"])
     ablation = stratified_sample(set_b_sample, cfg["data"]["ablation_subset"], cfg["seed"])
     all_posts = set(set_a["post_id"]) | set(set_b_sample["post_id"])
+    assert not dev_ids & (all_posts | set(ablation["post_id"]))
+    stats["dev_posts"] = len(dev)
+    stats["train_posts_also_in_test"] = len(set(train["post_id"]) & set(test["post_id"]))
     stats["set_b_sample_posts"] = len(set_b_sample)
     stats["ablation_subset_posts"] = len(ablation)
     stats["unique_posts_to_run_main"] = len(all_posts)
@@ -142,6 +148,7 @@ def main():
     set_b.to_csv(out / "set_b.csv", index=False)
     set_b_sample.to_csv(out / "set_b_sample.csv", index=False)
     ablation.to_csv(out / "ablation_subset.csv", index=False)
+    dev.to_csv(out / "dev.csv", index=False)
     (out / "stats.json").write_text(json.dumps(stats, indent=2))
     print(json.dumps(stats, indent=2))
 

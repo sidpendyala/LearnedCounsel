@@ -39,7 +39,7 @@ The two smallest tasks are `education` (56 rows) and `benefits` (66 rows).
 - 10 (post, task) pairs appear twice within the same task. One of them has conflicting labels (Yes in one row, No in the other), so that entry is **masked** in Set B.
 
 ## Set A (standard binary, comparable to LegalBench)
-- **Size:** 15 items per category, stratified as 8 Yes and 7 No, with seed 448. That's **240 items** covering **231 unique posts**.
+- **Size:** 15 items per category, stratified as 8 Yes and 7 No, with seed 448. That's **240 items** covering **230 unique posts**.
   - The spec started at 25 per category (400 items). That was cut to 15 after the M2 speed benchmark, to fit the 12-hour compute budget; see NOTES.md.
 - **File:** `data/processed/set_a.csv`, with columns `item_id, post_id, category, text, label`.
 
@@ -80,7 +80,9 @@ These line up with the confusable pairs in the spec (divorce/family, courts/crim
 ## Evaluation samples (sized to the compute budget)
 - **Set B sample:** 120 posts, stratified by number of known positives so that multi-issue posts are oversampled: 40 with 1, 50 with 2, and 30 with 3 or more. Seed 448. File: `set_b_sample.csv`.
 - **Ablation subset:** 60 posts drawn from the Set B sample (20 with 1, 25 with 2, 15 with 3 or more). The main run's cached calls are reused there. File: `ablation_subset.csv`.
-- **Unique posts in the main comparison** (Set A posts plus Set B sample posts): **341**. Each post is run once per system, and both sets are scored from that one output.
+- **Unique posts in the main comparison** (Set A posts plus Set B sample posts): **342**. Each post is run once per system, and both sets are scored from that one output.
+- **Dev set:** 20 posts (`data/dev_post_ids.txt`) used to tune prompts, tau, the B3 version and the B5 k. They are excluded from Set A, the Set B sample and the ablation subset, and are never used for reported results. File: `dev.csv`.
+- **Train/test overlap:** 82 posts of the train split also appear in the test split of some task, so few-shot examples must exclude evaluation posts.
 
 ## Post length
 | | min | 25% | median | 75% | max |

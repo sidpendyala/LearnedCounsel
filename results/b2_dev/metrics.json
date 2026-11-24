@@ -1,0 +1,199 @@
+{
+  "system": "b2",
+  "variant": "full",
+  "run_name": "b2_dev",
+  "set": "dev",
+  "cost": {
+    "calls_per_post": 2.7,
+    "tokens_in_per_post": 1194.2,
+    "tokens_out_per_post": 18.9,
+    "latency_s_per_post": 6.686847186088562,
+    "total_calls": 54.0,
+    "total_tokens_in": 23884.0,
+    "total_tokens_out": 378.0,
+    "total_latency_s": 133.73694372177124,
+    "n_posts": 20
+  },
+  "concurrency": 2,
+  "on_battery": {
+    "start": false,
+    "end": false
+  },
+  "wall_seconds_live": 67.66433668136597,
+  "per_post_means": {
+    "invalid_messages": 0.0,
+    "repair_retries": 0.0
+  },
+  "llm_stats": {
+    "calls": 54,
+    "cached_calls": 0,
+    "tokens_in": 23884,
+    "tokens_out": 378,
+    "model_seconds": 133.73694372177124,
+    "live_seconds": 133.73694372177124,
+    "repair_retries": 0,
+    "invalid_after_retry": 0,
+    "ctx_warnings": 0
+  },
+  "posts_with_invalid_output": 0,
+  "set_a": {
+    "n_items": 54,
+    "n_items_in_set": 54,
+    "mean_accuracy": 0.9348290598290598,
+    "overall": {
+      "n": 54,
+      "accuracy": 0.8703703703703703,
+      "precision": 0.9117647058823529,
+      "recall": 0.8857142857142857,
+      "f1": 0.8985507246376812,
+      "tp": 31,
+      "fp": 3,
+      "fn": 4
+    },
+    "per_category": {
+      "business": {
+        "n": 1,
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "consumer": {
+        "n": 4,
+        "accuracy": 0.75,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "tp": 3,
+        "fp": 0,
+        "fn": 1
+      },
+      "courts": {
+        "n": 1,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "crime": {
+        "n": 5,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 5,
+        "fp": 0,
+        "fn": 0
+      },
+      "divorce": {
+        "n": 1,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "domestic_violence": {
+        "n": 2,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "employment": {
+        "n": 2,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "estates": {
+        "n": 1,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "family": {
+        "n": 8,
+        "accuracy": 0.875,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.888888888888889,
+        "tp": 4,
+        "fp": 0,
+        "fn": 1
+      },
+      "health": {
+        "n": 2,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "housing": {
+        "n": 18,
+        "accuracy": 0.7777777777777778,
+        "precision": 0.5714285714285714,
+        "recall": 0.8,
+        "f1": 0.6666666666666666,
+        "tp": 4,
+        "fp": 3,
+        "fn": 1
+      },
+      "torts": {
+        "n": 5,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0
+      },
+      "traffic": {
+        "n": 4,
+        "accuracy": 0.75,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "tp": 3,
+        "fp": 0,
+        "fn": 1
+      }
+    }
+  },
+  "set_b": null,
+  "ci": {
+    "set_a": {
+      "mean_accuracy": {
+        "value": 0.9348290598290598,
+        "ci95": [
+          0.853062865497076,
+          0.978545653907496
+        ]
+      }
+    },
+    "set_b": null
+  }
+}

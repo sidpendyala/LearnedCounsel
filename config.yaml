@@ -7,6 +7,7 @@ data:
   # Pinned commit of the Hugging Face repo, so every run sees the same data.
   hf_revision: daec8237410aa23e3faf4bc41ad8b3a7e1696826
   processed_dir: data/processed
+  dev_ids: data/dev_post_ids.txt   # posts used to tune prompts and tau; never evaluated
   n_a_per_category: 15        # Set A: items per category (stratified Yes/No); 25 did not fit the budget (M2)
   # Set B evaluation sample, by number of known positives (oversamples multi-issue posts)
   set_b_sample: {"1": 40, "2": 50, "3+": 30}
@@ -29,14 +30,19 @@ groups:
 ollama:
   url: http://localhost:11434
   num_ctx: 8192
-  num_predict: 1024           # max output tokens per call
+  num_predict: 2048           # max output tokens per call (16-category outputs can exceed 1024)
   concurrency: 2              # M2: 1.42x throughput vs 1, still 100% GPU (use 1 for mixed-model runs)
 
-compute_budget_hours: 12      # total live model time across all experiments
+compute_budget_hours: 19      # raised from 12 in M5: the full plan needs about 17.3 h
 
 learnedcounsel:
-  tau: 0.7                    # skeptic may challenge positive claims below this confidence
+  tau: 0.9                    # skeptic may challenge positive claims below this; chosen on dev (M5)
   max_rounds: 2               # challenge/rebuttal rounds (0 = no debate)
+
+baselines:
+  b3_version: present_first   # chosen on the dev set (M5): micro-F1 0.930 vs 0.904 for evidence_first
+  b5_k: 9                     # odd; LearnedCounsel 12,412 vs B3 1,532 tokens per dev post = 8.1x (M5)
+  b5_temperature: 0.7
 
 models:
   main: qwen3:8b

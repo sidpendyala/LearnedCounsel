@@ -29,6 +29,20 @@ class CategoryAnswer(BaseModel):
 B3Output = create_model("B3Output", **{c: (CategoryAnswer, ...) for c in CATEGORIES})
 
 
+class CategoryAnswerEvidenceFirst(BaseModel):
+    evidence_quote: str = Field(max_length=300)
+    present: bool
+
+
+B3EvidenceFirstOutput = create_model("B3EvidenceFirstOutput",
+                                     **{c: (CategoryAnswerEvidenceFirst, ...) for c in CATEGORIES})
+
+
+# ---------------- B2 ----------------
+class B2Output(BaseModel):
+    answer: Literal["Yes", "No"]
+
+
 # ---------------- 1. Intake ----------------
 class Intake(BaseModel):
     facts: list[str] = Field(max_length=8)
@@ -118,6 +132,24 @@ CoordinatorOutput = create_model(
     referral_note=(str, Field(max_length=900)),
     settled=(bool, ...),
     reopen=(list[ReopenItem], Field(max_length=3)),
+)
+
+
+# ---------------- B4: the same workflow in one context ----------------
+class SelfChallenge(BaseModel):
+    category: Category
+    argument: str = Field(max_length=200)
+    present: bool
+
+
+B4Output = create_model(
+    "B4Output",
+    facts=(list[str], Field(max_length=8)),
+    urgency=(Literal["low", "medium", "high"], ...),
+    first_pass=(create_model("FirstPass", **{c: (Claim, ...) for c in CATEGORIES}), ...),
+    challenges=(list[SelfChallenge], Field(max_length=6)),
+    final_labels=(create_model("B4Labels", **{c: (bool, ...) for c in CATEGORIES}), ...),
+    referral_note=(str, Field(max_length=900)),
 )
 
 

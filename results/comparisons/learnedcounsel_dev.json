@@ -1,0 +1,207 @@
+{
+  "b2_dev": {
+    "mcnemar_set_a": {
+      "n_items": 54,
+      "only_1_correct": 5,
+      "only_2_correct": 3,
+      "p_value": 0.7265625,
+      "p_value_holm": 1.0
+    },
+    "set_a_difference": {
+      "mean_accuracy": {
+        "value": -0.004487179487179471,
+        "ci95": [
+          -0.08251879699248119,
+          0.10000282805429862
+        ],
+        "significant": false
+      }
+    }
+  },
+  "b3_dev": {
+    "mcnemar_set_a": {
+      "n_items": 54,
+      "only_1_correct": 3,
+      "only_2_correct": 3,
+      "p_value": 1.0,
+      "p_value_holm": 1.0
+    },
+    "set_a_difference": {
+      "mean_accuracy": {
+        "value": -0.027991452991453003,
+        "ci95": [
+          -0.10977023524720898,
+          0.03384437656641616
+        ],
+        "significant": false
+      }
+    },
+    "set_b_posts": 20,
+    "set_b_difference": {
+      "micro_f1": {
+        "value": -0.004204330460374162,
+        "ci95": [
+          -0.08986140567927418,
+          0.07680084745762716
+        ],
+        "significant": false
+      },
+      "micro_precision": {
+        "value": 0.05208333333333337,
+        "ci95": [
+          -0.0047770133216380765,
+          0.128833914559721
+        ],
+        "significant": false
+      },
+      "micro_recall": {
+        "value": -0.05714285714285716,
+        "ci95": [
+          -0.18918918918918914,
+          0.0625
+        ],
+        "significant": false
+      },
+      "macro_f1": {
+        "value": -0.016122766122766086,
+        "ci95": [
+          -0.11361263063275459,
+          0.04637180629827711
+        ],
+        "significant": false
+      },
+      "exact_match": {
+        "value": 0.050000000000000044,
+        "ci95": [
+          -0.15000000000000002,
+          0.25124999999999886
+        ],
+        "significant": false
+      }
+    }
+  },
+  "b4_dev": {
+    "mcnemar_set_a": {
+      "n_items": 54,
+      "only_1_correct": 4,
+      "only_2_correct": 3,
+      "p_value": 1.0,
+      "p_value_holm": 1.0
+    },
+    "set_a_difference": {
+      "mean_accuracy": {
+        "value": -0.023717948717948745,
+        "ci95": [
+          -0.11112440191387554,
+          0.03675751879699256
+        ],
+        "significant": false
+      }
+    },
+    "set_b_posts": 20,
+    "set_b_difference": {
+      "micro_f1": {
+        "value": 0.006454215409439246,
+        "ci95": [
+          -0.08485227272727272,
+          0.08432405403633028
+        ],
+        "significant": false
+      },
+      "micro_precision": {
+        "value": 0.0969551282051282,
+        "ci95": [
+          0.018088235294117586,
+          0.18423489278752436
+        ],
+        "significant": true
+      },
+      "micro_recall": {
+        "value": -0.08571428571428574,
+        "ci95": [
+          -0.21052631578947367,
+          0.0
+        ],
+        "significant": false
+      },
+      "macro_f1": {
+        "value": -0.013227513227513144,
+        "ci95": [
+          -0.11735868952563024,
+          0.044163059163059175
+        ],
+        "significant": false
+      },
+      "exact_match": {
+        "value": 0.10000000000000009,
+        "ci95": [
+          -0.10000000000000009,
+          0.3012499999999989
+        ],
+        "significant": false
+      }
+    }
+  },
+  "b5_dev": {
+    "mcnemar_set_a": {
+      "n_items": 54,
+      "only_1_correct": 3,
+      "only_2_correct": 3,
+      "p_value": 1.0,
+      "p_value_holm": 1.0
+    },
+    "set_a_difference": {
+      "mean_accuracy": {
+        "value": -0.027991452991453003,
+        "ci95": [
+          -0.10977023524720898,
+          0.03384437656641616
+        ],
+        "significant": false
+      }
+    },
+    "set_b_posts": 20,
+    "set_b_difference": {
+      "micro_f1": {
+        "value": -0.004204330460374162,
+        "ci95": [
+          -0.08986140567927418,
+          0.07680084745762716
+        ],
+        "significant": false
+      },
+      "micro_precision": {
+        "value": 0.05208333333333337,
+        "ci95": [
+          -0.0047770133216380765,
+          0.128833914559721
+        ],
+        "significant": false
+      },
+      "micro_recall": {
+        "value": -0.05714285714285716,
+        "ci95": [
+          -0.18918918918918914,
+          0.0625
+        ],
+        "significant": false
+      },
+      "macro_f1": {
+        "value": -0.016122766122766086,
+        "ci95": [
+          -0.11361263063275459,
+          0.04637180629827711
+        ],
+        "significant": false
+      },
+      "exact_match": {
+        "value": 0.050000000000000044,
+        "ci95": [
+          -0.15000000000000002,
+          0.25124999999999886
+        ],
+        "significant": false
+      }
+    }
+  }
+}
