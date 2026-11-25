@@ -181,8 +181,6 @@ Found with fixed filters on the first evaluation (agreement with the label, then
 - **Tuning effort:** LearnedCounsel's prompts were tuned in several rounds on dev posts, B3's in one (a field-order comparison), B4's not at all. B2 is zero-shot, unlike LegalBench's few-shot setup.
 - **Not legal advice:** the system sorts stories. Some notes still drift into advice: in 20 randomly read v1 notes, one reader (our AI assistant, not a lawyer) judged 3 to be clear drifts. We did not re-check v2's notes. A real deployment would need review by legal professionals.
 - **Privacy:** local execution, no telemetry, demo stories not stored. The dataset is public and anonymized, and our result files contain excerpts under its license, CC BY-NC-SA 4.0.
-- **AI assistance:** an AI coding assistant helped build the system and draft this report, as the course allows.
-- **Name:** LearnedCounsel is named after the Learned Hands dataset, itself a nod to Judge Learned Hand. It is unrelated to the commercial products Learned Hand AI or CoCounsel.
 
 ## 6. Conclusion
 For this 8B model and these posts, collaboration did not give a measurable overall benefit over one well-designed call. It changed *what* the system is good at: more verifiable evidence, and in v2 more recall at the cost of precision and tokens. This matches the pattern in [5]: similar overall performance, different answers. If a legal aid office prefers many leads to check over few precise ones, v2 is the better tool, but B4 offers similar labels for a sixth of the cost, with quotes that cannot be trusted. Future work: combine one broad call with a code-checked evidence step, and test on larger models and with fully labeled posts.
