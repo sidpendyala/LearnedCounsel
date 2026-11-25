@@ -6,9 +6,10 @@
 import hashlib
 
 from src.evaluate import quote_in_post
+from src.fewshot import few_shot_block
 from src.prompts import category_definitions, load_prompt
-from src.schemas import (CATEGORIES, GROUP_OF, GROUPS, SPECIALIST_SCHEMAS, ClaimState, CoordinatorOutput,
-                         Intake, Rebuttal, RouterOutput, SkepticOutput)
+from src.schemas import (CATEGORIES, GROUP_OF, GROUPS, SPECIALIST_SCHEMAS, B3Output, ClaimState, CoordinatorOutput,
+                         Intake, Rebuttal, RouterOutput, SkepticMissesOutput, SkepticOutput)
 
 NAMES = {"housing": "Housing", "family": "Family", "work_money": "Work & Money",
          "courts_crime": "Courts & Crime", "health_more": "Health & More", "general": "General"}
@@ -98,6 +99,8 @@ def specialist(llm, case, s, group):
     others = ", ".join(f"{g} ({', '.join(GROUPS[g])})" for g in GROUPS if g != group) if group != "general" else "none"
     system = load_prompt("specialist", name=NAMES[group], categories=", ".join(cats),
                          definitions=category_definitions(cats), others=others)
+    if s.few_shot:  # experiment (h)
+        system += "\n\n" + few_shot_block(tuple(cats))
     user = post_block(case) + "\n\n" + intake_block(case)
     schema = SPECIALIST_SCHEMAS[group]
     out = call(llm, case, s, f"specialist:{group}", 0, system, user, schema, model=s.specialist_model)
@@ -122,9 +125,48 @@ def specialist(llm, case, s, group):
     return out.get("consult_requests", [])
 
 
+# ---------------- v2: Scout ----------------
+def scout(llm, case, s):
+    """One broad reading of all 16 categories (the same call as baseline B3).
+    The specialists do not see it; only disagreements are raised, after they have judged."""
+    case.scout = call(llm, case, s, "scout", 0, load_prompt("b3_single"), post_block(case), B3Output)
+
+
+def scout_items(case, s):
+    """Questions for the specialists where the Scout and a specialist disagree."""
+    items = []
+    for c in CATEGORIES if case.scout else []:
+        sees, claim = case.scout[c], case.claims[c]
+        if sees["present"] and not claim.present:
+            items.append({"category": c, "kind": "scout_add", "from": "Scout",
+                          "text": f'I think the post involves {c}. I noticed: "{sees["evidence_quote"]}"'})
+        elif claim.present and not sees["present"] and s.scout_mode == "both":
+            items.append({"category": c, "kind": "scout_drop", "from": "Scout",
+                          "text": f"I read the post and did not see a {c} issue. Is it really there?"})
+    return items
+
+
 # ---------------- 4. Skeptic ----------------
+def skeptic_misses(llm, case, s, round_):
+    """v2: the skeptic raises possible misses only."""
+    user = post_block(case) + "\n\nCurrent claims:\n" + claim_lines(case)
+    out = call(llm, case, s, "skeptic", round_, load_prompt("skeptic_misses"), user, SkepticMissesOutput)
+    items, seen, dropped = [], set(), 0
+    for m in out["possible_misses"] if out else []:
+        c = m["category"]
+        if c in seen or case.claims[c].present:
+            dropped += 1
+            continue
+        seen.add(c)
+        items.append({"category": c, "kind": "possible_miss", "from": "Skeptic", "text": m["reason"]})
+    case.debate.append({"round": round_, "type": "skeptic", "items": items, "dropped": dropped})
+    return items
+
+
 def skeptic(llm, case, s, round_):
     """Returns the items the specialists must answer: kept challenges and possible misses."""
+    if s.skeptic_misses_only:
+        return skeptic_misses(llm, case, s, round_)
     user = post_block(case) + "\n\nCurrent claims:\n" + claim_lines(case, tau=s.tau)
     out = call(llm, case, s, "skeptic", round_, load_prompt("skeptic", tau=s.tau), user, SkepticOutput)
     if out is None:
@@ -199,6 +241,7 @@ def coordinator(llm, case, s, round_, rounds_left):
             f"({'; '.join(i.get('urgency_reasons', []))}); goals: {'; '.join(i.get('user_goals', []))}\n\n"
             f"Current claims:\n{claim_lines(case)}\n\nDebate so far:\n{debate_lines(case)}\n\n"
             f"Rounds of questions left: {rounds_left}" + (" (you must set settled to true)" if rounds_left == 0 else ""))
-    out = call(llm, case, s, "coordinator", round_, load_prompt("coordinator"), user, CoordinatorOutput)
+    prompt = "coordinator_v2" if s.safe_note else "coordinator"
+    out = call(llm, case, s, "coordinator", round_, load_prompt(prompt), user, CoordinatorOutput)
     case.decisions.append(out or {"invalid": True, "round": round_})
     return out

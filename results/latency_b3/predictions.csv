@@ -1,0 +1,81 @@
+post_id,category,pred,evidence_quote,evidence_valid
+037e254201b3,benefits,0,,
+037e254201b3,business,0,,
+037e254201b3,consumer,1,I thought that this was a simple warning and would have never admitted it had I known our internet would go down,True
+037e254201b3,courts,0,,
+037e254201b3,crime,0,,
+037e254201b3,divorce,0,,
+037e254201b3,domestic_violence,0,,
+037e254201b3,education,0,,
+037e254201b3,employment,0,,
+037e254201b3,estates,0,,
+037e254201b3,family,0,,
+037e254201b3,health,0,,
+037e254201b3,housing,1,He called me today and I said that I did it for the most recent notice. He then said he needs to call my ISP tomorrow or else the internet will get shut off,True
+037e254201b3,immigration,0,,
+037e254201b3,torts,0,,
+037e254201b3,traffic,0,,
+9b0bf8371bc2,benefits,1,My mom recieved government benefits for being a single mother for 3 (?) years.,True
+9b0bf8371bc2,business,0,,
+9b0bf8371bc2,consumer,0,,
+9b0bf8371bc2,courts,0,,
+9b0bf8371bc2,crime,0,,
+9b0bf8371bc2,divorce,0,,
+9b0bf8371bc2,domestic_violence,0,,
+9b0bf8371bc2,education,0,,
+9b0bf8371bc2,employment,0,,
+9b0bf8371bc2,estates,0,,
+9b0bf8371bc2,family,1,My parents separated legally.,True
+9b0bf8371bc2,health,0,,
+9b0bf8371bc2,housing,0,,
+9b0bf8371bc2,immigration,0,,
+9b0bf8371bc2,torts,0,,
+9b0bf8371bc2,traffic,0,,
+54c92e2b13b9,benefits,0,,
+54c92e2b13b9,business,0,,
+54c92e2b13b9,consumer,0,,
+54c92e2b13b9,courts,1,We tried to report him but they sent cops and cps to our mom trying to charge her for it because there's no proof against him.,True
+54c92e2b13b9,crime,1,my sisters said they found child porn on his phone but they didn't mention it to cops because they were telling them they'll go to a foster home.,False
+54c92e2b13b9,divorce,0,,
+54c92e2b13b9,domestic_violence,1,my father (divorced) has been molesting my sisters but they hid it for years because they didn't want to lose their dad.,False
+54c92e2b13b9,education,0,,
+54c92e2b13b9,employment,0,,
+54c92e2b13b9,estates,0,,
+54c92e2b13b9,family,1,my sisters said they found child porn on his phone but they didn't mention it to cops because they were telling them they'll go to a foster home.,False
+54c92e2b13b9,health,0,,
+54c92e2b13b9,housing,0,,
+54c92e2b13b9,immigration,0,,
+54c92e2b13b9,torts,0,,
+54c92e2b13b9,traffic,0,,
+4e515d20fa0d,benefits,0,,
+4e515d20fa0d,business,0,,
+4e515d20fa0d,consumer,0,,
+4e515d20fa0d,courts,0,,
+4e515d20fa0d,crime,1,I just wanna know when it's legal to punch someone in the mouth to make them shut the fuck up,True
+4e515d20fa0d,divorce,0,,
+4e515d20fa0d,domestic_violence,0,,
+4e515d20fa0d,education,0,,
+4e515d20fa0d,employment,1,the employee make the company more money than I do slightly and has tenure there,True
+4e515d20fa0d,estates,0,,
+4e515d20fa0d,family,0,,
+4e515d20fa0d,health,0,,
+4e515d20fa0d,housing,0,,
+4e515d20fa0d,immigration,0,,
+4e515d20fa0d,torts,1,I was playing my music loud enough that I can here it in my area but walks over to my area and complains that my music is too vulgar and it offends him and his religion(Islam),True
+4e515d20fa0d,traffic,0,,
+2fb4d91c0cc5,benefits,0,,
+2fb4d91c0cc5,business,0,,
+2fb4d91c0cc5,consumer,0,,
+2fb4d91c0cc5,courts,1,I received a ticket for an LAMC 80.56E4 violation,True
+2fb4d91c0cc5,crime,0,,
+2fb4d91c0cc5,divorce,0,,
+2fb4d91c0cc5,domestic_violence,0,,
+2fb4d91c0cc5,education,0,,
+2fb4d91c0cc5,employment,0,,
+2fb4d91c0cc5,estates,0,,
+2fb4d91c0cc5,family,0,,
+2fb4d91c0cc5,health,0,,
+2fb4d91c0cc5,housing,1,My complex has 100+ units and 10 private parking spots,True
+2fb4d91c0cc5,immigration,0,,
+2fb4d91c0cc5,torts,0,,
+2fb4d91c0cc5,traffic,1,I received a ticket for an LAMC 80.56E4 violation,True

@@ -1,0 +1,385 @@
+post_id,category,pred,confidence,evidence_quote,evidence_valid
+fafb7aaa30b6,benefits,0,1.0,,
+fafb7aaa30b6,business,0,1.0,,
+fafb7aaa30b6,consumer,0,1.0,,
+fafb7aaa30b6,courts,1,1.0,My appointed Attorney is bullying me to give PMC (permanent managing conservative) to his paternal grandparents.,True
+fafb7aaa30b6,crime,0,0.5,,
+fafb7aaa30b6,divorce,0,0.5,,
+fafb7aaa30b6,domestic_violence,0,0.5,,
+fafb7aaa30b6,education,0,1.0,,
+fafb7aaa30b6,employment,0,1.0,,
+fafb7aaa30b6,estates,0,0.5,,
+fafb7aaa30b6,family,1,1.0,My appointed Attorney is bullying me to give PMC (permanent managing conservative) to his paternal grandparents.,True
+fafb7aaa30b6,health,0,0.8,,
+fafb7aaa30b6,housing,1,1.0,I have a great apartment a support system and a Job that i love.,True
+fafb7aaa30b6,immigration,0,1.0,,
+fafb7aaa30b6,torts,1,1.0,They have 50 ppl lined up to bad mouth me to tge judge.,True
+fafb7aaa30b6,traffic,0,0.5,,
+349b56e6e62d,benefits,0,1.0,,
+349b56e6e62d,business,0,1.0,,
+349b56e6e62d,consumer,1,0.8,they did not indicate where the carpet is apparently unusable,True
+349b56e6e62d,courts,0,1.0,,
+349b56e6e62d,crime,0,1.0,,
+349b56e6e62d,divorce,0,1.0,,
+349b56e6e62d,domestic_violence,0,1.0,,
+349b56e6e62d,education,0,1.0,,
+349b56e6e62d,employment,0,1.0,,
+349b56e6e62d,estates,0,1.0,,
+349b56e6e62d,family,0,1.0,,
+349b56e6e62d,health,0,1.0,,
+349b56e6e62d,housing,1,1.0,"Property manager said that since they have to replace it earlier, it would be coming out of our security deposits.",True
+349b56e6e62d,immigration,0,1.0,,
+349b56e6e62d,torts,1,0.8,I think they're just fucking us on the last year to get money for a carpet before they have to replace it themselves.,True
+349b56e6e62d,traffic,0,1.0,,
+138be5648a52,benefits,0,0.5,,
+138be5648a52,business,0,0.5,,
+138be5648a52,consumer,0,0.5,,
+138be5648a52,courts,1,1.0,I've since filed a protection order for myself against him but did not show up to the first court hearing,True
+138be5648a52,crime,1,1.0,the cops showed up first and they've deemed my brother as the 'aggrevied' and myself as the 'respondant',True
+138be5648a52,divorce,0,0.5,,
+138be5648a52,domestic_violence,1,1.0,I've since filed a protection order for myself against him,True
+138be5648a52,education,0,0.5,,
+138be5648a52,employment,1,0.8,"compensation for the loss of work and as I'm currently looking for another job, loss of being able to find a new one",True
+138be5648a52,estates,0,0.5,,
+138be5648a52,family,1,1.0,I've since filed a protection order for myself against him,True
+138be5648a52,health,1,1.0,my face is fucked up now and it likely will be that way for a long time,True
+138be5648a52,housing,0,1.0,,
+138be5648a52,immigration,0,0.5,,
+138be5648a52,torts,1,1.0,he's fucked up my face for life,True
+138be5648a52,traffic,0,0.5,,
+90ed97f18971,benefits,0,1.0,,
+90ed97f18971,business,1,1.0,We have someone who owes a TON of back rent for there lot (2 months worth).,True
+90ed97f18971,consumer,0,1.0,,
+90ed97f18971,courts,1,1.0,We eventually just went ahead and moved all of there property into our storage area.,True
+90ed97f18971,crime,0,1.0,,
+90ed97f18971,divorce,0,1.0,,
+90ed97f18971,domestic_violence,0,1.0,,
+90ed97f18971,education,0,1.0,,
+90ed97f18971,employment,0,1.0,,
+90ed97f18971,estates,0,1.0,,
+90ed97f18971,family,0,1.0,,
+90ed97f18971,health,0,1.0,,
+90ed97f18971,housing,1,1.0,We've run into a hang up though we haven't had to deal with in the time we've owned the Park (2 generations).,True
+90ed97f18971,immigration,0,1.0,,
+90ed97f18971,torts,0,0.5,,
+90ed97f18971,traffic,0,1.0,,
+66c3c1c21692,benefits,0,1.0,,
+66c3c1c21692,business,1,1.0,My parents have owned/lived in a 4plex for about 25 years.,True
+66c3c1c21692,consumer,0,1.0,,
+66c3c1c21692,courts,0,1.0,,
+66c3c1c21692,crime,1,1.0,Unfortunately I know Indiana has been regressive with their drug laws and I'm worried that this could somehow end up as a forfeiture or something.,True
+66c3c1c21692,divorce,0,1.0,,
+66c3c1c21692,domestic_violence,0,1.0,,
+66c3c1c21692,education,0,1.0,,
+66c3c1c21692,employment,0,1.0,,
+66c3c1c21692,estates,1,1.0,Everything is in their name.,True
+66c3c1c21692,family,1,1.0,My parents have owned/lived in a 4plex for about 25 years.,True
+66c3c1c21692,health,0,1.0,,
+66c3c1c21692,housing,1,1.0,Tenant pays every month and otherwise isn't a bother,True
+66c3c1c21692,immigration,0,1.0,,
+66c3c1c21692,torts,1,1.0,"One tenant recently has a tendency to sometimes play loud music, which by itself isn't really a problem, but he is also definitely smoking weed.",True
+66c3c1c21692,traffic,0,1.0,,
+534e31b790db,benefits,0,1.0,,
+534e31b790db,business,0,1.0,,
+534e31b790db,consumer,0,1.0,,
+534e31b790db,courts,0,1.0,,
+534e31b790db,crime,0,1.0,,
+534e31b790db,divorce,0,1.0,,
+534e31b790db,domestic_violence,0,1.0,,
+534e31b790db,education,0,1.0,,
+534e31b790db,employment,0,1.0,,
+534e31b790db,estates,0,1.0,,
+534e31b790db,family,0,1.0,,
+534e31b790db,health,0,1.0,,
+534e31b790db,housing,0,1.0,,
+534e31b790db,immigration,0,1.0,,
+534e31b790db,torts,1,0.8,"Does this really matter, and if so are they going to try and charge me for their mistake?",True
+534e31b790db,traffic,1,1.0,they copied my address down wrong and my new title should be 2700 my street address but it is 2706 my street address,True
+763023edf6db,benefits,0,1.0,,
+763023edf6db,business,0,1.0,,
+763023edf6db,consumer,0,1.0,,
+763023edf6db,courts,1,1.0,I need help! tl/dr: ex wife keeps winning custody battle even though she knowingly is filling false accusations,True
+763023edf6db,crime,1,1.0,"She's lied to the judge, police and her lawyer.",True
+763023edf6db,divorce,1,1.0,I need help! tl/dr: ex wife keeps winning custody battle even though she knowingly is filling false accusations,True
+763023edf6db,domestic_violence,0,0.5,,
+763023edf6db,education,0,0.5,,
+763023edf6db,employment,0,0.5,,
+763023edf6db,estates,0,0.5,,
+763023edf6db,family,1,1.0,My ex wife has made it her goal to wipe me from this earth.,True
+763023edf6db,health,0,0.5,,
+763023edf6db,housing,0,1.0,,
+763023edf6db,immigration,0,0.5,,
+763023edf6db,torts,1,0.8,"She's lied to the judge, police and her lawyer.",True
+763023edf6db,traffic,0,0.6,,
+f4a548fd69d6,benefits,1,1.0,We were on section 8(subsidised housing. For families that make less than a living wage),True
+f4a548fd69d6,business,0,1.0,,
+f4a548fd69d6,consumer,0,1.0,,
+f4a548fd69d6,courts,1,1.0,In the state of New York the statute of limitation for a lawsuit involving lead poisoning as a child is 3 years after turning 18.,False
+f4a548fd69d6,crime,0,0.5,,
+f4a548fd69d6,divorce,0,0.5,,
+f4a548fd69d6,domestic_violence,0,0.5,,
+f4a548fd69d6,education,0,0.5,,
+f4a548fd69d6,employment,0,1.0,,
+f4a548fd69d6,estates,0,0.5,,
+f4a548fd69d6,family,1,1.0,My mother didn't sue. Fast forward the rest of my time living at this residence. Not once was the house repainted.,True
+f4a548fd69d6,health,1,1.0,My doctor looks at my new audiogram And asked me if I have had any childhood illnesses or exposure to heavy metals.,True
+f4a548fd69d6,housing,1,1.0,We were on section 8(subsidised housing. For families that make less than a living wage),True
+f4a548fd69d6,immigration,0,0.5,,
+f4a548fd69d6,torts,1,1.0,The landlord had to scrape it all off but did so in an unsafe manner. He just let it fall and fly all around outside.,False
+f4a548fd69d6,traffic,0,0.5,,
+f4a838546804,benefits,1,1.0,He has a large sum of money coming from some back pay,True
+f4a838546804,business,0,1.0,,
+f4a838546804,consumer,0,1.0,,
+f4a838546804,courts,1,1.0,He was ready to walk until I told him I'm not selling the house and plan to stay.,True
+f4a838546804,crime,0,0.5,,
+f4a838546804,divorce,1,1.0,He was ready to walk until I told him I'm not selling the house,True
+f4a838546804,domestic_violence,0,0.5,,
+f4a838546804,education,0,1.0,,
+f4a838546804,employment,0,1.0,,
+f4a838546804,estates,1,0.8,I want to withdraw this money and put it into a fireproof safe and hide it,True
+f4a838546804,family,1,1.0,He was adamant about it and went the next day and opened his own bank account,True
+f4a838546804,health,0,1.0,,
+f4a838546804,housing,0,0.6,,
+f4a838546804,immigration,0,1.0,,
+f4a838546804,torts,0,1.0,,
+f4a838546804,traffic,0,0.5,,
+2c8bc23bbb4a,benefits,0,1.0,,
+2c8bc23bbb4a,business,0,1.0,,
+2c8bc23bbb4a,consumer,0,1.0,,
+2c8bc23bbb4a,courts,1,1.0,I received a caution/ drug diversion for possession/ being under the influence of LSD along with a caution for possession of a air rifle last year,True
+2c8bc23bbb4a,crime,1,1.0,I received a caution/ drug diversion for possession/ being under the influence of LSD along with a caution for possession of a air rifle last year,True
+2c8bc23bbb4a,divorce,0,1.0,,
+2c8bc23bbb4a,domestic_violence,0,1.0,,
+2c8bc23bbb4a,education,0,1.0,,
+2c8bc23bbb4a,employment,0,0.6,,
+2c8bc23bbb4a,estates,0,1.0,,
+2c8bc23bbb4a,family,0,1.0,,
+2c8bc23bbb4a,health,0,1.0,,
+2c8bc23bbb4a,housing,0,1.0,,
+2c8bc23bbb4a,immigration,1,1.0,received a caution/ drug diversion for possession/ being under the influence of LSD along with a caution for possession of a air rifle last year,True
+2c8bc23bbb4a,torts,0,1.0,,
+2c8bc23bbb4a,traffic,0,1.0,,
+2b374de11e45,benefits,0,1.0,,
+2b374de11e45,business,0,1.0,,
+2b374de11e45,consumer,0,1.0,,
+2b374de11e45,courts,1,1.0,"Is he considered a first-time offender, as the points only stay on record for 3 years?",True
+2b374de11e45,crime,1,1.0,Let's say somebody accidentally rear ends another car. There are no injuries. A ticket is issued for failing to stop.,True
+2b374de11e45,divorce,0,1.0,,
+2b374de11e45,domestic_violence,0,1.0,,
+2b374de11e45,education,0,1.0,,
+2b374de11e45,employment,0,1.0,,
+2b374de11e45,estates,0,1.0,,
+2b374de11e45,family,0,1.0,,
+2b374de11e45,health,0,1.0,,
+2b374de11e45,housing,0,1.0,,
+2b374de11e45,immigration,0,1.0,,
+2b374de11e45,torts,0,0.5,,
+2b374de11e45,traffic,1,1.0,Points only stay on record for 3 years,True
+5ca5befa924d,benefits,0,1.0,,
+5ca5befa924d,business,0,1.0,,
+5ca5befa924d,consumer,1,0.8,He is refusing to pay. What should I do? Should I go through small claims?,True
+5ca5befa924d,courts,1,1.0,Should I go through small claims?,True
+5ca5befa924d,crime,0,1.0,,
+5ca5befa924d,divorce,1,1.0,The money he stole was put in the mediation papers. Those papers later went into the judgement of divorce.,True
+5ca5befa924d,domestic_violence,0,0.5,,
+5ca5befa924d,education,0,1.0,,
+5ca5befa924d,employment,0,1.0,,
+5ca5befa924d,estates,0,0.5,,
+5ca5befa924d,family,1,1.0,My ex husband stole money from me ($600 to be exact).,True
+5ca5befa924d,health,0,1.0,,
+5ca5befa924d,housing,0,1.0,,
+5ca5befa924d,immigration,0,1.0,,
+5ca5befa924d,torts,1,0.8,Ex-husband stole money from me ($600 to be exact).,True
+5ca5befa924d,traffic,0,1.0,,
+f6ad50cbadfc,benefits,0,1.0,,
+f6ad50cbadfc,business,0,1.0,,
+f6ad50cbadfc,consumer,1,1.0,Are there any steps I can take myself / encourage him to take to protect himself financially or protect himself from possible marriage fraud?,True
+f6ad50cbadfc,courts,0,1.0,,
+f6ad50cbadfc,crime,0,1.0,,
+f6ad50cbadfc,divorce,0,0.5,,
+f6ad50cbadfc,domestic_violence,0,0.5,,
+f6ad50cbadfc,education,0,1.0,,
+f6ad50cbadfc,employment,0,1.0,,
+f6ad50cbadfc,estates,0,0.5,,
+f6ad50cbadfc,family,0,0.5,,
+f6ad50cbadfc,health,0,1.0,,
+f6ad50cbadfc,housing,0,1.0,,
+f6ad50cbadfc,immigration,1,1.0,Are there any steps I can take myself / encourage him to take to protect himself financially or protect himself from possible marriage fraud?,True
+f6ad50cbadfc,torts,0,1.0,,
+f6ad50cbadfc,traffic,0,1.0,,
+bd3f94c7eb10,benefits,0,1.0,,
+bd3f94c7eb10,business,0,1.0,,
+bd3f94c7eb10,consumer,0,1.0,,
+bd3f94c7eb10,courts,0,0.5,,
+bd3f94c7eb10,crime,1,1.0,"She was caught trying to sneak out last night, and in a weird trance, told her mother everything she's done.",True
+bd3f94c7eb10,divorce,0,0.5,,
+bd3f94c7eb10,domestic_violence,1,1.0,"Her father, who is a pilot, is away for now, and she wants to get out before he comes home.",True
+bd3f94c7eb10,education,0,0.5,,
+bd3f94c7eb10,employment,0,1.0,,
+bd3f94c7eb10,estates,0,0.5,,
+bd3f94c7eb10,family,1,1.0,"Her parents have actively berated her for these issues, saying 'you're a disgrace to this family' 'you ruined our lives' etc.",True
+bd3f94c7eb10,health,1,1.0,,False
+bd3f94c7eb10,housing,0,0.5,,
+bd3f94c7eb10,immigration,0,0.5,,
+bd3f94c7eb10,torts,1,1.0,,False
+bd3f94c7eb10,traffic,0,0.5,,
+f87c9ae4bffb,benefits,0,1.0,,
+f87c9ae4bffb,business,0,1.0,,
+f87c9ae4bffb,consumer,0,1.0,,
+f87c9ae4bffb,courts,1,1.0,"If I've accepted the inevitability of divorce, why don't I just file for it myself and get it over with?",True
+f87c9ae4bffb,crime,0,1.0,,
+f87c9ae4bffb,divorce,1,1.0,I feel divorce is inevitable. Can I just wait for it to happen or is it urgent that I pre-emotively lawyer-up?,True
+f87c9ae4bffb,domestic_violence,0,0.5,,
+f87c9ae4bffb,education,0,1.0,,
+f87c9ae4bffb,employment,0,0.8,,
+f87c9ae4bffb,estates,0,0.5,,
+f87c9ae4bffb,family,1,1.0,I suspect she may file for divorce.,True
+f87c9ae4bffb,health,0,1.0,,
+f87c9ae4bffb,housing,0,1.0,,
+f87c9ae4bffb,immigration,1,1.0,Applied for my wife’s 10-year green card,True
+f87c9ae4bffb,torts,0,1.0,,
+f87c9ae4bffb,traffic,0,1.0,,
+e1597cf12637,benefits,1,0.8,"She's unemployed, but collects Social Security benefits as a representative payee for her kids",True
+e1597cf12637,business,0,1.0,,
+e1597cf12637,consumer,0,1.0,,
+e1597cf12637,courts,0,0.6,,
+e1597cf12637,crime,0,1.0,,
+e1597cf12637,divorce,1,1.0,Been married for a little over two years,True
+e1597cf12637,domestic_violence,0,0.5,,
+e1597cf12637,education,0,1.0,,
+e1597cf12637,employment,0,1.0,,
+e1597cf12637,estates,0,0.5,,
+e1597cf12637,family,1,1.0,"She's unemployed, but collects Social Security benefits as a representative payee for her kids",True
+e1597cf12637,health,0,1.0,,
+e1597cf12637,housing,0,1.0,,
+e1597cf12637,immigration,0,1.0,,
+e1597cf12637,torts,0,1.0,,
+e1597cf12637,traffic,0,1.0,,
+9f5d238e2bf0,benefits,0,1.0,,
+9f5d238e2bf0,business,0,1.0,,
+9f5d238e2bf0,consumer,0,1.0,,
+9f5d238e2bf0,courts,0,1.0,,
+9f5d238e2bf0,crime,0,1.0,,
+9f5d238e2bf0,divorce,0,1.0,,
+9f5d238e2bf0,domestic_violence,0,1.0,,
+9f5d238e2bf0,education,0,0.5,,
+9f5d238e2bf0,employment,0,1.0,,
+9f5d238e2bf0,estates,0,1.0,,
+9f5d238e2bf0,family,0,1.0,,
+9f5d238e2bf0,health,1,1.0,I'm taking drugs that interact with each other because it's the only solution I've been offered.,True
+9f5d238e2bf0,housing,0,1.0,,
+9f5d238e2bf0,immigration,0,0.5,,
+9f5d238e2bf0,torts,1,1.0,I'm taking drugs that interact with each other because it's the only solution I've been offered.,True
+9f5d238e2bf0,traffic,0,1.0,,
+a64335e54329,benefits,0,1.0,,
+a64335e54329,business,0,1.0,,
+a64335e54329,consumer,1,1.0,I do not have the money to pay at the moment.,True
+a64335e54329,courts,1,1.0,"I requested a 30 day extension, but what are my options?",True
+a64335e54329,crime,0,1.0,,
+a64335e54329,divorce,0,1.0,,
+a64335e54329,domestic_violence,0,1.0,,
+a64335e54329,education,0,1.0,,
+a64335e54329,employment,0,1.0,,
+a64335e54329,estates,0,1.0,,
+a64335e54329,family,0,1.0,,
+a64335e54329,health,0,1.0,,
+a64335e54329,housing,0,1.0,,
+a64335e54329,immigration,0,1.0,,
+a64335e54329,torts,1,1.0,I recently got a bike citation for failing to stop at a stop sign while riding my bike.,True
+a64335e54329,traffic,1,1.0,I recently got a bike citation for failing to stop at a stop sign while riding my bike.,True
+b150d577cfe7,benefits,0,1.0,,
+b150d577cfe7,business,0,1.0,,
+b150d577cfe7,consumer,0,1.0,,
+b150d577cfe7,courts,0,1.0,,
+b150d577cfe7,crime,0,1.0,,
+b150d577cfe7,divorce,1,1.0,Recently split up with my s/o and am now in the process of setting up a new life for myself.,True
+b150d577cfe7,domestic_violence,0,0.5,,
+b150d577cfe7,education,0,1.0,,
+b150d577cfe7,employment,0,1.0,,
+b150d577cfe7,estates,0,1.0,,
+b150d577cfe7,family,1,1.0,"S/o is now asking me to give him all the money that I've saved up for that, now that I've left.",True
+b150d577cfe7,health,0,1.0,,
+b150d577cfe7,housing,1,1.0,"S/o is now asking me to give him all the money that I've saved up for that, now that I've left.",True
+b150d577cfe7,immigration,0,1.0,,
+b150d577cfe7,torts,0,1.0,,
+b150d577cfe7,traffic,0,1.0,,
+9a978ec72f93,benefits,0,1.0,,
+9a978ec72f93,business,0,1.0,,
+9a978ec72f93,consumer,0,1.0,,
+9a978ec72f93,courts,1,1.0,Defendant ONLY UPON VIOLATION OF THE DIVERSION AGREEMENT stipulate to the facts as they are contained in the complaint,True
+9a978ec72f93,crime,1,1.0,I will participate a diversion program,True
+9a978ec72f93,divorce,0,1.0,,
+9a978ec72f93,domestic_violence,0,1.0,,
+9a978ec72f93,education,0,1.0,,
+9a978ec72f93,employment,1,1.0,employee background check? – Would this charges shows up on my employee background check?,True
+9a978ec72f93,estates,0,1.0,,
+9a978ec72f93,family,0,1.0,,
+9a978ec72f93,health,0,1.0,,
+9a978ec72f93,housing,0,1.0,,
+9a978ec72f93,immigration,1,1.0,"I got my 2 years green card through marriage to Citizen, and it is expiring on August. I need to apply for the 10 years green card soon.",True
+9a978ec72f93,torts,0,1.0,,
+9a978ec72f93,traffic,0,0.5,,
+b4ff3a87749f,benefits,0,1.0,,
+b4ff3a87749f,business,0,1.0,,
+b4ff3a87749f,consumer,0,1.0,,
+b4ff3a87749f,courts,0,0.5,,
+b4ff3a87749f,crime,0,0.6,,
+b4ff3a87749f,divorce,0,0.5,,
+b4ff3a87749f,domestic_violence,0,0.5,,
+b4ff3a87749f,education,0,0.5,,
+b4ff3a87749f,employment,0,1.0,,
+b4ff3a87749f,estates,1,1.0,Will she inherit everything he owns as he has no children?,True
+b4ff3a87749f,family,1,1.0,"Hospital took 3 days to contact us, his family",False
+b4ff3a87749f,health,1,1.0,"it took the Hospital 3 days to contact us, his family",True
+b4ff3a87749f,housing,0,1.0,,
+b4ff3a87749f,immigration,1,1.0,We suspect it's some prostitute who was trying to become a citizen.,True
+b4ff3a87749f,torts,0,0.5,,
+b4ff3a87749f,traffic,0,0.5,,
+1fad238e8d1e,benefits,0,0.5,,
+1fad238e8d1e,business,0,0.5,,
+1fad238e8d1e,consumer,1,1.0,I had to cancel that policy for some cheap roadside insurance policy that still costs me $230 a month.,True
+1fad238e8d1e,courts,0,1.0,,
+1fad238e8d1e,crime,0,1.0,,
+1fad238e8d1e,divorce,0,1.0,,
+1fad238e8d1e,domestic_violence,0,1.0,,
+1fad238e8d1e,education,0,1.0,,
+1fad238e8d1e,employment,1,0.8,,False
+1fad238e8d1e,estates,0,1.0,,
+1fad238e8d1e,family,0,1.0,,
+1fad238e8d1e,health,0,1.0,,
+1fad238e8d1e,housing,0,1.0,,
+1fad238e8d1e,immigration,0,1.0,,
+1fad238e8d1e,torts,1,1.0,a woman was driving with her husband. Neither parties had a drivers license but the male had an ID and insurance.,True
+1fad238e8d1e,traffic,1,1.0,a woman was driving with her husband. Neither parties had a drivers license but the male had an ID and insurance.,True
+1bf7f3b82aa6,benefits,1,1.0,"Insurance company has become increasingly difficult (stopping payments, demanding more paperwork after requested paperwork was supplied, etc).",True
+1bf7f3b82aa6,business,0,0.5,,
+1bf7f3b82aa6,consumer,1,1.0,"Insurance company has become increasingly difficult (stopping payments, demanding more paperwork after requested paperwork was supplied, etc).",True
+1bf7f3b82aa6,courts,0,0.5,,
+1bf7f3b82aa6,crime,0,1.0,,
+1bf7f3b82aa6,divorce,0,0.5,,
+1bf7f3b82aa6,domestic_violence,0,0.5,,
+1bf7f3b82aa6,education,0,0.5,,
+1bf7f3b82aa6,employment,1,1.0,Her employer supplied a list of duties that are required and her doctor stated that she could not fulfill them.,True
+1bf7f3b82aa6,estates,0,0.5,,
+1bf7f3b82aa6,family,0,0.5,,
+1bf7f3b82aa6,health,1,1.0,"Insurance company has become increasingly difficult (stopping payments, demanding more paperwork after requested paperwork was supplied, etc).",True
+1bf7f3b82aa6,housing,0,1.0,,
+1bf7f3b82aa6,immigration,0,0.5,,
+1bf7f3b82aa6,torts,0,0.5,,
+1bf7f3b82aa6,traffic,0,1.0,,
+cf05c0a497d6,benefits,0,0.5,,
+cf05c0a497d6,business,1,1.0,The president of a dumpster company trespasses my property.,True
+cf05c0a497d6,consumer,1,1.0,"Mortgage company who refused to honor the locked rate, ran credit over 12 times in a span of 2 weeks, then offer higher interest because the score went down dramatically.",True
+cf05c0a497d6,courts,0,1.0,,
+cf05c0a497d6,crime,1,1.0,Threatening to kill then mellowing down to sue after I kicked him out,True
+cf05c0a497d6,divorce,0,1.0,,
+cf05c0a497d6,domestic_violence,0,1.0,,
+cf05c0a497d6,education,0,1.0,,
+cf05c0a497d6,employment,1,1.0,My multi-billion dollars employer refused to honor my promotion. Reason? Change of manager and I took FMLA recently.,True
+cf05c0a497d6,estates,0,1.0,,
+cf05c0a497d6,family,0,1.0,,
+cf05c0a497d6,health,1,1.0,"Fell of a HD rental truck and tore my ACL (ER, bone bruises, etc).",True
+cf05c0a497d6,housing,1,1.0,Short term renter partied in my property and violated the fire/over occupancy code.,True
+cf05c0a497d6,immigration,0,0.5,,
+cf05c0a497d6,torts,1,1.0,The back cover can't support the steps properly and the employee who rent it out knew it.,True
+cf05c0a497d6,traffic,0,1.0,,

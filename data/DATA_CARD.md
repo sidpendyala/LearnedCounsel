@@ -101,4 +101,4 @@ These line up with the confusable pairs in the spec (divorce/family, courts/crim
 
 ## Citations
 - Guha, N., et al. (2023). *LegalBench: A Collaboratively Built Benchmark for Measuring Legal Reasoning in Large Language Models.* NeurIPS 2023 Datasets and Benchmarks Track.
-- Learned Hands / LIST taxonomy: Stanford Legal Design Lab and Suffolk LIT Lab. (The exact reference will be verified for the report.)
+- Learned Hands and LIST: Stanford Legal Design Lab and Suffolk LIT Lab, https://learnedhands.law.stanford.edu (verified references: `report/REFERENCES.md`).

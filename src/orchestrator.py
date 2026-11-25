@@ -1,6 +1,7 @@
 """LearnedCounsel control flow: the agents work on one shared case file.
 
-  intake -> router -> specialists (+ consults) -> [skeptic -> rebuttals]
+  intake -> router -> specialists (+ consults) -> [skeptic -> rebuttals]          (v1)
+  intake -> all specialists + scout -> disagreements -> [skeptic -> rebuttals]    (v2)
          -> coordinator -> (if not settled and rounds left: reopen questions -> rebuttals -> coordinator)
 
 Settings switch parts on and off for the ablations. Every LLM call is logged in
@@ -30,6 +31,10 @@ class Settings:
     use_consults: bool = True           # ablation (c)
     single_specialist: bool = False     # ablation (d)
     specialist_model: str | None = None # experiment (g); None = main model
+    few_shot: bool = False              # experiment (h)
+    scout_mode: str = "off"             # v2: off, "add" (scout may only add issues) or "both" (add or question)
+    skeptic_misses_only: bool = False   # v2: the skeptic raises possible misses, no challenges
+    safe_note: bool = False             # v2: stricter "no legal advice" rule for the referral note
     on_event: Callable | None = None    # callback after every LLM call (used by the demo)
 
 
@@ -53,6 +58,12 @@ def run_case(llm, post_id, text, s):
                     called.append(g)
                     case.consults.append({"specialist": g, "reason": req["reason"]})
                     agents.specialist(llm, case, s, g)
+
+    # v2: a Scout reads the post independently; the specialists answer where it disagrees with them
+    if s.scout_mode != "off":
+        agents.scout(llm, case, s)
+        for item in agents.scout_items(case, s):
+            agents.rebuttal(llm, case, s, item, 1)
 
     # Round 1: the skeptic challenges, the specialists answer
     round_ = 0
@@ -123,6 +134,7 @@ def learnedcounsel_post(llm, post_id, text, settings):
             "challenges": sum(d["kind"] == "challenge" for d in rebuttals),
             "possible_misses": sum(d["kind"] == "possible_miss" for d in rebuttals),
             "reopens": sum(d["kind"] == "reopen" for d in rebuttals),
+            "scout_questions": sum(d["kind"].startswith("scout") for d in rebuttals),
             "flips": sum(d["before"] != d["after"] for d in rebuttals),
             "rounds": case.final["rounds"], "coordinator_failed": case.final["coordinator_failed"],
             "urgency": case.final["urgency"]}

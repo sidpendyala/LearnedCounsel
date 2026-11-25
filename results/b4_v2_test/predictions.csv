@@ -1,0 +1,1441 @@
+post_id,category,pred,evidence_quote,evidence_valid
+d7b5cbcfcf05,benefits,0,,
+d7b5cbcfcf05,business,0,,
+d7b5cbcfcf05,consumer,0,,
+d7b5cbcfcf05,courts,0,,
+d7b5cbcfcf05,crime,0,,
+d7b5cbcfcf05,divorce,0,,
+d7b5cbcfcf05,domestic_violence,0,,
+d7b5cbcfcf05,education,0,,
+d7b5cbcfcf05,employment,0,,
+d7b5cbcfcf05,estates,0,,
+d7b5cbcfcf05,family,0,,
+d7b5cbcfcf05,health,0,,
+d7b5cbcfcf05,housing,1,Should I immediately add my name to his existing lease when I move in this week or can I wait until his lease is up for renewal in January to then add my name to his lease?,True
+d7b5cbcfcf05,immigration,0,,
+d7b5cbcfcf05,torts,0,,
+d7b5cbcfcf05,traffic,0,,
+899bbff3474b,benefits,0,,
+899bbff3474b,business,0,,
+899bbff3474b,consumer,0,,
+899bbff3474b,courts,0,,
+899bbff3474b,crime,0,,
+899bbff3474b,divorce,0,,
+899bbff3474b,domestic_violence,0,,
+899bbff3474b,education,0,,
+899bbff3474b,employment,1,Position contingent on passing a controlled substances drug screen,False
+899bbff3474b,estates,0,,
+899bbff3474b,family,0,,
+899bbff3474b,health,0,,
+899bbff3474b,housing,0,,
+899bbff3474b,immigration,0,,
+899bbff3474b,torts,0,,
+899bbff3474b,traffic,0,,
+17fa3468913c,benefits,0,,
+17fa3468913c,business,0,,
+17fa3468913c,consumer,0,,
+17fa3468913c,courts,0,,
+17fa3468913c,crime,0,,
+17fa3468913c,divorce,1,Separated from my spouse... pending divorce,False
+17fa3468913c,domestic_violence,0,,
+17fa3468913c,education,1,Our son went to private school for the first time last year... transfer to the school right by my house,False
+17fa3468913c,employment,0,,
+17fa3468913c,estates,0,,
+17fa3468913c,family,1,No established primary custody because it will be 50/50... transportation every day at the private school,False
+17fa3468913c,health,0,,
+17fa3468913c,housing,1,I'm in the house and will be paying for all utilities and mortgage starting in September,True
+17fa3468913c,immigration,0,,
+17fa3468913c,torts,0,,
+17fa3468913c,traffic,0,,
+b3565cc93565,benefits,0,,
+b3565cc93565,business,0,,
+b3565cc93565,consumer,1,Received tickets for expired registration,False
+b3565cc93565,courts,1,Question about releasing liability,False
+b3565cc93565,crime,0,,
+b3565cc93565,divorce,0,,
+b3565cc93565,domestic_violence,0,,
+b3565cc93565,education,0,,
+b3565cc93565,employment,0,,
+b3565cc93565,estates,0,,
+b3565cc93565,family,0,,
+b3565cc93565,health,0,,
+b3565cc93565,housing,0,,
+b3565cc93565,immigration,0,,
+b3565cc93565,torts,0,,
+b3565cc93565,traffic,1,Received tickets for expired registration,False
+1a63acd21386,benefits,0,,
+1a63acd21386,business,0,,
+1a63acd21386,consumer,1,You'll probably get charged about $50 for carpet cleaning or you can show a receipt as proof of cleaning from your own cleaners or rugdoctor rental for example),True
+1a63acd21386,courts,0,,
+1a63acd21386,crime,0,,
+1a63acd21386,divorce,0,,
+1a63acd21386,domestic_violence,0,,
+1a63acd21386,education,0,,
+1a63acd21386,employment,0,,
+1a63acd21386,estates,0,,
+1a63acd21386,family,0,,
+1a63acd21386,health,0,,
+1a63acd21386,housing,1,Lease includes move-out cleaning instructions,False
+1a63acd21386,immigration,0,,
+1a63acd21386,torts,0,,
+1a63acd21386,traffic,0,,
+0258d23a9e48,benefits,1,Friend pays rent from money that he gets from the state and his job,False
+0258d23a9e48,business,0,,
+0258d23a9e48,consumer,0,,
+0258d23a9e48,courts,0,,
+0258d23a9e48,crime,0,,
+0258d23a9e48,divorce,0,,
+0258d23a9e48,domestic_violence,0,,
+0258d23a9e48,education,0,,
+0258d23a9e48,employment,1,Friend pays rent from money that he gets from the state and his job,False
+0258d23a9e48,estates,0,,
+0258d23a9e48,family,1,Friend is their son but he is an adult renter,False
+0258d23a9e48,health,0,,
+0258d23a9e48,housing,1,Friend pays rent from money that he gets from the state and his job,False
+0258d23a9e48,immigration,0,,
+0258d23a9e48,torts,0,,
+0258d23a9e48,traffic,0,,
+1ed4eeb162d1,benefits,0,,
+1ed4eeb162d1,business,0,,
+1ed4eeb162d1,consumer,0,,
+1ed4eeb162d1,courts,0,,
+1ed4eeb162d1,crime,0,,
+1ed4eeb162d1,divorce,0,,
+1ed4eeb162d1,domestic_violence,0,,
+1ed4eeb162d1,education,0,,
+1ed4eeb162d1,employment,0,,
+1ed4eeb162d1,estates,0,,
+1ed4eeb162d1,family,0,,
+1ed4eeb162d1,health,0,,
+1ed4eeb162d1,housing,0,,
+1ed4eeb162d1,immigration,0,,
+1ed4eeb162d1,torts,0,,
+1ed4eeb162d1,traffic,0,,
+9d81f1635bd7,benefits,0,,
+9d81f1635bd7,business,0,,
+9d81f1635bd7,consumer,0,,
+9d81f1635bd7,courts,0,,
+9d81f1635bd7,crime,0,,
+9d81f1635bd7,divorce,0,,
+9d81f1635bd7,domestic_violence,0,,
+9d81f1635bd7,education,0,,
+9d81f1635bd7,employment,0,,
+9d81f1635bd7,estates,1,Statement of claim to surplus funds,True
+9d81f1635bd7,family,0,,
+9d81f1635bd7,health,0,,
+9d81f1635bd7,housing,1,Parents' house in Texas foreclosed on,False
+9d81f1635bd7,immigration,0,,
+9d81f1635bd7,torts,0,,
+9d81f1635bd7,traffic,0,,
+6cbb559a51eb,benefits,0,,
+6cbb559a51eb,business,0,,
+6cbb559a51eb,consumer,1,"We tried all week to get the nail polish out, but were only mildly successful.",True
+6cbb559a51eb,courts,0,,
+6cbb559a51eb,crime,0,,
+6cbb559a51eb,divorce,0,,
+6cbb559a51eb,domestic_violence,0,,
+6cbb559a51eb,education,0,,
+6cbb559a51eb,employment,0,,
+6cbb559a51eb,estates,0,,
+6cbb559a51eb,family,1,My in-laws recently rented a vacation house for a week so the whole family could spend some time together.,True
+6cbb559a51eb,health,0,,
+6cbb559a51eb,housing,1,My in-laws recently rented a vacation house for a week so the whole family could spend some time together.,True
+6cbb559a51eb,immigration,0,,
+6cbb559a51eb,torts,1,"We tried all week to get the nail polish out, but were only mildly successful.",True
+6cbb559a51eb,traffic,0,,
+e686f949fc5a,benefits,0,,
+e686f949fc5a,business,0,,
+e686f949fc5a,consumer,0,,
+e686f949fc5a,courts,1,,False
+e686f949fc5a,crime,0,,
+e686f949fc5a,divorce,0,,
+e686f949fc5a,domestic_violence,0,,
+e686f949fc5a,education,0,,
+e686f949fc5a,employment,0,,
+e686f949fc5a,estates,0,,
+e686f949fc5a,family,0,,
+e686f949fc5a,health,0,,
+e686f949fc5a,housing,1,"User signed a lease today and after looking at it more closely, the person who signed the lease (property manager) signed as the vice president of the company. Manager did use her own name in the signature.",False
+e686f949fc5a,immigration,0,,
+e686f949fc5a,torts,0,,
+e686f949fc5a,traffic,0,,
+7e881fef5473,benefits,0,,
+7e881fef5473,business,0,,
+7e881fef5473,consumer,0,,
+7e881fef5473,courts,0,,
+7e881fef5473,crime,0,,
+7e881fef5473,divorce,0,,
+7e881fef5473,domestic_violence,0,,
+7e881fef5473,education,0,,
+7e881fef5473,employment,0,,
+7e881fef5473,estates,0,,
+7e881fef5473,family,0,,
+7e881fef5473,health,0,,
+7e881fef5473,housing,1,I know advertisements at the front door is a sign to thieves that no one is home,True
+7e881fef5473,immigration,0,,
+7e881fef5473,torts,1,Could I add a sign that say violator contact information will be entered on junk mailing/telemarketer contact lists,True
+7e881fef5473,traffic,0,,
+bec1a53e2bdb,benefits,0,,
+bec1a53e2bdb,business,0,,
+bec1a53e2bdb,consumer,0,,
+bec1a53e2bdb,courts,0,,
+bec1a53e2bdb,crime,0,,
+bec1a53e2bdb,divorce,0,,
+bec1a53e2bdb,domestic_violence,0,,
+bec1a53e2bdb,education,0,,
+bec1a53e2bdb,employment,0,,
+bec1a53e2bdb,estates,0,,
+bec1a53e2bdb,family,0,,
+bec1a53e2bdb,health,0,,
+bec1a53e2bdb,housing,1,Tenant needs updated lease for renters insurance,False
+bec1a53e2bdb,immigration,0,,
+bec1a53e2bdb,torts,0,,
+bec1a53e2bdb,traffic,0,,
+00377d2d88af,benefits,0,,
+00377d2d88af,business,0,,
+00377d2d88af,consumer,0,,
+00377d2d88af,courts,1,"We have evidence, we've got a few people and are building up on more evidence as I type this.",True
+00377d2d88af,crime,0,,
+00377d2d88af,divorce,0,,
+00377d2d88af,domestic_violence,0,,
+00377d2d88af,education,0,,
+00377d2d88af,employment,0,,
+00377d2d88af,estates,0,,
+00377d2d88af,family,0,,
+00377d2d88af,health,0,,
+00377d2d88af,housing,1,"Landlord only owns the land and foundations, not the mobile homes and there's nothing in the contracts we sign that exonerates them from upkeep of the property and such.",True
+00377d2d88af,immigration,0,,
+00377d2d88af,torts,1,"Landlord insists this is a 'new' development, but it's been steadily building up over the last few years.",True
+00377d2d88af,traffic,0,,
+989fe2117583,benefits,0,,
+989fe2117583,business,0,,
+989fe2117583,consumer,0,,
+989fe2117583,courts,0,,
+989fe2117583,crime,0,,
+989fe2117583,divorce,0,,
+989fe2117583,domestic_violence,0,,
+989fe2117583,education,0,,
+989fe2117583,employment,0,,
+989fe2117583,estates,0,,
+989fe2117583,family,0,,
+989fe2117583,health,0,,
+989fe2117583,housing,1,Landlord's rent increase is 9%,False
+989fe2117583,immigration,0,,
+989fe2117583,torts,0,,
+989fe2117583,traffic,0,,
+7d17f88f82a2,benefits,0,,
+7d17f88f82a2,business,0,,
+7d17f88f82a2,consumer,0,,
+7d17f88f82a2,courts,0,,
+7d17f88f82a2,crime,0,,
+7d17f88f82a2,divorce,0,,
+7d17f88f82a2,domestic_violence,0,,
+7d17f88f82a2,education,0,,
+7d17f88f82a2,employment,0,,
+7d17f88f82a2,estates,0,,
+7d17f88f82a2,family,0,,
+7d17f88f82a2,health,0,,
+7d17f88f82a2,housing,1,Living without hot water for 11 days,False
+7d17f88f82a2,immigration,0,,
+7d17f88f82a2,torts,0,,
+7d17f88f82a2,traffic,0,,
+db929791387f,benefits,0,,
+db929791387f,business,0,,
+db929791387f,consumer,0,,
+db929791387f,courts,1,She came to him and offered to remove a morality clause...,True
+db929791387f,crime,0,,
+db929791387f,divorce,0,,
+db929791387f,domestic_violence,1,He feels controlled by ex-girlfriend,False
+db929791387f,education,0,,
+db929791387f,employment,1,He can't afford a lawyer AND child support,True
+db929791387f,estates,0,,
+db929791387f,family,1,She came to him and offered to remove a morality clause...,True
+db929791387f,health,0,,
+db929791387f,housing,0,,
+db929791387f,immigration,0,,
+db929791387f,torts,0,,
+db929791387f,traffic,0,,
+9ddc27013737,benefits,0,,
+9ddc27013737,business,0,,
+9ddc27013737,consumer,1,Received $200 driving without consideration ticket,False
+9ddc27013737,courts,1,Disputed $200 driving without consideration ticket,False
+9ddc27013737,crime,0,,
+9ddc27013737,divorce,0,,
+9ddc27013737,domestic_violence,0,,
+9ddc27013737,education,0,,
+9ddc27013737,employment,0,,
+9ddc27013737,estates,0,,
+9ddc27013737,family,0,,
+9ddc27013737,health,0,,
+9ddc27013737,housing,0,,
+9ddc27013737,immigration,0,,
+9ddc27013737,torts,1,Claimed no one was in danger or at risk,False
+9ddc27013737,traffic,1,Received two traffic tickets: stunt driving and driving without consideration,False
+c36c1c8db5aa,benefits,0,,
+c36c1c8db5aa,business,0,,
+c36c1c8db5aa,consumer,0,,
+c36c1c8db5aa,courts,0,,
+c36c1c8db5aa,crime,0,,
+c36c1c8db5aa,divorce,0,,
+c36c1c8db5aa,domestic_violence,0,,
+c36c1c8db5aa,education,0,,
+c36c1c8db5aa,employment,0,,
+c36c1c8db5aa,estates,0,,
+c36c1c8db5aa,family,0,,
+c36c1c8db5aa,health,0,,
+c36c1c8db5aa,housing,1,Property management never notified us or asked us if it was ok for this to happen.,True
+c36c1c8db5aa,immigration,0,,
+c36c1c8db5aa,torts,1,Property management never notified us or asked us if it was ok for this to happen.,True
+c36c1c8db5aa,traffic,0,,
+e56b41752493,benefits,0,,
+e56b41752493,business,0,,
+e56b41752493,consumer,1,Brother opened credit card accounts in my name using my social security number,False
+e56b41752493,courts,0,,
+e56b41752493,crime,1,Brother opened credit card accounts in my name using my social security number,False
+e56b41752493,divorce,0,,
+e56b41752493,domestic_violence,0,,
+e56b41752493,education,1,I check credit report due to student loans,False
+e56b41752493,employment,0,,
+e56b41752493,estates,0,,
+e56b41752493,family,1,Brother opened credit card accounts in my name using my social security number,False
+e56b41752493,health,0,,
+e56b41752493,housing,1,I am suspect that he has also taken out a mortgage using my identity,True
+e56b41752493,immigration,0,,
+e56b41752493,torts,1,Brother opened credit card accounts in my name using my social security number,False
+e56b41752493,traffic,0,,
+e4b6af6c955e,benefits,0,,
+e4b6af6c955e,business,0,,
+e4b6af6c955e,consumer,0,,
+e4b6af6c955e,courts,0,,
+e4b6af6c955e,crime,0,,
+e4b6af6c955e,divorce,0,,
+e4b6af6c955e,domestic_violence,0,,
+e4b6af6c955e,education,0,,
+e4b6af6c955e,employment,0,,
+e4b6af6c955e,estates,0,,
+e4b6af6c955e,family,0,,
+e4b6af6c955e,health,0,,
+e4b6af6c955e,housing,1,"12-month lease has ended, landlord did not provide new lease, landlord asked to sign another year lease, tenant plans to move in 5-6 months, landlord wants to lease starting Sept 1, tenant unsure about required notice, tenant concerned about being required to move Sept 1",False
+e4b6af6c955e,immigration,0,,
+e4b6af6c955e,torts,0,,
+e4b6af6c955e,traffic,0,,
+16f329eb8261,benefits,0,,
+16f329eb8261,business,0,,
+16f329eb8261,consumer,0,,
+16f329eb8261,courts,0,,
+16f329eb8261,crime,0,,
+16f329eb8261,divorce,0,,
+16f329eb8261,domestic_violence,1,"Mother has a documented history of physical child abuse, and has mentally and emotionally abused my siblings and me for most of our lives.",True
+16f329eb8261,education,0,,
+16f329eb8261,employment,0,,
+16f329eb8261,estates,0,,
+16f329eb8261,family,1,My mother withheld this information from me and the rest of my siblings who are not living in the house because 'it is none of our business'.,True
+16f329eb8261,health,0,,
+16f329eb8261,housing,0,,
+16f329eb8261,immigration,0,,
+16f329eb8261,torts,0,,
+16f329eb8261,traffic,0,,
+706ed39121ee,benefits,0,,
+706ed39121ee,business,0,,
+706ed39121ee,consumer,1,a now former friend is demanding i pay back a small debt of 1400 AUD,True
+706ed39121ee,courts,1,Both Legal Aid QLD and Victoria both have stated that since its been 10+ years since the debt has been and that she never asked for it back originaly back in 04 sometime,True
+706ed39121ee,crime,0,,
+706ed39121ee,divorce,0,,
+706ed39121ee,domestic_violence,0,,
+706ed39121ee,education,0,,
+706ed39121ee,employment,0,,
+706ed39121ee,estates,0,,
+706ed39121ee,family,0,,
+706ed39121ee,health,0,,
+706ed39121ee,housing,0,,
+706ed39121ee,immigration,0,,
+706ed39121ee,torts,0,,
+706ed39121ee,traffic,0,,
+ab1ec1052d0c,benefits,0,,
+ab1ec1052d0c,business,0,,
+ab1ec1052d0c,consumer,0,,
+ab1ec1052d0c,courts,1,I was served at fault papers which falsely accused me of being an abusive alcoholic,True
+ab1ec1052d0c,crime,0,,
+ab1ec1052d0c,divorce,1,I was served at fault papers which falsely accused me of being an abusive alcoholic,True
+ab1ec1052d0c,domestic_violence,0,,
+ab1ec1052d0c,education,0,,
+ab1ec1052d0c,employment,0,,
+ab1ec1052d0c,estates,0,,
+ab1ec1052d0c,family,1,I want full custody of my child to at least be able to regulate her being around her insane and manipulative mother,True
+ab1ec1052d0c,health,0,,
+ab1ec1052d0c,housing,0,,
+ab1ec1052d0c,immigration,0,,
+ab1ec1052d0c,torts,1,I am considering pressing separate civil as well as legal charges against the mother for the manipulation and pain that has been a result of this,False
+ab1ec1052d0c,traffic,0,,
+f562de59a15f,benefits,0,,
+f562de59a15f,business,0,,
+f562de59a15f,consumer,0,,
+f562de59a15f,courts,0,,
+f562de59a15f,crime,0,,
+f562de59a15f,divorce,0,,
+f562de59a15f,domestic_violence,0,,
+f562de59a15f,education,0,,
+f562de59a15f,employment,0,,
+f562de59a15f,estates,0,,
+f562de59a15f,family,0,,
+f562de59a15f,health,0,,
+f562de59a15f,housing,0,,
+f562de59a15f,immigration,1,Wife was born in the Philippines,True
+f562de59a15f,torts,0,,
+f562de59a15f,traffic,0,,
+7900276a08db,benefits,0,,
+7900276a08db,business,0,,
+7900276a08db,consumer,0,,
+7900276a08db,courts,1,Landlord served 30-day notice to terminate leases,False
+7900276a08db,crime,0,,
+7900276a08db,divorce,0,,
+7900276a08db,domestic_violence,0,,
+7900276a08db,education,0,,
+7900276a08db,employment,0,,
+7900276a08db,estates,0,,
+7900276a08db,family,0,,
+7900276a08db,health,0,,
+7900276a08db,housing,1,Landlord served 30-day notice to terminate leases,False
+7900276a08db,immigration,0,,
+7900276a08db,torts,0,,
+7900276a08db,traffic,0,,
+a506d67e8155,benefits,0,,
+a506d67e8155,business,0,,
+a506d67e8155,consumer,1,When we moved out 3 years later our landlord charged us $500 to replace the carpet but did not apply the pet deposit towards that nor did they refund it.,True
+a506d67e8155,courts,0,,
+a506d67e8155,crime,0,,
+a506d67e8155,divorce,0,,
+a506d67e8155,domestic_violence,0,,
+a506d67e8155,education,0,,
+a506d67e8155,employment,0,,
+a506d67e8155,estates,0,,
+a506d67e8155,family,0,,
+a506d67e8155,health,0,,
+a506d67e8155,housing,1,When we moved out 3 years later our landlord charged us $500 to replace the carpet but did not apply the pet deposit towards that nor did they refund it.,True
+a506d67e8155,immigration,0,,
+a506d67e8155,torts,0,,
+a506d67e8155,traffic,0,,
+e3c30cf76fad,benefits,0,,
+e3c30cf76fad,business,0,,
+e3c30cf76fad,consumer,0,,
+e3c30cf76fad,courts,1,I was considering allowing him to move back there at the end of the next summer but wanted to talk to his mom and get a lawyer involved to protect all parties' interests.,True
+e3c30cf76fad,crime,0,,
+e3c30cf76fad,divorce,1,"Back in mid-2000's my wife and I divorced. Around 2013, I filed for custody and given the circumstances she was in, I was granted custody as it was clearly the better place for him to live.",True
+e3c30cf76fad,domestic_violence,0,,
+e3c30cf76fad,education,0,,
+e3c30cf76fad,employment,0,,
+e3c30cf76fad,estates,0,,
+e3c30cf76fad,family,1,My son (16 years old) visits his mom during the summers and had stated to me before leaving he wanted to live with her.,True
+e3c30cf76fad,health,0,,
+e3c30cf76fad,housing,0,,
+e3c30cf76fad,immigration,0,,
+e3c30cf76fad,torts,0,,
+e3c30cf76fad,traffic,0,,
+6054808fa928,benefits,0,,
+6054808fa928,business,0,,
+6054808fa928,consumer,0,,
+6054808fa928,courts,0,,
+6054808fa928,crime,0,,
+6054808fa928,divorce,0,,
+6054808fa928,domestic_violence,0,,
+6054808fa928,education,0,,
+6054808fa928,employment,0,,
+6054808fa928,estates,0,,
+6054808fa928,family,0,,
+6054808fa928,health,0,,
+6054808fa928,housing,0,,
+6054808fa928,immigration,0,,
+6054808fa928,torts,1,Dog caught the cat and killed it. Neighbors have video of parts of the incident. Owner was wholly incapable of stopping or controlling the dog.,False
+6054808fa928,traffic,0,,
+d4d82f3321b1,benefits,0,,
+d4d82f3321b1,business,0,,
+d4d82f3321b1,consumer,0,,
+d4d82f3321b1,courts,0,,
+d4d82f3321b1,crime,1,Two people were found dead in an apartment in the same building as my apartment in a huge complex,True
+d4d82f3321b1,divorce,0,,
+d4d82f3321b1,domestic_violence,0,,
+d4d82f3321b1,education,0,,
+d4d82f3321b1,employment,0,,
+d4d82f3321b1,estates,0,,
+d4d82f3321b1,family,0,,
+d4d82f3321b1,health,1,The place is a real shithole and I knew that going into it but it was cheap and convenient,False
+d4d82f3321b1,housing,1,Two people were found dead in an apartment in the same building as my apartment in a huge complex,True
+d4d82f3321b1,immigration,0,,
+d4d82f3321b1,torts,1,"The police told my girlfriend and I that it's a suspected double overdose, we basically told him there are always people hanging around outside at all hours of the night and if we continue to see this should we call, he pretty much told us they always get calls about our building",False
+d4d82f3321b1,traffic,0,,
+b7d9577c584e,benefits,0,,
+b7d9577c584e,business,0,,
+b7d9577c584e,consumer,0,,
+b7d9577c584e,courts,1,The cops told me I could hire a lawyer or speak to the prosecutor myself on my first appearance.,True
+b7d9577c584e,crime,1,Friend had pot in passenger side door pocket,False
+b7d9577c584e,divorce,0,,
+b7d9577c584e,domestic_violence,0,,
+b7d9577c584e,education,0,,
+b7d9577c584e,employment,0,,
+b7d9577c584e,estates,0,,
+b7d9577c584e,family,0,,
+b7d9577c584e,health,0,,
+b7d9577c584e,housing,0,,
+b7d9577c584e,immigration,0,,
+b7d9577c584e,torts,0,,
+b7d9577c584e,traffic,1,"Approaching a steady green light, I was riding my brakes a bit in the event it turned yellow before I got there (as to not get pulled over for running a red light).",True
+ac7424858ce4,benefits,0,,
+ac7424858ce4,business,0,,
+ac7424858ce4,consumer,1,"She took my debit card, basically taking access away from money.",True
+ac7424858ce4,courts,0,,
+ac7424858ce4,crime,0,,
+ac7424858ce4,divorce,1,"We're divorcing, we're done.",True
+ac7424858ce4,domestic_violence,0,,
+ac7424858ce4,education,0,,
+ac7424858ce4,employment,0,,
+ac7424858ce4,estates,0,,
+ac7424858ce4,family,1,We need to split. I have a mouth to feed.,False
+ac7424858ce4,health,0,,
+ac7424858ce4,housing,0,,
+ac7424858ce4,immigration,0,,
+ac7424858ce4,torts,0,,
+ac7424858ce4,traffic,0,,
+6315eb6c7e5d,benefits,0,,
+6315eb6c7e5d,business,0,,
+6315eb6c7e5d,consumer,0,,
+6315eb6c7e5d,courts,0,,
+6315eb6c7e5d,crime,1,She wouldn't be into it. But she won't find out either. I've cum in her panties many times and put them back in her drawer. She's never known. I've even used her when she's passed out drunk and cum on her face. She never knew.,True
+6315eb6c7e5d,divorce,0,,
+6315eb6c7e5d,domestic_violence,0,,
+6315eb6c7e5d,education,0,,
+6315eb6c7e5d,employment,0,,
+6315eb6c7e5d,estates,0,,
+6315eb6c7e5d,family,0,,
+6315eb6c7e5d,health,0,,
+6315eb6c7e5d,housing,0,,
+6315eb6c7e5d,immigration,0,,
+6315eb6c7e5d,torts,1,She wouldn't be into it. But she won't find out either. I've cum in her panties many times and put them back in her drawer. She's never known. I've even used her when she's passed out drunk and cum on her face. She never knew.,True
+6315eb6c7e5d,traffic,0,,
+791496f24c69,benefits,0,,
+791496f24c69,business,0,,
+791496f24c69,consumer,0,,
+791496f24c69,courts,1,"Do I have to go to divorce court, or could I take her to civil court, or even small claims court, to get my money?",True
+791496f24c69,crime,0,,
+791496f24c69,divorce,1,"Per our divorce agreement, in this situation we agreed to pay back the other",True
+791496f24c69,domestic_violence,0,,
+791496f24c69,education,0,,
+791496f24c69,employment,0,,
+791496f24c69,estates,0,,
+791496f24c69,family,1,"Per our divorce agreement, in this situation we agreed to pay back the other",True
+791496f24c69,health,0,,
+791496f24c69,housing,0,,
+791496f24c69,immigration,0,,
+791496f24c69,torts,0,,
+791496f24c69,traffic,0,,
+562379141a38,benefits,0,,
+562379141a38,business,0,,
+562379141a38,consumer,0,,
+562379141a38,courts,1,"I moved out and filed the paperwork, and they lawyer-ed up and are now asking for more than agreeing to.",True
+562379141a38,crime,0,,
+562379141a38,divorce,1,"My partner and I are divorcing in San Diego California. We agreed to go our separate ways, divide our stuff on our own, and just end it.",True
+562379141a38,domestic_violence,0,,
+562379141a38,education,0,,
+562379141a38,employment,0,,
+562379141a38,estates,0,,
+562379141a38,family,1,"There are no children together, or anything too complicated like property or large 401K's.",True
+562379141a38,health,0,,
+562379141a38,housing,0,,
+562379141a38,immigration,0,,
+562379141a38,torts,0,,
+562379141a38,traffic,0,,
+f093b6cb5df3,benefits,0,,
+f093b6cb5df3,business,1,my Dad is a local business owner and he's being bullied by a lot of people in my hometown for basically nothing - cutting the best deals with people the next town over,False
+f093b6cb5df3,consumer,0,,
+f093b6cb5df3,courts,1,"local news anchor calls me up and let's me know that they're about to do a story on some pretty bad things that I may or may not have done, and want to see if I would like to comment",True
+f093b6cb5df3,crime,1,people are whiney babies but that's besides the point,True
+f093b6cb5df3,divorce,0,,
+f093b6cb5df3,domestic_violence,0,,
+f093b6cb5df3,education,0,,
+f093b6cb5df3,employment,0,,
+f093b6cb5df3,estates,0,,
+f093b6cb5df3,family,0,,
+f093b6cb5df3,health,0,,
+f093b6cb5df3,housing,0,,
+f093b6cb5df3,immigration,0,,
+f093b6cb5df3,torts,1,people are whiney babies but that's besides the point,True
+f093b6cb5df3,traffic,0,,
+510cf12e705f,benefits,0,,
+510cf12e705f,business,0,,
+510cf12e705f,consumer,0,,
+510cf12e705f,courts,0,,
+510cf12e705f,crime,1,She smothered me with a pillow in order to get me to stop talking so she could sleep.,True
+510cf12e705f,divorce,0,,
+510cf12e705f,domestic_violence,1,She smothered me with a pillow in order to get me to stop talking so she could sleep.,True
+510cf12e705f,education,0,,
+510cf12e705f,employment,0,,
+510cf12e705f,estates,0,,
+510cf12e705f,family,1,She smothered me with a pillow in order to get me to stop talking so she could sleep.,True
+510cf12e705f,health,1,I was bleeding and in serious pain with no aftercare on her part.,False
+510cf12e705f,housing,0,,
+510cf12e705f,immigration,0,,
+510cf12e705f,torts,1,She smothered me with a pillow in order to get me to stop talking so she could sleep.,True
+510cf12e705f,traffic,0,,
+2710233615c4,benefits,0,,
+2710233615c4,business,0,,
+2710233615c4,consumer,0,,
+2710233615c4,courts,1,Received a summons for divorce,True
+2710233615c4,crime,0,,
+2710233615c4,divorce,1,Received a summons for divorce,True
+2710233615c4,domestic_violence,0,,
+2710233615c4,education,0,,
+2710233615c4,employment,0,,
+2710233615c4,estates,0,,
+2710233615c4,family,1,Received a summons for divorce,True
+2710233615c4,health,0,,
+2710233615c4,housing,0,,
+2710233615c4,immigration,0,,
+2710233615c4,torts,0,,
+2710233615c4,traffic,0,,
+ec3e6fc97d16,benefits,1,I pay half of his health insurance premium through Florida Kid Care to help out,True
+ec3e6fc97d16,business,0,,
+ec3e6fc97d16,consumer,0,,
+ec3e6fc97d16,courts,0,,
+ec3e6fc97d16,crime,0,,
+ec3e6fc97d16,divorce,0,,
+ec3e6fc97d16,domestic_violence,0,,
+ec3e6fc97d16,education,0,,
+ec3e6fc97d16,employment,0,,
+ec3e6fc97d16,estates,0,,
+ec3e6fc97d16,family,1,My name is not on his birth certificate and paternity has not been established,True
+ec3e6fc97d16,health,1,I pay half of his health insurance premium through Florida Kid Care to help out,True
+ec3e6fc97d16,housing,0,,
+ec3e6fc97d16,immigration,0,,
+ec3e6fc97d16,torts,0,,
+ec3e6fc97d16,traffic,0,,
+6409842f8aca,benefits,0,,
+6409842f8aca,business,0,,
+6409842f8aca,consumer,0,,
+6409842f8aca,courts,1,I hired a lawyer last year to help me with my child support case,True
+6409842f8aca,crime,0,,
+6409842f8aca,divorce,1,Ex and I decided to mutually split and split our times with the kids as well,True
+6409842f8aca,domestic_violence,0,,
+6409842f8aca,education,0,,
+6409842f8aca,employment,1,I was a SAHM for three years and also a full time student,True
+6409842f8aca,estates,0,,
+6409842f8aca,family,1,Ex and I decided to mutually split and split our times with the kids as well,True
+6409842f8aca,health,0,,
+6409842f8aca,housing,0,,
+6409842f8aca,immigration,0,,
+6409842f8aca,torts,0,,
+6409842f8aca,traffic,0,,
+8cdef801cf17,benefits,0,,
+8cdef801cf17,business,0,,
+8cdef801cf17,consumer,0,,
+8cdef801cf17,courts,0,,
+8cdef801cf17,crime,1,He got all angry then saying she wasted his time and had to at least suck his dick. He was going to let her leave.,True
+8cdef801cf17,divorce,0,,
+8cdef801cf17,domestic_violence,1,He got all angry then saying she wasted his time and had to at least suck his dick. He was going to let her leave.,True
+8cdef801cf17,education,0,,
+8cdef801cf17,employment,0,,
+8cdef801cf17,estates,0,,
+8cdef801cf17,family,0,,
+8cdef801cf17,health,0,,
+8cdef801cf17,housing,0,,
+8cdef801cf17,immigration,0,,
+8cdef801cf17,torts,1,He got all angry then saying she wasted his time and had to at least suck his dick. He was going to let her leave.,True
+8cdef801cf17,traffic,0,,
+282070e0ae50,benefits,0,,
+282070e0ae50,business,0,,
+282070e0ae50,consumer,1,"I had a referral list with x rays from my dentist that reccomended 5 for extraction, but included a note that said 'per patient which ones'.",True
+282070e0ae50,courts,0,,
+282070e0ae50,crime,0,,
+282070e0ae50,divorce,0,,
+282070e0ae50,domestic_violence,0,,
+282070e0ae50,education,0,,
+282070e0ae50,employment,0,,
+282070e0ae50,estates,0,,
+282070e0ae50,family,0,,
+282070e0ae50,health,1,"I had 3 teeth extracted yesterday by a local oral surgeon, and after I got home and the numbness began to wear off, I realized that one of the 3 was not one I had asked them to pull.",True
+282070e0ae50,housing,0,,
+282070e0ae50,immigration,0,,
+282070e0ae50,torts,1,"I had a referral list with x rays from my dentist that reccomended 5 for extraction, but included a note that said 'per patient which ones'.",True
+282070e0ae50,traffic,0,,
+d84d58059607,benefits,0,,
+d84d58059607,business,1,A company that seems to be contracted by the city was working on a line next to my house.,True
+d84d58059607,consumer,1,"My belongings got sloshed with sewage, including my computers and office furniture.",True
+d84d58059607,courts,1,Nothing has been signed yet.,True
+d84d58059607,crime,0,,
+d84d58059607,divorce,0,,
+d84d58059607,domestic_violence,0,,
+d84d58059607,education,0,,
+d84d58059607,employment,0,,
+d84d58059607,estates,0,,
+d84d58059607,family,0,,
+d84d58059607,health,0,,
+d84d58059607,housing,1,I'm renting and my landlord and I both have concerns about the situation,True
+d84d58059607,immigration,0,,
+d84d58059607,torts,1,A company that seems to be contracted by the city was working on a line next to my house.,True
+d84d58059607,traffic,0,,
+079ca5dd92cc,benefits,1,Mom can’t afford a lawyer,True
+079ca5dd92cc,business,0,,
+079ca5dd92cc,consumer,0,,
+079ca5dd92cc,courts,1,Landlord gave over 30 days notice and house is on market,False
+079ca5dd92cc,crime,0,,
+079ca5dd92cc,divorce,1,Mom is worried about being saddled with half of his debt and half of his hoard of junk if she were to divorce him,False
+079ca5dd92cc,domestic_violence,1,Dad had infidelity with a minor,False
+079ca5dd92cc,education,0,,
+079ca5dd92cc,employment,0,,
+079ca5dd92cc,estates,0,,
+079ca5dd92cc,family,1,Mom is worried about being saddled with half of his debt and half of his hoard of junk if she were to divorce him,False
+079ca5dd92cc,health,0,,
+079ca5dd92cc,housing,1,Dad hasn’t paid rent on his house in long enough that he’s now getting evicted,False
+079ca5dd92cc,immigration,0,,
+079ca5dd92cc,torts,0,,
+079ca5dd92cc,traffic,0,,
+2f0f6d157304,benefits,1,Uploaded tax returns as proof of income,False
+2f0f6d157304,business,0,,
+2f0f6d157304,consumer,0,,
+2f0f6d157304,courts,1,Filing an appeal for health insurance eligibility,False
+2f0f6d157304,crime,0,,
+2f0f6d157304,divorce,0,,
+2f0f6d157304,domestic_violence,0,,
+2f0f6d157304,education,0,,
+2f0f6d157304,employment,1,Freelance income,False
+2f0f6d157304,estates,0,,
+2f0f6d157304,family,0,,
+2f0f6d157304,health,1,Wisdom tooth causing severe pain and difficulty eating,False
+2f0f6d157304,housing,0,,
+2f0f6d157304,immigration,0,,
+2f0f6d157304,torts,0,,
+2f0f6d157304,traffic,0,,
+02dff8d4bd40,benefits,0,,
+02dff8d4bd40,business,0,,
+02dff8d4bd40,consumer,0,,
+02dff8d4bd40,courts,0,,
+02dff8d4bd40,crime,0,,
+02dff8d4bd40,divorce,0,,
+02dff8d4bd40,domestic_violence,0,,
+02dff8d4bd40,education,0,,
+02dff8d4bd40,employment,0,,
+02dff8d4bd40,estates,0,,
+02dff8d4bd40,family,0,,
+02dff8d4bd40,health,0,,
+02dff8d4bd40,housing,1,Paid $2000 to move trailer to property,False
+02dff8d4bd40,immigration,0,,
+02dff8d4bd40,torts,1,Neighbor is city commissioner,False
+02dff8d4bd40,traffic,0,,
+5cce8453beb0,benefits,0,,
+5cce8453beb0,business,0,,
+5cce8453beb0,consumer,0,,
+5cce8453beb0,courts,1,Now I'm facing a real court date.,True
+5cce8453beb0,crime,1,arrested for drinking in a park,False
+5cce8453beb0,divorce,0,,
+5cce8453beb0,domestic_violence,0,,
+5cce8453beb0,education,0,,
+5cce8453beb0,employment,0,,
+5cce8453beb0,estates,0,,
+5cce8453beb0,family,0,,
+5cce8453beb0,health,0,,
+5cce8453beb0,housing,0,,
+5cce8453beb0,immigration,0,,
+5cce8453beb0,torts,0,,
+5cce8453beb0,traffic,1,arrested for drinking in a park,False
+3e4b2a7adeb2,benefits,1,CPS gave us two strikes.,True
+3e4b2a7adeb2,business,0,,
+3e4b2a7adeb2,consumer,0,,
+3e4b2a7adeb2,courts,1,Divorce process has not fully began cause im still waiting on legal aid,False
+3e4b2a7adeb2,crime,1,Abusive husband knows i wont report him to the police,True
+3e4b2a7adeb2,divorce,1,I finally decided to go through with the divorce,True
+3e4b2a7adeb2,domestic_violence,1,Abusive husband knows i wont report him to the police,True
+3e4b2a7adeb2,education,0,,
+3e4b2a7adeb2,employment,0,,
+3e4b2a7adeb2,estates,0,,
+3e4b2a7adeb2,family,1,I have 6 kids under the age of 16,True
+3e4b2a7adeb2,health,0,,
+3e4b2a7adeb2,housing,0,,
+3e4b2a7adeb2,immigration,0,,
+3e4b2a7adeb2,torts,0,,
+3e4b2a7adeb2,traffic,0,,
+ad66fd12e350,benefits,1,Received mail from the Social Security office that I was able to receive his back benefits because he had been accepted prior to his death,True
+ad66fd12e350,business,0,,
+ad66fd12e350,consumer,0,,
+ad66fd12e350,courts,1,Court is next week,True
+ad66fd12e350,crime,0,,
+ad66fd12e350,divorce,0,,
+ad66fd12e350,domestic_violence,0,,
+ad66fd12e350,education,0,,
+ad66fd12e350,employment,0,,
+ad66fd12e350,estates,1,Signed his estate over to my uncle,True
+ad66fd12e350,family,1,Dad not on birth certificate,False
+ad66fd12e350,health,0,,
+ad66fd12e350,housing,0,,
+ad66fd12e350,immigration,0,,
+ad66fd12e350,torts,0,,
+ad66fd12e350,traffic,0,,
+e394e53b6f11,benefits,0,,
+e394e53b6f11,business,0,,
+e394e53b6f11,consumer,0,,
+e394e53b6f11,courts,1,I plead not guilty,True
+e394e53b6f11,crime,1,Jailed on an Domestic Assault charge,True
+e394e53b6f11,divorce,0,,
+e394e53b6f11,domestic_violence,1,Jailed on Domestic Assault charge,False
+e394e53b6f11,education,1,Want to get a teaching license,True
+e394e53b6f11,employment,1,Want to get a teaching license,True
+e394e53b6f11,estates,0,,
+e394e53b6f11,family,1,Jailed on Domestic Assault charge,False
+e394e53b6f11,health,1,Suffered scratches and contusions,False
+e394e53b6f11,housing,0,,
+e394e53b6f11,immigration,0,,
+e394e53b6f11,torts,1,Suffered scratches and contusions,False
+e394e53b6f11,traffic,0,,
+94caf2c0e08e,benefits,1,Facility contacted my family saying she has started doing some things that will require us to move her,False
+94caf2c0e08e,business,0,,
+94caf2c0e08e,consumer,0,,
+94caf2c0e08e,courts,1,"Facility told her that because we've already paid through July there is no need to hurry her things out, just her",False
+94caf2c0e08e,crime,0,,
+94caf2c0e08e,divorce,0,,
+94caf2c0e08e,domestic_violence,0,,
+94caf2c0e08e,education,0,,
+94caf2c0e08e,employment,0,,
+94caf2c0e08e,estates,0,,
+94caf2c0e08e,family,1,Facility contacted my family saying she has started doing some things that will require us to move her,False
+94caf2c0e08e,health,1,"Mother diagnosed with early onset Alzheimer's disease at 59, and is now 66",False
+94caf2c0e08e,housing,1,"Facility told her that because we've already paid through July there is no need to hurry her things out, just her",False
+94caf2c0e08e,immigration,0,,
+94caf2c0e08e,torts,1,Mother slapped someone at the facility and they are kicking her out effective immediately,False
+94caf2c0e08e,traffic,0,,
+61dc0c1f6aeb,benefits,0,,
+61dc0c1f6aeb,business,0,,
+61dc0c1f6aeb,consumer,1,Cab driver doesn't tell me how much the fare is going to be but says flat out he will only accept cash.,True
+61dc0c1f6aeb,courts,1,Cops were called and involved,False
+61dc0c1f6aeb,crime,1,He says 'If you don't give me my f***ing money you're never getting out of this car.',True
+61dc0c1f6aeb,divorce,0,,
+61dc0c1f6aeb,domestic_violence,0,,
+61dc0c1f6aeb,education,0,,
+61dc0c1f6aeb,employment,0,,
+61dc0c1f6aeb,estates,0,,
+61dc0c1f6aeb,family,0,,
+61dc0c1f6aeb,health,0,,
+61dc0c1f6aeb,housing,0,,
+61dc0c1f6aeb,immigration,0,,
+61dc0c1f6aeb,torts,1,He says 'If you don't give me my f***ing money you're never getting out of this car.',True
+61dc0c1f6aeb,traffic,0,,
+e25c8cdc41f2,benefits,0,,
+e25c8cdc41f2,business,0,,
+e25c8cdc41f2,consumer,1,NELNET is calling me saying that I have a student loan that is delinquent and will need to pay or it will start affecting my credit.,True
+e25c8cdc41f2,courts,0,,
+e25c8cdc41f2,crime,0,,
+e25c8cdc41f2,divorce,0,,
+e25c8cdc41f2,domestic_violence,0,,
+e25c8cdc41f2,education,1,Took out student loan in 2013 to attend trade school,False
+e25c8cdc41f2,employment,0,,
+e25c8cdc41f2,estates,0,,
+e25c8cdc41f2,family,0,,
+e25c8cdc41f2,health,0,,
+e25c8cdc41f2,housing,0,,
+e25c8cdc41f2,immigration,0,,
+e25c8cdc41f2,torts,0,,
+e25c8cdc41f2,traffic,0,,
+45b106f3ad6f,benefits,1,They are a very poor family and already struggle to make ends meet,True
+45b106f3ad6f,business,0,,
+45b106f3ad6f,consumer,0,,
+45b106f3ad6f,courts,0,,
+45b106f3ad6f,crime,0,,
+45b106f3ad6f,divorce,0,,
+45b106f3ad6f,domestic_violence,0,,
+45b106f3ad6f,education,0,,
+45b106f3ad6f,employment,0,,
+45b106f3ad6f,estates,0,,
+45b106f3ad6f,family,0,,
+45b106f3ad6f,health,1,My friend has a sister who has been in the ICU for a couple weeks now and requires heart surgery,True
+45b106f3ad6f,housing,0,,
+45b106f3ad6f,immigration,0,,
+45b106f3ad6f,torts,0,,
+45b106f3ad6f,traffic,0,,
+946fbcc7327c,benefits,0,,
+946fbcc7327c,business,1,Bartender grabbed friend's shirt and demanded he comes with him,False
+946fbcc7327c,consumer,1,Bartender slammed user to ground and straddled them,False
+946fbcc7327c,courts,1,User had to argue with multiple workers to get property back,False
+946fbcc7327c,crime,1,Bartender choked user's left arm over throat and laughed,False
+946fbcc7327c,divorce,0,,
+946fbcc7327c,domestic_violence,0,,
+946fbcc7327c,education,0,,
+946fbcc7327c,employment,0,,
+946fbcc7327c,estates,0,,
+946fbcc7327c,family,0,,
+946fbcc7327c,health,1,"User woke up with a large bruise on right arm, left rotator cuff is killing me, and neck is red",False
+946fbcc7327c,housing,0,,
+946fbcc7327c,immigration,0,,
+946fbcc7327c,torts,1,Bartender choked user's left arm over throat and laughed,False
+946fbcc7327c,traffic,0,,
+325240f926d8,benefits,0,,
+325240f926d8,business,1,Suggested starting a YouTube channel and various social media with her father who was a professional athlete.,True
+325240f926d8,consumer,0,,
+325240f926d8,courts,1,They are suing me and placing a restraining order against me,False
+325240f926d8,crime,0,,
+325240f926d8,divorce,1,She decided it would be a good idea to cheat on me and move to a completely different state,True
+325240f926d8,domestic_violence,0,,
+325240f926d8,education,0,,
+325240f926d8,employment,1,My career was ruined due to my wife taking everything with her,False
+325240f926d8,estates,0,,
+325240f926d8,family,1,In-laws approached me about buying me out,True
+325240f926d8,health,0,,
+325240f926d8,housing,0,,
+325240f926d8,immigration,0,,
+325240f926d8,torts,0,,
+325240f926d8,traffic,0,,
+01a0d800c3cc,benefits,0,,
+01a0d800c3cc,business,0,,
+01a0d800c3cc,consumer,0,,
+01a0d800c3cc,courts,0,,
+01a0d800c3cc,crime,0,,
+01a0d800c3cc,divorce,1,User is divorcing,False
+01a0d800c3cc,domestic_violence,0,,
+01a0d800c3cc,education,0,,
+01a0d800c3cc,employment,0,,
+01a0d800c3cc,estates,0,,
+01a0d800c3cc,family,1,User is divorcing,False
+01a0d800c3cc,health,0,,
+01a0d800c3cc,housing,0,,
+01a0d800c3cc,immigration,0,,
+01a0d800c3cc,torts,0,,
+01a0d800c3cc,traffic,0,,
+25097feccfae,benefits,0,,
+25097feccfae,business,0,,
+25097feccfae,consumer,0,,
+25097feccfae,courts,0,,
+25097feccfae,crime,0,,
+25097feccfae,divorce,1,The 'tenant' is actually my dad and my mom is kicking him out of our house.,True
+25097feccfae,domestic_violence,0,,
+25097feccfae,education,0,,
+25097feccfae,employment,0,,
+25097feccfae,estates,0,,
+25097feccfae,family,1,The 'tenant' is actually my dad and my mom is kicking him out of our house.,True
+25097feccfae,health,0,,
+25097feccfae,housing,1,This is her house 100% (bought after the divorce) and we're in Iowa.,True
+25097feccfae,immigration,0,,
+25097feccfae,torts,1,Dad plays dirty. Please help ease my poor mother's mind.,True
+25097feccfae,traffic,0,,
+80f14c077b85,benefits,1,Ex not allowing me benefits,False
+80f14c077b85,business,0,,
+80f14c077b85,consumer,0,,
+80f14c077b85,courts,1,I don't know what to do,True
+80f14c077b85,crime,0,,
+80f14c077b85,divorce,1,I got married really young and now I want to get a divorce,True
+80f14c077b85,domestic_violence,1,He kicked me out a year ago and I've jumped around living here and there since,True
+80f14c077b85,education,0,,
+80f14c077b85,employment,0,,
+80f14c077b85,estates,0,,
+80f14c077b85,family,1,I got married really young and now I want to get a divorce,True
+80f14c077b85,health,0,,
+80f14c077b85,housing,1,He kicked me out a year ago and I've jumped around living here and there since,True
+80f14c077b85,immigration,0,,
+80f14c077b85,torts,0,,
+80f14c077b85,traffic,0,,
+0806dfd463a5,benefits,0,,
+0806dfd463a5,business,0,,
+0806dfd463a5,consumer,0,,
+0806dfd463a5,courts,1,Court date is the 17th,True
+0806dfd463a5,crime,1,Charged with PL 245.01 (exposure of a person),True
+0806dfd463a5,divorce,0,,
+0806dfd463a5,domestic_violence,0,,
+0806dfd463a5,education,0,,
+0806dfd463a5,employment,0,,
+0806dfd463a5,estates,0,,
+0806dfd463a5,family,0,,
+0806dfd463a5,health,0,,
+0806dfd463a5,housing,0,,
+0806dfd463a5,immigration,0,,
+0806dfd463a5,torts,0,,
+0806dfd463a5,traffic,0,,
+bf365ce9f56d,benefits,0,,
+bf365ce9f56d,business,0,,
+bf365ce9f56d,consumer,0,,
+bf365ce9f56d,courts,1,Will this document he wants me to sign hold up in court?,True
+bf365ce9f56d,crime,0,,
+bf365ce9f56d,divorce,1,We are moving with the intention of getting divorced in the next year.,True
+bf365ce9f56d,domestic_violence,0,,
+bf365ce9f56d,education,0,,
+bf365ce9f56d,employment,1,I haven't worked significantly in the last several years to care for our daughter.,True
+bf365ce9f56d,estates,0,,
+bf365ce9f56d,family,1,We/He just bought our first house in another state. We are moving with the intention of getting divorced in the next year.,True
+bf365ce9f56d,health,0,,
+bf365ce9f56d,housing,1,We/He just bought our first house in another state.,True
+bf365ce9f56d,immigration,0,,
+bf365ce9f56d,torts,0,,
+bf365ce9f56d,traffic,0,,
+4630fa606075,benefits,0,,
+4630fa606075,business,0,,
+4630fa606075,consumer,0,,
+4630fa606075,courts,0,,
+4630fa606075,crime,0,,
+4630fa606075,divorce,0,,
+4630fa606075,domestic_violence,0,,
+4630fa606075,education,0,,
+4630fa606075,employment,0,,
+4630fa606075,estates,0,,
+4630fa606075,family,0,,
+4630fa606075,health,0,,
+4630fa606075,housing,1,Septic tank busted in apartment complex,False
+4630fa606075,immigration,0,,
+4630fa606075,torts,1,Sewage causing sink hole in backyard,False
+4630fa606075,traffic,0,,
+478a77935bf1,benefits,0,,
+478a77935bf1,business,0,,
+478a77935bf1,consumer,0,,
+478a77935bf1,courts,0,,
+478a77935bf1,crime,1,,False
+478a77935bf1,divorce,0,,
+478a77935bf1,domestic_violence,0,,
+478a77935bf1,education,0,,
+478a77935bf1,employment,0,,
+478a77935bf1,estates,0,,
+478a77935bf1,family,0,,
+478a77935bf1,health,0,,
+478a77935bf1,housing,0,,
+478a77935bf1,immigration,0,,
+478a77935bf1,torts,1,User published true things about ex-wife that would not paint her in a positive light.,False
+478a77935bf1,traffic,0,,
+75793837ea49,benefits,0,,
+75793837ea49,business,0,,
+75793837ea49,consumer,0,,
+75793837ea49,courts,1,I talked to a public defender and she told me if I never plan on coming back to New Mexico that I should just leave.,True
+75793837ea49,crime,1,I received a Petty Misdemeanor about 5 years ago in New Mexico for shoplifting under $30.,True
+75793837ea49,divorce,0,,
+75793837ea49,domestic_violence,0,,
+75793837ea49,education,0,,
+75793837ea49,employment,1,I applied for Lyft a couple months back and was declined because of that charge from New Mexico.,True
+75793837ea49,estates,0,,
+75793837ea49,family,0,,
+75793837ea49,health,0,,
+75793837ea49,housing,0,,
+75793837ea49,immigration,0,,
+75793837ea49,torts,0,,
+75793837ea49,traffic,0,,
+5e8ffd3b9e0d,benefits,0,,
+5e8ffd3b9e0d,business,0,,
+5e8ffd3b9e0d,consumer,0,,
+5e8ffd3b9e0d,courts,1,I am about to head over to the county planning department to file a formal complaint about it and see if there is anything they can do.,True
+5e8ffd3b9e0d,crime,0,,
+5e8ffd3b9e0d,divorce,0,,
+5e8ffd3b9e0d,domestic_violence,0,,
+5e8ffd3b9e0d,education,0,,
+5e8ffd3b9e0d,employment,0,,
+5e8ffd3b9e0d,estates,0,,
+5e8ffd3b9e0d,family,0,,
+5e8ffd3b9e0d,health,0,,
+5e8ffd3b9e0d,housing,1,I fear that the buyer may use it even more than the current owner did.,False
+5e8ffd3b9e0d,immigration,0,,
+5e8ffd3b9e0d,torts,1,I fear that the buyer may use it even more than the current owner did.,False
+5e8ffd3b9e0d,traffic,0,,
+afdd8156ee37,benefits,0,,
+afdd8156ee37,business,0,,
+afdd8156ee37,consumer,0,,
+afdd8156ee37,courts,0,,
+afdd8156ee37,crime,0,,
+afdd8156ee37,divorce,0,,
+afdd8156ee37,domestic_violence,0,,
+afdd8156ee37,education,0,,
+afdd8156ee37,employment,1,Wife is in probation period. Work cannot be done from home. Can she get fired? Does she have legal protection against being fired?,False
+afdd8156ee37,estates,0,,
+afdd8156ee37,family,0,,
+afdd8156ee37,health,1,Wife is on bed rest for few months for reasons.,False
+afdd8156ee37,housing,0,,
+afdd8156ee37,immigration,0,,
+afdd8156ee37,torts,0,,
+afdd8156ee37,traffic,0,,
+c1462064a2b7,benefits,0,,
+c1462064a2b7,business,0,,
+c1462064a2b7,consumer,0,,
+c1462064a2b7,courts,1,Can I look up that kind of thing online? Are records of those publicly available? Is there a way I can verify this without going through my relative (or his lawyer)?,False
+c1462064a2b7,crime,0,,
+c1462064a2b7,divorce,1,I am helping pay for a relative's divorce. ... custody hearings for their minor children. ... divorce hearing has supposedly been postponed several times and is now allegedly scheduled for October,False
+c1462064a2b7,domestic_violence,0,,
+c1462064a2b7,education,0,,
+c1462064a2b7,employment,0,,
+c1462064a2b7,estates,0,,
+c1462064a2b7,family,1,custody hearings for their minor children,True
+c1462064a2b7,health,0,,
+c1462064a2b7,housing,0,,
+c1462064a2b7,immigration,0,,
+c1462064a2b7,torts,0,,
+c1462064a2b7,traffic,0,,
+c3d8af87c0eb,benefits,0,,
+c3d8af87c0eb,business,0,,
+c3d8af87c0eb,consumer,0,,
+c3d8af87c0eb,courts,1,Her court-appointed attorney has ignored all of the resources and advocate options as well as contact info for expert witnesses I have provided.,True
+c3d8af87c0eb,crime,1,She has been waiting for trial for a very complicated case for 2 years.,True
+c3d8af87c0eb,divorce,0,,
+c3d8af87c0eb,domestic_violence,0,,
+c3d8af87c0eb,education,0,,
+c3d8af87c0eb,employment,0,,
+c3d8af87c0eb,estates,0,,
+c3d8af87c0eb,family,0,,
+c3d8af87c0eb,health,0,,
+c3d8af87c0eb,housing,0,,
+c3d8af87c0eb,immigration,0,,
+c3d8af87c0eb,torts,0,,
+c3d8af87c0eb,traffic,0,,
+ac95d0fe63c8,benefits,0,,
+ac95d0fe63c8,business,1,Working at dad's perfume store,False
+ac95d0fe63c8,consumer,1,Sold items to two groups using credit cards,False
+ac95d0fe63c8,courts,0,,
+ac95d0fe63c8,crime,1,Both groups used stolen cards,True
+ac95d0fe63c8,divorce,0,,
+ac95d0fe63c8,domestic_violence,0,,
+ac95d0fe63c8,education,0,,
+ac95d0fe63c8,employment,1,Working at dad's perfume store,False
+ac95d0fe63c8,estates,0,,
+ac95d0fe63c8,family,0,,
+ac95d0fe63c8,health,0,,
+ac95d0fe63c8,housing,0,,
+ac95d0fe63c8,immigration,0,,
+ac95d0fe63c8,torts,0,,
+ac95d0fe63c8,traffic,0,,
+17ba6fb4e767,benefits,0,,
+17ba6fb4e767,business,0,,
+17ba6fb4e767,consumer,0,,
+17ba6fb4e767,courts,0,,
+17ba6fb4e767,crime,0,,
+17ba6fb4e767,divorce,0,,
+17ba6fb4e767,domestic_violence,1,"She made herself my personal caretaker isolating me away from professionals, church, friends and family.",True
+17ba6fb4e767,education,0,,
+17ba6fb4e767,employment,0,,
+17ba6fb4e767,estates,0,,
+17ba6fb4e767,family,1,She lastly brought up a polyamorous marriage.,True
+17ba6fb4e767,health,0,,
+17ba6fb4e767,housing,1,She gave me 30 days to get out of her parents house,True
+17ba6fb4e767,immigration,0,,
+17ba6fb4e767,torts,0,,
+17ba6fb4e767,traffic,0,,
+763637c913d3,benefits,0,,
+763637c913d3,business,0,,
+763637c913d3,consumer,0,,
+763637c913d3,courts,1,We went to court and judge ordered him to give it to me.,True
+763637c913d3,crime,0,,
+763637c913d3,divorce,1,"I am recently divorced, I have to take him to court over the stupidest things to get him to do.",True
+763637c913d3,domestic_violence,0,,
+763637c913d3,education,0,,
+763637c913d3,employment,0,,
+763637c913d3,estates,0,,
+763637c913d3,family,1,"We had agreed that since we were married all of last year and only separated in August, that we would still file jointly, and then do it separate after that.",True
+763637c913d3,health,0,,
+763637c913d3,housing,0,,
+763637c913d3,immigration,0,,
+763637c913d3,torts,0,,
+763637c913d3,traffic,0,,
+7b4d250c3cb1,benefits,0,,
+7b4d250c3cb1,business,0,,
+7b4d250c3cb1,consumer,0,,
+7b4d250c3cb1,courts,1,He is going to go to the court and say she is refusing to sign them.,True
+7b4d250c3cb1,crime,0,,
+7b4d250c3cb1,divorce,1,He served her divorce papers but would not let her see the papers.,True
+7b4d250c3cb1,domestic_violence,0,,
+7b4d250c3cb1,education,0,,
+7b4d250c3cb1,employment,0,,
+7b4d250c3cb1,estates,0,,
+7b4d250c3cb1,family,1,Friend's sister married to a marine,False
+7b4d250c3cb1,health,0,,
+7b4d250c3cb1,housing,0,,
+7b4d250c3cb1,immigration,0,,
+7b4d250c3cb1,torts,0,,
+7b4d250c3cb1,traffic,0,,
+20c171b05b35,benefits,0,,
+20c171b05b35,business,0,,
+20c171b05b35,consumer,0,,
+20c171b05b35,courts,0,,
+20c171b05b35,crime,0,,
+20c171b05b35,divorce,0,,
+20c171b05b35,domestic_violence,0,,
+20c171b05b35,education,0,,
+20c171b05b35,employment,0,,
+20c171b05b35,estates,0,,
+20c171b05b35,family,1,"In-laws want child to have Chinese nationality, using money and legal reasons",False
+20c171b05b35,health,0,,
+20c171b05b35,housing,0,,
+20c171b05b35,immigration,1,Thai lawyer said child can only get Chinese passport if both parents are Chinese,False
+20c171b05b35,torts,0,,
+20c171b05b35,traffic,0,,
+ef254e51ef17,benefits,1,Diabetic for 13 years with major numbness in my feet/legs,False
+ef254e51ef17,business,1,Have no idea if being a contractor makes any difference,False
+ef254e51ef17,consumer,1,I didn't want this to wreck my work contract (I need the money),True
+ef254e51ef17,courts,1,"I plan to show up, cast and all, and ask if there are any duties I can be given",True
+ef254e51ef17,crime,0,,
+ef254e51ef17,divorce,0,,
+ef254e51ef17,domestic_violence,0,,
+ef254e51ef17,education,0,,
+ef254e51ef17,employment,1,I have no idea if they'll go for it or if they'll just call off the contract and send me packing,True
+ef254e51ef17,estates,0,,
+ef254e51ef17,family,0,,
+ef254e51ef17,health,1,"Type 2 diabetic for the last 13 years, with major numbness in my feet/legs",True
+ef254e51ef17,housing,0,,
+ef254e51ef17,immigration,0,,
+ef254e51ef17,torts,1,I suspect the injury happened in the first couple of days when I was hopping off the last rung or two of the ladder,True
+ef254e51ef17,traffic,0,,
+26483c3400cd,benefits,0,,
+26483c3400cd,business,0,,
+26483c3400cd,consumer,0,,
+26483c3400cd,courts,1,"Attorney said they can represent him for $6000, of which he has paid $2000 today.",True
+26483c3400cd,crime,1,"jailed overnight for a DWI incident in Dallas, Texas last year with BAC >= 0.15",True
+26483c3400cd,divorce,0,,
+26483c3400cd,domestic_violence,0,,
+26483c3400cd,education,0,,
+26483c3400cd,employment,1,"He was in touch with the bail company to check about the court dates, and they assured they were working on it.",True
+26483c3400cd,estates,0,,
+26483c3400cd,family,0,,
+26483c3400cd,health,0,,
+26483c3400cd,housing,0,,
+26483c3400cd,immigration,1,European colleague... was in the country on a work assignment last year... called in again on a 3 week assignment... inquired whether he can leave the country as his assignment is getting over in the next 3 days,False
+26483c3400cd,torts,0,,
+26483c3400cd,traffic,1,"jailed overnight for a DWI incident in Dallas, Texas last year with BAC >= 0.15",True
+3a9205e98d24,benefits,0,,
+3a9205e98d24,business,0,,
+3a9205e98d24,consumer,0,,
+3a9205e98d24,courts,0,,
+3a9205e98d24,crime,1,"He had to file for OPT work or a work visa in that TIME to do so, but due to having an arrest on his record (that's now been expunged but took forever to pay off), the paperwork took too long to go through.",True
+3a9205e98d24,divorce,0,,
+3a9205e98d24,domestic_violence,0,,
+3a9205e98d24,education,1,"He was a student for 7 years at a university in TN, graduated in May",True
+3a9205e98d24,employment,1,I've been a nanny being paid under the table since March 2016,True
+3a9205e98d24,estates,0,,
+3a9205e98d24,family,1,We're planning a green card marriage,False
+3a9205e98d24,health,0,,
+3a9205e98d24,housing,0,,
+3a9205e98d24,immigration,1,"He had to file for OPT work or a work visa in that TIME to do so, but due to having an arrest on his record (that's now been expunged but took forever to pay off), the paperwork took too long to go through.",True
+3a9205e98d24,torts,0,,
+3a9205e98d24,traffic,0,,
+6a12667a6d00,benefits,0,,
+6a12667a6d00,business,1,Purchased a website about 6 months ago,True
+6a12667a6d00,consumer,1,"Website was not as described, does not have the capabilities that were promised",False
+6a12667a6d00,courts,1,"Can I file small claims court in my local court, or would I have to go all the way to San Diego or Pennsylvania?",True
+6a12667a6d00,crime,0,,
+6a12667a6d00,divorce,0,,
+6a12667a6d00,domestic_violence,0,,
+6a12667a6d00,education,0,,
+6a12667a6d00,employment,0,,
+6a12667a6d00,estates,0,,
+6a12667a6d00,family,0,,
+6a12667a6d00,health,0,,
+6a12667a6d00,housing,0,,
+6a12667a6d00,immigration,0,,
+6a12667a6d00,torts,1,"Website was not as described, does not have the capabilities that were promised",False
+6a12667a6d00,traffic,0,,
+75f88ba287c7,benefits,0,,
+75f88ba287c7,business,0,,
+75f88ba287c7,consumer,0,,
+75f88ba287c7,courts,1,I am going in the morning to write down and report the frequency of the crazy ex-in-law's phone calls every night,True
+75f88ba287c7,crime,1,She had my friend so hysterical crying that I took the phone and hung up and for the next 2 hours she called every 5 minutes,True
+75f88ba287c7,divorce,0,,
+75f88ba287c7,domestic_violence,1,She had my friend so hysterical crying that I took the phone and hung up and for the next 2 hours she called every 5 minutes,True
+75f88ba287c7,education,0,,
+75f88ba287c7,employment,0,,
+75f88ba287c7,estates,0,,
+75f88ba287c7,family,1,She is 85,True
+75f88ba287c7,health,1,She is 85,True
+75f88ba287c7,housing,0,,
+75f88ba287c7,immigration,0,,
+75f88ba287c7,torts,1,She had my friend so hysterical crying that I took the phone and hung up and for the next 2 hours she called every 5 minutes,True
+75f88ba287c7,traffic,0,,
+e82b44762675,benefits,1,Father has dementia,False
+e82b44762675,business,0,,
+e82b44762675,consumer,0,,
+e82b44762675,courts,1,She has power of attorney and I don't have the resources to take her to court,True
+e82b44762675,crime,0,,
+e82b44762675,divorce,0,,
+e82b44762675,domestic_violence,0,,
+e82b44762675,education,0,,
+e82b44762675,employment,0,,
+e82b44762675,estates,0,,
+e82b44762675,family,1,Father married gold-digger to avoid loneliness,False
+e82b44762675,health,1,Father has dementia,False
+e82b44762675,housing,1,Step-mother dropped him at nursing home,False
+e82b44762675,immigration,0,,
+e82b44762675,torts,0,,
+e82b44762675,traffic,0,,
+3526e675cb7f,benefits,0,,
+3526e675cb7f,business,0,,
+3526e675cb7f,consumer,0,,
+3526e675cb7f,courts,1,This is small claims.,False
+3526e675cb7f,crime,1,"She kicked me out, pushed me to my limits and ended up calling the police and filing a protective order.",True
+3526e675cb7f,divorce,0,,
+3526e675cb7f,domestic_violence,1,"She kicked me out, pushed me to my limits and ended up calling the police and filing a protective order.",True
+3526e675cb7f,education,0,,
+3526e675cb7f,employment,0,,
+3526e675cb7f,estates,0,,
+3526e675cb7f,family,1,"She is also pursuing almost $1,000 for emotional trauma.",True
+3526e675cb7f,health,0,,
+3526e675cb7f,housing,0,,
+3526e675cb7f,immigration,0,,
+3526e675cb7f,torts,1,"She is also pursuing almost $1,000 for emotional trauma.",True
+3526e675cb7f,traffic,0,,
+36e33d765121,benefits,0,,
+36e33d765121,business,0,,
+36e33d765121,consumer,1,We were gonna take over the lease then we got kicked out too.,True
+36e33d765121,courts,1,How should I go about taking it to small claims court,True
+36e33d765121,crime,0,,
+36e33d765121,divorce,0,,
+36e33d765121,domestic_violence,0,,
+36e33d765121,education,0,,
+36e33d765121,employment,0,,
+36e33d765121,estates,0,,
+36e33d765121,family,0,,
+36e33d765121,health,0,,
+36e33d765121,housing,1,We sub leased a room and the landlord was only aware that one of us was living there (my gf and i so 2) everyone moved out over the weekend without notice. We were gonna take over the lease then we got kicked out too.,True
+36e33d765121,immigration,0,,
+36e33d765121,torts,1,We were gonna take over the lease then we got kicked out too.,True
+36e33d765121,traffic,0,,
+5cbca0517a1c,benefits,1,Aunt drains her pension each month not even leaving her enough for groceries,True
+5cbca0517a1c,business,0,,
+5cbca0517a1c,consumer,0,,
+5cbca0517a1c,courts,0,,
+5cbca0517a1c,crime,0,,
+5cbca0517a1c,divorce,0,,
+5cbca0517a1c,domestic_violence,0,,
+5cbca0517a1c,education,0,,
+5cbca0517a1c,employment,0,,
+5cbca0517a1c,estates,0,,
+5cbca0517a1c,family,1,Aunt is in charge of grandmother's finances,False
+5cbca0517a1c,health,1,Grandmother is decaying away in her home losing her mind,False
+5cbca0517a1c,housing,0,,
+5cbca0517a1c,immigration,0,,
+5cbca0517a1c,torts,1,Aunt drains her pension each month not even leaving her enough for groceries,True
+5cbca0517a1c,traffic,0,,
+de28c37fbd38,benefits,0,,
+de28c37fbd38,business,1,36 wants to prepare for business trip,False
+de28c37fbd38,consumer,0,,
+de28c37fbd38,courts,1,26 calls cops. Report filed.,True
+de28c37fbd38,crime,1,36 strangles 26 with hands until he passes out,False
+de28c37fbd38,divorce,0,,
+de28c37fbd38,domestic_violence,1,26 claims history of violence at hands of 36,True
+de28c37fbd38,education,0,,
+de28c37fbd38,employment,1,36 works for private income,False
+de28c37fbd38,estates,0,,
+de28c37fbd38,family,1,Two brothers live in their father's home with their mother,False
+de28c37fbd38,health,1,Mother is ill with cancer,False
+de28c37fbd38,housing,1,They live in their father's home,False
+de28c37fbd38,immigration,0,,
+de28c37fbd38,torts,1,36 strangles 26 with hands until he passes out,False
+de28c37fbd38,traffic,0,,
+5133dd0b5207,benefits,1,She has been hospitalized because of it,True
+5133dd0b5207,business,0,,
+5133dd0b5207,consumer,0,,
+5133dd0b5207,courts,0,,
+5133dd0b5207,crime,1,She is being emotionally abused and financially controlled by her parents,True
+5133dd0b5207,divorce,0,,
+5133dd0b5207,domestic_violence,1,She is being emotionally abused and financially controlled by her parents,True
+5133dd0b5207,education,0,,
+5133dd0b5207,employment,0,,
+5133dd0b5207,estates,0,,
+5133dd0b5207,family,1,She is being emotionally abused and financially controlled by her parents,True
+5133dd0b5207,health,1,She has been hospitalized because of it,True
+5133dd0b5207,housing,0,,
+5133dd0b5207,immigration,0,,
+5133dd0b5207,torts,1,She is being emotionally abused and financially controlled by her parents,True
+5133dd0b5207,traffic,0,,
+ed1762fd2380,benefits,0,,
+ed1762fd2380,business,1,If a person has been embezzling money from the company,True
+ed1762fd2380,consumer,0,,
+ed1762fd2380,courts,1,Will the tax records of the company be under scrutiny?,True
+ed1762fd2380,crime,1,If a person has been embezzling money from the company and the company goes to the cops,True
+ed1762fd2380,divorce,0,,
+ed1762fd2380,domestic_violence,0,,
+ed1762fd2380,education,0,,
+ed1762fd2380,employment,0,,
+ed1762fd2380,estates,0,,
+ed1762fd2380,family,0,,
+ed1762fd2380,health,0,,
+ed1762fd2380,housing,0,,
+ed1762fd2380,immigration,0,,
+ed1762fd2380,torts,0,,
+ed1762fd2380,traffic,0,,
+774b7e60b829,benefits,0,,
+774b7e60b829,business,0,,
+774b7e60b829,consumer,1,"Wife tried to reserve a beach house for this summer, and the long story short, she was being scammed by a guy through craigslist.",True
+774b7e60b829,courts,0,,
+774b7e60b829,crime,1,"Wife tried to reserve a beach house for this summer, and the long story short, she was being scammed by a guy through craigslist.",True
+774b7e60b829,divorce,0,,
+774b7e60b829,domestic_violence,0,,
+774b7e60b829,education,0,,
+774b7e60b829,employment,0,,
+774b7e60b829,estates,0,,
+774b7e60b829,family,1,We have the persons phone number and 2 of his bank account numbers.,True
+774b7e60b829,health,0,,
+774b7e60b829,housing,1,"Wife tried to reserve a beach house for this summer, and the long story short, she was being scammed by a guy through craigslist.",True
+774b7e60b829,immigration,0,,
+774b7e60b829,torts,1,"Wife tried to reserve a beach house for this summer, and the long story short, she was being scammed by a guy through craigslist.",True
+774b7e60b829,traffic,0,,
+f075104d4216,benefits,0,,
+f075104d4216,business,1,Separation agreement extended exercise period to 2 years,False
+f075104d4216,consumer,0,,
+f075104d4216,courts,1,Lawyers said this was BS,False
+f075104d4216,crime,0,,
+f075104d4216,divorce,0,,
+f075104d4216,domestic_violence,0,,
+f075104d4216,education,0,,
+f075104d4216,employment,1,Let go after vesting half stock options,False
+f075104d4216,estates,0,,
+f075104d4216,family,0,,
+f075104d4216,health,0,,
+f075104d4216,housing,0,,
+f075104d4216,immigration,0,,
+f075104d4216,torts,0,,
+f075104d4216,traffic,0,,
+273232e6fd4a,benefits,0,,
+273232e6fd4a,business,0,,
+273232e6fd4a,consumer,1,I don't have full coverage on this car so my insurance will not cover it.,True
+273232e6fd4a,courts,1,"Cops did not fill out an accident report, only got a 'CFS - Command Log'.",True
+273232e6fd4a,crime,1,"Person A hit one of my cars, approx $3,000 in damages.",True
+273232e6fd4a,divorce,0,,
+273232e6fd4a,domestic_violence,0,,
+273232e6fd4a,education,0,,
+273232e6fd4a,employment,0,,
+273232e6fd4a,estates,0,,
+273232e6fd4a,family,0,,
+273232e6fd4a,health,0,,
+273232e6fd4a,housing,0,,
+273232e6fd4a,immigration,0,,
+273232e6fd4a,torts,1,"Person A hit one of my cars, approx $3,000 in damages.",True
+273232e6fd4a,traffic,1,"Cops did not fill out an accident report, only got a 'CFS - Command Log'.",True
+b000443bf5a1,benefits,0,,
+b000443bf5a1,business,0,,
+b000443bf5a1,consumer,0,,
+b000443bf5a1,courts,0,,
+b000443bf5a1,crime,0,,
+b000443bf5a1,divorce,0,,
+b000443bf5a1,domestic_violence,0,,
+b000443bf5a1,education,0,,
+b000443bf5a1,employment,1,I can't get a straight answer on if it is a misdemeanor or not? Also I have a lot of driving tickets (4) from the age 18-21. Will that impact me forever? I am embarrassed of them now especially since all my future employers can see them.,True
+b000443bf5a1,estates,0,,
+b000443bf5a1,family,0,,
+b000443bf5a1,health,0,,
+b000443bf5a1,housing,0,,
+b000443bf5a1,immigration,0,,
+b000443bf5a1,torts,0,,
+b000443bf5a1,traffic,1,"Now not reckless driving, but the one point negligent driving. It keeps coming back for job background checks and I disclose it now after the first time I was called out on it because I had no idea it was not a general type of ticket when I was 18 and then forgot the ticket was and never thought twi",True
+6c755e1e3602,benefits,0,,
+6c755e1e3602,business,0,,
+6c755e1e3602,consumer,1,private seller misrepresented title,True
+6c755e1e3602,courts,1,I am planning to call both the VA Bar and the TX Bar referral services,True
+6c755e1e3602,crime,0,,
+6c755e1e3602,divorce,0,,
+6c755e1e3602,domestic_violence,0,,
+6c755e1e3602,education,0,,
+6c755e1e3602,employment,0,,
+6c755e1e3602,estates,0,,
+6c755e1e3602,family,0,,
+6c755e1e3602,health,0,,
+6c755e1e3602,housing,0,,
+6c755e1e3602,immigration,0,,
+6c755e1e3602,torts,1,private seller misrepresented title,True
+6c755e1e3602,traffic,1,seller paid a small dealership in VA to process the car through the abandoned vehicle process,False
+59012ad83479,benefits,0,,
+59012ad83479,business,0,,
+59012ad83479,consumer,1,I received a bill for a little over $500 and promptly handed it to my general manager.,True
+59012ad83479,courts,0,,
+59012ad83479,crime,0,,
+59012ad83479,divorce,0,,
+59012ad83479,domestic_violence,0,,
+59012ad83479,education,0,,
+59012ad83479,employment,1,"Before this incident, we were not provided with eye safety goggles, though a request had been made about masks of some sort because of the smell.",True
+59012ad83479,estates,0,,
+59012ad83479,family,0,,
+59012ad83479,health,1,I was in and out in 20 minutes with a prescription for eye drops.,True
+59012ad83479,housing,0,,
+59012ad83479,immigration,0,,
+59012ad83479,torts,1,"Before this incident, we were not provided with eye safety goggles, though a request had been made about masks of some sort because of the smell.",True
+59012ad83479,traffic,0,,

@@ -136,6 +136,15 @@ def main():
     ablation = stratified_sample(set_b_sample, cfg["data"]["ablation_subset"], cfg["seed"])
     all_posts = set(set_a["post_id"]) | set(set_b_sample["post_id"])
     assert not dev_ids & (all_posts | set(ablation["post_id"]))
+
+    # v2: new dev and fresh test posts, disjoint from everything used so far (and from train posts)
+    unused = eval_pool[~eval_pool["post_id"].isin(all_posts | set(train["post_id"]))]
+    v2_test = stratified_sample(unused, cfg["data"]["v2_test"], cfg["seed"])
+    unused = unused[~unused["post_id"].isin(v2_test["post_id"])]
+    v2_dev = stratified_sample(unused, cfg["data"]["v2_dev"], cfg["seed"])
+    groups = [dev_ids, all_posts, set(train["post_id"]) - all_posts - dev_ids, set(v2_test["post_id"]), set(v2_dev["post_id"])]
+    assert len(set().union(*groups)) == sum(len(g) for g in groups)   # no post is in two groups
+    stats["v2_dev_posts"], stats["v2_test_posts"] = len(v2_dev), len(v2_test)
     stats["dev_posts"] = len(dev)
     stats["train_posts_also_in_test"] = len(set(train["post_id"]) & set(test["post_id"]))
     stats["set_b_sample_posts"] = len(set_b_sample)
@@ -149,6 +158,8 @@ def main():
     set_b_sample.to_csv(out / "set_b_sample.csv", index=False)
     ablation.to_csv(out / "ablation_subset.csv", index=False)
     dev.to_csv(out / "dev.csv", index=False)
+    v2_dev.to_csv(out / "v2_dev.csv", index=False)
+    v2_test.to_csv(out / "v2_test.csv", index=False)
     (out / "stats.json").write_text(json.dumps(stats, indent=2))
     print(json.dumps(stats, indent=2))
 

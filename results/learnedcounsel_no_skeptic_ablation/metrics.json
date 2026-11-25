@@ -1,0 +1,414 @@
+{
+  "system": "learnedcounsel",
+  "variant": "no_skeptic",
+  "run_name": "learnedcounsel_no_skeptic_ablation",
+  "set": "ablation",
+  "cost": {
+    "calls_per_post": 8.916666666666666,
+    "tokens_in_per_post": 9654.333333333334,
+    "tokens_out_per_post": 2219.9333333333334,
+    "latency_s_per_post": 114.32133333333333,
+    "total_calls": 535.0,
+    "total_tokens_in": 579260.0,
+    "total_tokens_out": 133196.0,
+    "total_latency_s": 6859.28,
+    "n_posts": 60
+  },
+  "concurrency": 2,
+  "on_battery": {
+    "start": false,
+    "end": false
+  },
+  "wall_seconds_live": 1564.0825078487396,
+  "per_post_means": {
+    "invalid_messages": 0.0,
+    "repair_retries": 0.0,
+    "evidence_retries": 0.6,
+    "first_try_evidence_valid": 2.25,
+    "first_try_evidence_total": 2.816666666666667,
+    "specialists_called": 2.466666666666667,
+    "consults": 0.26666666666666666,
+    "challenges": 0.0,
+    "possible_misses": 0.0,
+    "reopens": 1.9166666666666667,
+    "flips": 0.43333333333333335,
+    "rounds": 0.9333333333333333,
+    "coordinator_failed": 0.0
+  },
+  "llm_stats": {
+    "calls": 535,
+    "cached_calls": 311,
+    "tokens_in": 579260,
+    "tokens_out": 133196,
+    "model_seconds": 6859.294919013977,
+    "live_seconds": 3101.3659439086914,
+    "repair_retries": 0,
+    "invalid_after_retry": 0,
+    "ctx_warnings": 3
+  },
+  "posts_with_invalid_output": 0,
+  "evidence_validity_rate": 0.9382022471910112,
+  "debate": {
+    "challenge": {
+      "count": 0,
+      "per_post": 0.0,
+      "flips": 0,
+      "flip_rate": null,
+      "flips_vs_known_labels": {
+        "correct": 0,
+        "incorrect": 0,
+        "unknown": 0
+      }
+    },
+    "possible_miss": {
+      "count": 0,
+      "per_post": 0.0,
+      "flips": 0,
+      "flip_rate": null,
+      "flips_vs_known_labels": {
+        "correct": 0,
+        "incorrect": 0,
+        "unknown": 0
+      }
+    },
+    "reopen": {
+      "count": 115,
+      "per_post": 1.9166666666666667,
+      "flips": 26,
+      "flip_rate": 0.22608695652173913,
+      "flips_vs_known_labels": {
+        "correct": 8,
+        "incorrect": 2,
+        "unknown": 16
+      }
+    },
+    "skeptic_items_dropped": 0,
+    "coordinator_overrides": {
+      "count": 2,
+      "vs_known_labels": {
+        "correct": 1,
+        "incorrect": 0,
+        "unknown": 1
+      }
+    },
+    "consults": {
+      "count": 16,
+      "posts_with_consult": 14,
+      "final_positives_in_consulted_areas": {
+        "correct": 1,
+        "incorrect": 0,
+        "unknown": 2
+      }
+    },
+    "stages": {
+      "round0_specialists": {
+        "n": 185,
+        "accuracy": 0.8216216216216217,
+        "precision": 0.9468085106382979,
+        "recall": 0.7606837606837606,
+        "f1": 0.8436018957345972,
+        "tp": 89,
+        "fp": 5,
+        "fn": 28
+      },
+      "after_debate": {
+        "n": 185,
+        "accuracy": 0.8540540540540541,
+        "precision": 0.9411764705882353,
+        "recall": 0.8205128205128205,
+        "f1": 0.8767123287671232,
+        "tp": 96,
+        "fp": 6,
+        "fn": 21
+      },
+      "final_coordinator": {
+        "n": 185,
+        "accuracy": 0.8594594594594595,
+        "precision": 0.941747572815534,
+        "recall": 0.8290598290598291,
+        "f1": 0.8818181818181818,
+        "tp": 97,
+        "fp": 6,
+        "fn": 20
+      }
+    },
+    "positive_claim_confidences": {
+      "0.6": 1,
+      "0.8": 32,
+      "0.9": 1,
+      "1.0": 127
+    }
+  },
+  "set_a": {
+    "n_items": 5,
+    "n_items_in_set": 240,
+    "mean_accuracy": 1.0,
+    "overall": {
+      "n": 5,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 5,
+      "fp": 0,
+      "fn": 0
+    },
+    "per_category": {
+      "consumer": {
+        "n": 1,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "divorce": {
+        "n": 1,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "domestic_violence": {
+        "n": 1,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "education": {
+        "n": 1,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "torts": {
+        "n": 1,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  },
+  "set_b": {
+    "n_posts": 60,
+    "n_known_entries": 185,
+    "micro_precision": 0.941747572815534,
+    "micro_recall": 0.8290598290598291,
+    "micro_f1": 0.8818181818181818,
+    "macro_f1": 0.8632991597893074,
+    "macro_f1_categories": 14,
+    "exact_match": 0.6166666666666667,
+    "recall_by_known_positives": {
+      "1": 1.0,
+      "2": 0.76,
+      "3+": 0.8297872340425532
+    },
+    "per_category": {
+      "business": {
+        "n": 7,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 5,
+        "fp": 0,
+        "fn": 0
+      },
+      "consumer": {
+        "n": 13,
+        "accuracy": 0.5384615384615384,
+        "precision": 0.8333333333333334,
+        "recall": 0.5,
+        "f1": 0.625,
+        "tp": 5,
+        "fp": 1,
+        "fn": 5
+      },
+      "courts": {
+        "n": 8,
+        "accuracy": 0.75,
+        "precision": 1.0,
+        "recall": 0.7142857142857143,
+        "f1": 0.8333333333333333,
+        "tp": 5,
+        "fp": 0,
+        "fn": 2
+      },
+      "crime": {
+        "n": 8,
+        "accuracy": 0.875,
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "tp": 5,
+        "fp": 0,
+        "fn": 1
+      },
+      "divorce": {
+        "n": 8,
+        "accuracy": 0.75,
+        "precision": 0.8333333333333334,
+        "recall": 0.8333333333333334,
+        "f1": 0.8333333333333334,
+        "tp": 5,
+        "fp": 1,
+        "fn": 1
+      },
+      "domestic_violence": {
+        "n": 9,
+        "accuracy": 0.7777777777777778,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571,
+        "tp": 6,
+        "fp": 0,
+        "fn": 2
+      },
+      "education": {
+        "n": 3,
+        "accuracy": 0.3333333333333333,
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "f1": 0.5,
+        "tp": 1,
+        "fp": 2,
+        "fn": 0
+      },
+      "employment": {
+        "n": 9,
+        "accuracy": 0.7777777777777778,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8,
+        "tp": 4,
+        "fp": 0,
+        "fn": 2
+      },
+      "estates": {
+        "n": 1,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0
+      },
+      "family": {
+        "n": 27,
+        "accuracy": 0.8888888888888888,
+        "precision": 0.9411764705882353,
+        "recall": 0.8888888888888888,
+        "f1": 0.9142857142857143,
+        "tp": 16,
+        "fp": 1,
+        "fn": 2
+      },
+      "health": {
+        "n": 7,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 6,
+        "fp": 0,
+        "fn": 0
+      },
+      "housing": {
+        "n": 47,
+        "accuracy": 0.9787234042553191,
+        "precision": 0.9333333333333333,
+        "recall": 1.0,
+        "f1": 0.9655172413793104,
+        "tp": 14,
+        "fp": 1,
+        "fn": 0
+      },
+      "torts": {
+        "n": 23,
+        "accuracy": 0.782608695652174,
+        "precision": 1.0,
+        "recall": 0.7368421052631579,
+        "f1": 0.8484848484848484,
+        "tp": 14,
+        "fp": 0,
+        "fn": 5
+      },
+      "traffic": {
+        "n": 15,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 10,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  },
+  "ci": {
+    "set_a": {
+      "mean_accuracy": {
+        "value": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "set_b": {
+      "micro_f1": {
+        "value": 0.8818181818181818,
+        "ci95": [
+          0.832579185520362,
+          0.9217550129045067
+        ]
+      },
+      "micro_precision": {
+        "value": 0.941747572815534,
+        "ci95": [
+          0.9,
+          0.9803969160479725
+        ]
+      },
+      "micro_recall": {
+        "value": 0.8290598290598291,
+        "ci95": [
+          0.7582681297709923,
+          0.8925930666276604
+        ]
+      },
+      "macro_f1": {
+        "value": 0.8632991597893075,
+        "ci95": [
+          0.8052550428036671,
+          0.9267134041297952
+        ]
+      },
+      "exact_match": {
+        "value": 0.6166666666666667,
+        "ci95": [
+          0.48333333333333334,
+          0.7333333333333333
+        ]
+      }
+    }
+  }
+}

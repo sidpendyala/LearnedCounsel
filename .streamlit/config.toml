@@ -1,0 +1,6 @@
+# The demo must stay on this computer.
+[browser]
+gatherUsageStats = false
+
+[server]
+address = "localhost"

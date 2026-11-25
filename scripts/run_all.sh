@@ -36,4 +36,6 @@ done
 
 # (g) 4B specialists
 run learnedcounsel_mixed_4b_ablation --system learnedcounsel --variant mixed_4b --set ablation
+# (h) few-shot examples for the specialists
+run learnedcounsel_few_shot_ablation --system learnedcounsel --variant few_shot --set ablation
 echo "[$(date +%H:%M)] ALL RUNS FINISHED"

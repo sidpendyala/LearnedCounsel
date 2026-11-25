@@ -12,6 +12,9 @@ data:
   # Set B evaluation sample, by number of known positives (oversamples multi-issue posts)
   set_b_sample: {"1": 40, "2": 50, "3+": 30}
   ablation_subset: {"1": 20, "2": 25, "3+": 15}   # drawn from the Set B sample
+  # v2 (designed after M6): new posts that no system or prompt change has seen
+  v2_dev: {"1": 8, "2": 11, "3+": 5}              # choose between the v2 candidates
+  v2_test: {"1": 30, "2": 42, "3+": 18}           # run once
   hand_label_threshold: 100   # build a hand-label template if fewer Set B posts have 2+ known positives
   hand_label_candidates: 50
 
@@ -33,7 +36,7 @@ ollama:
   num_predict: 2048           # max output tokens per call (16-category outputs can exceed 1024)
   concurrency: 2              # M2: 1.42x throughput vs 1, still 100% GPU (use 1 for mixed-model runs)
 
-compute_budget_hours: 19      # raised from 12 in M5: the full plan needs about 17.3 h
+compute_budget_hours: 23      # raised from 12 to 19 (M5), then to 23 for v2 (user OK, 2026-11-25)
 
 learnedcounsel:
   tau: 0.9                    # skeptic may challenge positive claims below this; chosen on dev (M5)

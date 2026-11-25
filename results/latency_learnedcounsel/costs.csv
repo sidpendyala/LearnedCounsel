@@ -1,0 +1,6 @@
+post_id,calls,tokens_in,tokens_out,latency_s,valid,invalid_messages,repair_retries,evidence_retries,first_try_evidence_valid,first_try_evidence_total,specialists_called,consults,challenges,possible_misses,reopens,flips,rounds,coordinator_failed,urgency
+037e254201b3,9,7721,1747,61.61,True,0,0,0,2,2,3,0,2,0,0,0,1,False,high
+9b0bf8371bc2,13,13067,3013,99.10000000000001,True,0,0,0,6,6,5,2,1,0,2,2,2,False,medium
+54c92e2b13b9,9,7165,2136,68.41999999999999,True,0,0,1,2,3,4,2,0,0,0,0,1,False,high
+4e515d20fa0d,9,8998,1924,65.05,True,0,0,0,2,2,2,0,0,0,2,1,2,False,low
+2fb4d91c0cc5,8,8546,1754,59.160000000000004,True,0,0,0,1,1,1,0,0,0,2,1,2,False,low

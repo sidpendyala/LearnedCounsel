@@ -1,0 +1,25 @@
+system,pair,rate,n,hits
+B3,"domestic_violence is there, family is not
+(3 posts)",1.0,3,3
+B3,"torts is there, traffic is not
+(5 posts)",0.0,5,0
+B3,"torts is there, housing is not
+(25 posts)",0.04,25,1
+B3,"housing is there, torts is not
+(10 posts)",0.3,10,3
+B4,"domestic_violence is there, family is not
+(3 posts)",0.6666666666666666,3,2
+B4,"torts is there, traffic is not
+(5 posts)",0.0,5,0
+B4,"torts is there, housing is not
+(25 posts)",0.08,25,2
+B4,"housing is there, torts is not
+(10 posts)",0.3,10,3
+LearnedCounsel,"domestic_violence is there, family is not
+(3 posts)",0.6666666666666666,3,2
+LearnedCounsel,"torts is there, traffic is not
+(5 posts)",0.0,5,0
+LearnedCounsel,"torts is there, housing is not
+(25 posts)",0.04,25,1
+LearnedCounsel,"housing is there, torts is not
+(10 posts)",0.2,10,2

@@ -39,7 +39,7 @@ def tally(verdicts):
 def debate_metrics(cases, known):
     out, n = {}, len(cases)
     rebuttals = [(c["post_id"], d) for c in cases for d in c["debate"] if d["type"] == "rebuttal"]
-    for kind in ["challenge", "possible_miss", "reopen"]:
+    for kind in ["challenge", "possible_miss", "reopen", "scout_add", "scout_drop"]:
         items = [(p, d) for p, d in rebuttals if d["kind"] == kind]
         flips = [(p, d) for p, d in items if d["before"] != d["after"]]
         out[kind] = {"count": len(items), "per_post": len(items) / n, "flips": len(flips),

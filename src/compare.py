@@ -31,7 +31,8 @@ def shared(preds_1, preds_2):
 def compare(main, other, set_a, set_b):
     p1, p2 = shared(main, other)
     out = {}
-    if score_set_a(p1, set_a)["n_items"]:
+    # Skip Set A if the other run covers only a few of its items by chance (B5 runs on Set B only).
+    if score_set_a(p1, set_a)["n_items"] >= 0.5 * len(set_a):
         out["mcnemar_set_a"] = mcnemar(p1, p2, set_a)
         out["set_a_difference"] = paired_difference(set_a_counts, set_a_metrics, p1, p2, set_a, CATEGORIES)
     if score_set_b(p1, set_b, CATEGORIES)["n_posts"]:
@@ -44,11 +45,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--main", required=True)
     ap.add_argument("--others", nargs="+", required=True)
-    ap.add_argument("--set", default="eval", choices=["eval", "dev"])
+    ap.add_argument("--set", default="eval", choices=["eval", "dev", "v2_dev", "v2_test"])
     args = ap.parse_args()
     sets = load_sets(load_config())
-    set_a, set_b = ((sets["dev_items"], sets["dev"]) if args.set == "dev"
-                    else (sets["set_a"], sets["set_b_sample"]))
+    set_a, set_b = ((sets["set_a"], sets["set_b_sample"]) if args.set == "eval"
+                    else (sets[f"{args.set}_items"], sets[args.set]))
     load = lambda run: pd.read_csv(Path("results") / run / "predictions.csv")
     main_preds = load(args.main)
     # B2 answers only Set A items, so comparing it on Set B would be meaningless.

@@ -1,0 +1,126 @@
+{
+  "args": {
+    "system": "b3",
+    "set": "main",
+    "variant": "full",
+    "n": null,
+    "run_name": "b3_main",
+    "concurrency": null,
+    "no_cache": false
+  },
+  "config": {
+    "seed": 448,
+    "data": {
+      "hf_repo": "nguha/legalbench",
+      "hf_revision": "daec8237410aa23e3faf4bc41ad8b3a7e1696826",
+      "processed_dir": "data/processed",
+      "dev_ids": "data/dev_post_ids.txt",
+      "n_a_per_category": 15,
+      "set_b_sample": {
+        "1": 40,
+        "2": 50,
+        "3+": 30
+      },
+      "ablation_subset": {
+        "1": 20,
+        "2": 25,
+        "3+": 15
+      },
+      "hand_label_threshold": 100,
+      "hand_label_candidates": 50
+    },
+    "categories": [
+      "benefits",
+      "business",
+      "consumer",
+      "courts",
+      "crime",
+      "divorce",
+      "domestic_violence",
+      "education",
+      "employment",
+      "estates",
+      "family",
+      "health",
+      "housing",
+      "immigration",
+      "torts",
+      "traffic"
+    ],
+    "groups": {
+      "housing": [
+        "housing"
+      ],
+      "family": [
+        "family",
+        "divorce",
+        "domestic_violence",
+        "estates"
+      ],
+      "work_money": [
+        "employment",
+        "consumer",
+        "benefits",
+        "business"
+      ],
+      "courts_crime": [
+        "courts",
+        "crime",
+        "traffic"
+      ],
+      "health_more": [
+        "health",
+        "education",
+        "immigration",
+        "torts"
+      ]
+    },
+    "ollama": {
+      "url": "http://localhost:11434",
+      "num_ctx": 8192,
+      "num_predict": 2048,
+      "concurrency": 2
+    },
+    "compute_budget_hours": 19,
+    "learnedcounsel": {
+      "tau": 0.9,
+      "max_rounds": 2
+    },
+    "baselines": {
+      "b3_version": "present_first",
+      "b5_k": 9,
+      "b5_temperature": 0.7
+    },
+    "models": {
+      "main": "qwen3:8b",
+      "strong": "qwen3:14b",
+      "small": "qwen3:4b"
+    }
+  },
+  "time": "2026-11-24T21:18:10",
+  "git_commit": "847fb20",
+  "uncommitted_changes": false,
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU, 8188 MiB, 621.14",
+    "cpu": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+    "os": "Windows-10-10.0.26200-SP0"
+  },
+  "models": {
+    "qwen3:14b": {
+      "digest": "bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8",
+      "quantization": "Q4_K_M",
+      "parameters": "14.8B"
+    },
+    "qwen3:4b": {
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "quantization": "Q4_K_M",
+      "parameters": "4.0B"
+    },
+    "qwen3:8b": {
+      "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "quantization": "Q4_K_M",
+      "parameters": "8.2B"
+    }
+  },
+  "ollama_version": "0.40.17"
+}

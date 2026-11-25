@@ -6,7 +6,8 @@ Examples:
   python -m src.experiments --system learnedcounsel --variant tau0.9 --set ablation
   python -m src.experiments --system b3 --set dev --n 10 --concurrency 1 --no-cache   (true latency)
 
-Sets: main (Set A posts + Set B sample), A, B (the Set B sample), ablation, dev (tuning only).
+Sets: main (Set A posts + Set B sample), A, B (the Set B sample), ablation, dev and v2_dev (tuning only),
+v2_test (fresh posts for v2).
 Writes results/<run_name>/ with metrics.json, predictions.csv, costs.csv, config.json.
 
 Budget: every run adds its model runtime (wall clock) to results/runtime_ledger.csv, and
@@ -52,17 +53,23 @@ VARIANTS = {
     "tau0.8": {"tau": 0.8},                               # (f), dev only
     "tau0.9": {"tau": 0.9},                               # (f)
     "mixed_4b": {"specialist_model": "small"},            # (g) small model for specialists + rebuttals
+    "few_shot": {"few_shot": True},                       # (h)
+    # v2 candidates (no router, skeptic raises misses only, stricter note); one is chosen on v2_dev
+    "v2_add": {"use_router": False, "skeptic_misses_only": True, "safe_note": True, "scout_mode": "add"},
+    "v2_both": {"use_router": False, "skeptic_misses_only": True, "safe_note": True, "scout_mode": "both"},
+    "v2_no_scout": {"use_router": False, "skeptic_misses_only": True, "safe_note": True},
 }
 
 
 # ---------------- data ----------------
 def load_sets(cfg):
     d = Path(cfg["data"]["processed_dir"])
-    names = ["set_a", "set_b_sample", "ablation_subset", "dev", "set_b", "test_long"]
+    names = ["set_a", "set_b_sample", "ablation_subset", "dev", "v2_dev", "v2_test", "set_b", "test_long"]
     sets = {name: pd.read_csv(d / f"{name}.csv") for name in names}
-    for name in ["set_b_sample", "ablation_subset", "dev", "set_b"]:
+    for name in ["set_b_sample", "ablation_subset", "dev", "v2_dev", "v2_test", "set_b"]:
         sets[name][CATEGORIES] = sets[name][CATEGORIES].astype("Int8")
-    sets["dev_items"] = known_labels_long(sets["dev"], CATEGORIES)  # dev labels as Yes/No items
+    for name in ["dev", "v2_dev", "v2_test"]:   # these have no Set A: use their known labels as Yes/No items
+        sets[f"{name}_items"] = known_labels_long(sets[name], CATEGORIES)
     return sets
 
 
@@ -71,7 +78,8 @@ def select_posts(sets, which, n, seed):
     cols = ["post_id", "text"]
     pools = {"main": pd.concat([sets["set_a"][cols], sets["set_b_sample"][cols]]),
              "A": sets["set_a"][cols], "B": sets["set_b_sample"][cols],
-             "ablation": sets["ablation_subset"][cols], "dev": sets["dev"][cols]}
+             "ablation": sets["ablation_subset"][cols], "dev": sets["dev"][cols],
+             "v2_dev": sets["v2_dev"][cols], "v2_test": sets["v2_test"][cols]}
     posts = pools[which].drop_duplicates("post_id").reset_index(drop=True)
     if n:
         posts = posts.sample(n=min(n, len(posts)), random_state=seed).reset_index(drop=True)
@@ -155,7 +163,7 @@ def run_llm_system(llm, system_fn, posts, workers):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--system", required=True, choices=["b1", "learnedcounsel"] + LLM_BASELINES)
-    ap.add_argument("--set", default="main", choices=["main", "A", "B", "ablation", "dev"])
+    ap.add_argument("--set", default="main", choices=["main", "A", "B", "ablation", "dev", "v2_dev", "v2_test"])
     ap.add_argument("--variant", default="full", choices=list(VARIANTS), help="LearnedCounsel variant")
     ap.add_argument("--n", type=int, default=None, help="random subset of n posts")
     ap.add_argument("--run-name", default=None)
@@ -169,8 +177,9 @@ def main():
     run_name = args.run_name or f"{args.system}{variant}_{args.set}" + (f"_n{args.n}" if args.n else "")
     out = Path("results") / run_name
     out.mkdir(parents=True, exist_ok=True)
-    set_a = sets["dev_items"] if args.set == "dev" else sets["set_a"]
-    set_b = sets["dev"] if args.set == "dev" else sets["set_b_sample"]
+    own_labels = args.set in ["dev", "v2_dev", "v2_test"]
+    set_a = sets[f"{args.set}_items"] if own_labels else sets["set_a"]
+    set_b = sets[args.set] if own_labels else sets["set_b_sample"]
     metrics = {"system": args.system, "variant": args.variant, "run_name": run_name, "set": args.set}
 
     if args.system == "b1":

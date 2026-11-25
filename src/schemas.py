@@ -104,6 +104,10 @@ class SkepticOutput(BaseModel):
     possible_misses: list[PossibleMiss] = Field(max_length=4)
 
 
+class SkepticMissesOutput(BaseModel):          # v2: the skeptic only looks for misses
+    possible_misses: list[PossibleMiss] = Field(max_length=4)
+
+
 # ---------------- 5. Rebuttal ----------------
 class Rebuttal(BaseModel):
     # Reasoning first, decision last (M4 fix: a rebuttal said "not torts" but returned present=true).
@@ -171,6 +175,7 @@ class CaseFile(BaseModel):
     routing: dict = {}                 # {"specialists_to_call": [...], "reasons": {...}}
     consults: list[dict] = []          # consult requests honored
     specialist_outputs: dict = {}      # round-0 output of each specialist
+    scout: dict | None = None          # v2: first reading of all 16 categories
     claims: dict[str, ClaimState] = {c: ClaimState() for c in CATEGORIES}
     debate: list[dict] = []            # challenges, misses, rebuttals, reopen questions
     decisions: list[dict] = []         # coordinator output of each round

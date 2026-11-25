@@ -27,7 +27,7 @@ from pydantic import BaseModel, ValidationError
 
 log = logging.getLogger("llm")
 
-CHARS_PER_TOKEN = 3.5  # conservative estimate (English is ~4 chars/token)
+CHARS_PER_TOKEN = 4.0  # below the lowest ratio measured on long prompts (4.09, M6); 3.5 rejected prompts that fit
 
 
 class ContextTooLong(Exception):

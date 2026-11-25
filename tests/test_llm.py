@@ -71,12 +71,12 @@ def test_cache_key_includes_temperature_and_sample_id(tmp_path):
 def test_prompt_too_long_raises():
     llm = FakeLLM(lambda p: GOOD, num_ctx=1000, num_predict=200)
     with pytest.raises(ContextTooLong):
-        llm.chat("sys", "x" * 4000, schema=Answer)  # ~1140 tokens > 800
+        llm.chat("sys", "x" * 4000, schema=Answer)  # ~1000 tokens > 800
 
 
 def test_prompt_close_to_limit_warns():
     llm = FakeLLM(lambda p: GOOD, num_ctx=1000, num_predict=200)
-    llm.chat("sys", "x" * 2700, schema=Answer)  # ~770 tokens, above 85% of 800
+    llm.chat("sys", "x" * 2800, schema=Answer)  # ~700 tokens, above 85% of 800
     assert llm.stats["ctx_warnings"] >= 1
 
 
